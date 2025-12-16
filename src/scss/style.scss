@@ -124,6 +124,10 @@
 @use "blocks/marks.scss";
 @use "blocks/alert.scss";
 
+@use "blocks/comments.scss";
+@use "blocks/comment.scss";
+@use "blocks/add-comment.scss";
+
 // // Всплывающее уведомление об использовании куки
 @use 'blocks/notifycation';
 
