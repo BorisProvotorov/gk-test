@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "gulp",
-    "build": "NODE_ENV=production && chmod +x node_modules/mozjpeg/vendor/cjpeg && gulp build",
+    "build": "export NODE_ENV=production && chmod +x node_modules/mozjpeg/vendor/cjpeg && gulp build",
     "clean": "gulp clean"
   },
   "outputDirectory": "dist",
