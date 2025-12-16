@@ -1,0 +1,20 @@
+@use "../variables" as *;
+
+.forum {
+  background-color: #fff;
+  padding: 20px;
+
+  &__title {
+    margin: 0;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 29px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .forum {
+    margin-bottom: 15px;
+  }
+}

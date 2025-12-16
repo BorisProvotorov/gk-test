@@ -1,0 +1,91 @@
+@use "../variables" as *;
+
+.forum-search {
+  padding: 30px 20px;
+  margin-bottom: 15px;
+  background-color: #fff;
+  border: 1px solid #E9E9E9;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  &__left {
+    flex-grow: 1;
+    position: relative;
+  }
+  
+  &__right {
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-left: 15px;
+    position: relative;
+  }
+
+  &__input {
+    font: inherit;
+    font-size: 12px;
+    line-height: 1.2;
+    border: 0.75px solid #D8D8D8;
+    border-radius: 3px;
+    color: #959EA8;
+    width: 100%;
+    padding: 10px 20px;
+    padding-right: 45px;
+    outline: none;
+  }
+
+  &__button {
+    border: none;
+    background-color: transparent;
+    padding: 10px 0 15px 10px;
+    width: 40px;
+    height: 40px;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    top: -2px;
+    right: 10px;
+
+    &::before {
+      content: "";
+      width: 40px;
+      height: 40px;
+      background-image: url("../img/icon-search.svg");
+      background-repeat: no-repeat;
+      background-position: right center;
+      transition: opacity 0.7s;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+    
+     &:hover::before,
+      &:focus::before {
+        opacity: .5;
+        transition: opacity 0.7s;
+      }
+      &:active::before {
+        opacity: .8;
+        transition: opacity 0.7s;
+      }
+  }
+}
+
+@media (max-width: $mobile-width)  {
+  .forum-search {
+    &__wrapper {
+      display: block;
+    }
+    
+    &__left {
+      margin-bottom: 15px;
+    }
+    
+    &__right {
+      margin-left: 0;
+    }
+  }
+}

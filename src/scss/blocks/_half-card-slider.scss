@@ -1,0 +1,21 @@
+@use "../variables" as *;
+
+.half-card-slider {
+  width: 50%;
+}
+
+@media (max-width: $tablet-width) {
+  .half-card-slider {
+    width: 66.66666%;
+    
+    &--inner {
+      width: calc(50% - 16px);
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .half-card-slider {
+    width: 100%;
+  }
+}

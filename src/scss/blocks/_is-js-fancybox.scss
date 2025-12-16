@@ -1,0 +1,23 @@
+@use "../variables" as *;
+
+.fancybox-content {
+  background: transparent !important;
+}
+
+.fancybox-slide--html .fancybox-close-small {
+  color: #fff !important;
+}
+
+.modal.fancybox-content {
+  padding: 0 !important;
+}
+
+.modal .fancybox-close-small {
+  color: #000 !important;
+}
+
+@media (max-width: $mobile-width) {
+  .modal.fancybox-content {
+    padding: 0 10px !important;
+  }
+}

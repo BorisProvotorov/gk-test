@@ -1,0 +1,43 @@
+@use "../variables" as *;
+
+.author {
+  display: flex;
+  align-items: center;
+
+  &__image-wrapper {
+    width: 53px;
+    height: 53px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  &__name {
+    font-size: 17px;
+    line-height: 23px;
+
+    b {
+      color: #FE4349;
+      font-weight: normal;
+    }
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .author {
+    &__name {
+      font-size: 15px;
+      line-height: 20px;
+    }
+  }
+}
+
+
+@media (max-width: $mobile-width) {
+  .author {
+    &__name {
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+}

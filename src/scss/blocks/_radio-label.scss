@@ -1,0 +1,21 @@
+.radio-label {
+  display: inline-flex;
+  padding: 8px 40px;
+  line-height: 1.2;
+  font-size: 13px;
+  color: #2C3D52;
+  border: 1px solid #9AA2AC;
+  cursor: pointer;
+  
+  &--left {
+    border-right: none;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+  }
+  
+  &--right {
+    border-left: none;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+}

@@ -1,0 +1,21 @@
+.checkbox-label {
+  font-size: 12px;
+  line-height: 19px;
+  color: #838293;
+  padding-left: 32px;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  user-select: none;
+
+  &::before {
+    content: "";
+    width: 18px;
+    height: 18px;
+    border: 1px solid rgba(86, 100, 117, 0.6);
+    border-radius: 2px;
+    position: absolute;
+    left: 0;
+    top: 4px;
+  }
+}

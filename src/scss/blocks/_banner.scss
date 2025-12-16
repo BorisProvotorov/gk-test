@@ -1,0 +1,38 @@
+@use "../variables" as *;
+
+.banner {
+  &__link {
+    display: block;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+  
+  &--feed {
+    .container {
+      padding: 0;
+    }
+    
+    .banner__link {
+      width: calc(100% - 331px);
+    }
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .banner {
+    
+     &--feed {
+    .banner__link {
+      width: calc(100% - 30px);
+      height: 92px;
+    }
+  }
+  }
+}

@@ -1,0 +1,43 @@
+@use "../variables" as *;
+
+.user {
+	&__link {
+		display: flex;
+		align-items: center;
+		text-decoration: none;
+		color: #000;
+
+		&:hover .user__name,
+		&:focus .user__name {
+			opacity: 0.7;
+		}
+		
+		&:active .user__name {
+			opacity: 0.85;
+		}
+	}
+
+	&__img-wrapper {
+		width: 32px;
+		height: 32px;
+		border-radius: 50%;
+		overflow: hidden;
+	}
+
+	&__name {
+		padding-left: 10px;
+		padding-right: 20px;
+		background-image: url("../img/icon-arrow-small.svg");
+		background-repeat: no-repeat;
+		background-position: right 3px center;
+		transition: 0.5s;
+	}
+}
+
+@media (max-width: $mobile-width) {
+	.user {
+		&__name {
+			display: none;
+		}
+	}
+}

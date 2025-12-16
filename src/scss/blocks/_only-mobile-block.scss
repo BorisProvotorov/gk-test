@@ -1,0 +1,11 @@
+@use "../variables" as *;
+
+.only-mobile-block {
+  display: none;
+}
+
+@media (max-width: $mobile-width) {
+  .only-mobile-block {
+  display: block;
+}
+}

@@ -1,0 +1,17 @@
+.passive {
+    width: 100%;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &--inner {
+        margin: 16px 0;
+    }
+
+    &--news {
+        margin: 0;
+        margin-top: 8px;
+        margin-bottom: 16px;
+    }
+}

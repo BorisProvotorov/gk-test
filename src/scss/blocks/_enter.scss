@@ -1,0 +1,48 @@
+@use "../variables" as *;
+
+.enter {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+
+  &__link {
+    padding: 0 7px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    color: $grey;
+    transition: color 0.7s;
+
+    &:first-child {
+      border-right: 1px solid $grey;
+    }
+
+    &:hover {
+      color: #2C3D52;
+      transition: color 0.7s;
+    }
+
+    &:active {
+      color: #6A7582;
+      transition: color 0.7s;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .enter {
+    &__link {
+      display: none;
+
+      &:first-child {
+        display: block;
+        border-right: 1px solid $grey;
+        font-size: 0;
+        width: 50px;
+        background-image: url("../img/icon-profile.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+}

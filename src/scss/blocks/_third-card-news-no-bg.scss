@@ -1,0 +1,110 @@
+@use "../variables" as *;
+
+.third-card-news-no-bg {
+  background: #fff;
+  background-repeat: no-repeat;
+  background-position: 25px 85px;
+
+  &--avto {
+    background-image: url("../img/icon-rubric-avto.svg");
+  }
+
+  &--technology {
+    background-image: url("../img/icon-rubric-technology.svg");
+  }
+
+  &__wrapper {
+    padding-top: 105px;
+  }
+
+  &__link {
+    height: 100%;
+    display: block;
+    padding: 25px;
+    padding-right: 50px;
+    padding-bottom: 40px;
+    text-decoration: none;
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 17px;
+    line-height: 22px;
+    color: #000;
+    margin-top: 70px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    max-height: 87px;
+    -webkit-line-clamp: 4;
+    text-overflow: ellipsis;
+  }
+
+  .tag {
+    position: absolute;
+    top: 158px;
+    left: 25px;
+    z-index: 2;
+  }
+
+  .hashteg {
+    position: absolute;
+    bottom: 55px;
+    left: 25px;
+    z-index: 2;
+  }
+
+  .stamp {
+    bottom: 20px;
+
+    &__item {
+      color: grey;
+    }
+  }
+
+  .bookmark {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    z-index: 2;
+  }
+}
+
+.third-card-news-no-bg:hover {
+  background-color: #FDFCFC;
+}
+
+@media (max-width: $tablet-width) {
+  .third-card-news-no-bg {
+    border: 1px solid #E2E2E2;
+
+    &__title {
+      max-height: 87px;
+      -webkit-line-clamp: 4;
+    }
+
+    .bookmark {
+      top: 0;
+      left: auto;
+      right: 0;
+    }
+
+    .hashteg {
+      bottom: 63px;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .third-card-news-no-bg {
+    background-position: 25px 30px;
+
+    .tag {
+      top: 105px;
+    }
+
+    &__wrapper {
+      padding-top: 56px;
+    }
+  }
+}

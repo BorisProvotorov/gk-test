@@ -1,0 +1,110 @@
+@use "../variables" as *;
+
+.article-card {
+	display: none;
+	border-top: 1px solid  #E9E9E9;
+	border-bottom: 1px solid  #E9E9E9;
+	padding: 20px 0;
+
+	@media (max-width: $tablet-width) {
+		display: block;
+    margin-bottom: 20px;
+    padding: 16px 0;
+	}
+
+  @media (max-width: $mobile-width) {
+    padding: 7px 0;
+  }
+
+	&:hover {
+		transform: scale(1.01);
+		transition: transform .5s;
+	}
+
+	&__wrap {
+		position: relative;
+	}
+
+	&__link {
+		display: flex;
+		justify-content: flex-start;
+		width: 100%;
+		color: #000000;
+		text-decoration: none;
+		outline: none;
+		cursor: pointer;
+
+    @media (max-width: $mobile-width) {
+      align-items: center;
+    }
+	}
+
+	&__img {
+		width: 136px;
+		min-height: 100px;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+
+		@media (max-width: $mobile-width) {
+      width: 76px;
+			min-height: 64px;
+		}
+	}
+
+	&__body {
+		width: 67%;
+		padding-left: 16px;
+	}
+
+	&__title{
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+		margin: 23px 0 0 0;
+		padding: 0;
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+		-webkit-line-clamp: 3;
+		text-overflow: ellipsis;
+
+		@media (max-width: $mobile-width) {
+      margin-top: 0;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 22px;
+      -webkit-line-clamp: 4;
+		}
+	}
+
+  .stamp {
+    position: absolute;
+    bottom: 0;
+    left: 152px;
+    width: auto;
+
+    @media (max-width: $mobile-width) {
+      display: none;
+    }
+  }
+
+  .tag {
+    position: absolute;
+    top: 0;
+    left: 152px;
+
+    @media (max-width: $mobile-width) {
+      display: none;
+    }
+  }
+
+  .bookmark{
+    position: absolute;
+    top: 0;
+    right: 0;
+    @media (max-width: $mobile-width) {
+      display: none;
+    }
+  }
+}

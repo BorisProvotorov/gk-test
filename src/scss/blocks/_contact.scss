@@ -1,0 +1,46 @@
+@use "../variables" as *;
+@use "../mixins.scss" as *;
+
+.contact {
+  @include list;
+  margin-top: 40px;
+  font-size: 16px;
+  line-height: 23px;
+  color: #444444;
+  
+  &__item {
+    margin-bottom: 10px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    
+    &--map {
+      background-image: url("../img/icon-map.svg");
+      padding-left: 20px;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 23px;
+    color: #444444;
+    padding-left: 20px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    
+    &--phone {
+      background-image: url("../img/icon-phone.svg");
+    }
+    
+    &--site {
+      background-image: url("../img/icon-site.svg");
+    }
+  }
+}
+
+//@media (max-width: $tablet-width) {
+//  .contact {
+//    font-size: 14px;
+//    line-height: 1.2;
+//  }
+//}

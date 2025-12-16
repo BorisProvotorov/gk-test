@@ -1,0 +1,217 @@
+@use "../variables" as *;
+
+.card {
+  padding: 0 20px 0 20px;
+  background-color: #fff;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  margin-bottom: 20px;
+  border-radius: 8px;
+
+  &:not(:first-child) {
+    margin-top: 20px;
+  }
+
+  &__item {
+    border-bottom: 1px solid #E9E9E9;
+    position: relative;
+    text-decoration: none;
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    padding: 20px 0 20px 0;
+    transition: .5s;
+
+    &:hover,
+    &:focus {
+      opacity: .7;
+    }
+
+    &:active {
+      opacity: .85;
+    }
+    
+    &:last-of-type {
+      border-bottom: none;
+    }
+  }
+
+  &__link {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+  }
+  
+  &__image-wrapper {
+    flex-shrink: 0;
+    overflow: hidden;
+    margin-right: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 131px;
+  }
+
+  &__rubric {
+    color: #FE4349;
+    font-size: 14px;
+    line-height: 1.2;
+    text-decoration: none;
+    transition: .5s;
+    margin-bottom: 20px;
+    display: inline-block;
+
+    &:hover,
+    &:focus {
+      opacity: .7;
+    }
+
+    &:active {
+      opacity: .85;
+    }
+  }
+
+  &__bookmark {
+    display: block;
+    padding-left: 20px;
+    color: #FE4349;
+    font-size: 12px;
+    background-image: url("../img/icon-star.svg");
+    background-repeat: no-repeat;
+    background-position: center left;
+    text-decoration: none;
+  }
+
+  &__title {
+    margin: 0 0 5px 0;
+    font-size: 17px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #000;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+  }
+
+  &__text {
+    color: rgba(44, 61, 82, 0.8);
+    font-size: 15px;
+    line-height: 1.2;
+    margin: 10px 0;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    max-height: 18px;
+    -webkit-line-clamp: 1;
+    text-overflow: ellipsis;
+  }
+
+  &__hashteg {
+    margin-bottom: 8px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__time {
+    margin-right: 15px;
+  }
+
+  &--read {
+    opacity: 0.7;
+
+    .card__bookmark {
+      background-image: url("../img/icon-star-red.svg");
+    }
+  }
+
+  .hashteg {
+    height: 16px;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .card {
+    padding: 5px 15px 25px 15px;
+
+    &__item {
+      padding: 16px 0;
+    }
+
+    &--profile {
+      padding-left: 0;
+    }
+
+    &__image-wrapper {
+      width: 136px;
+      height: 100px;
+      margin-right: 16px;
+    }
+
+    &__title {
+      font-size: 15px;
+      line-height: 18px;
+      max-height: 70px;
+      -webkit-line-clamp: 3;
+    }
+
+    &__text {
+      display: none;
+    }
+
+    &__rubric {
+      font-size: 12px;
+    }
+
+    &--newsfeed {
+      padding: 0;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .card {
+    padding-bottom: 14px;
+    padding-top: 7px;
+
+    &__item {
+      border-bottom: none;
+      padding: 8px 0;
+    }
+
+    &__title {
+      font-size: 14px;
+      line-height: 20px;
+      margin-bottom: 0;
+      order: 1;
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__info {
+      order: 0;
+      margin-bottom: 8px;
+    }
+
+    &__hashteg {
+      display: none;
+    }
+
+    &__image-wrapper {
+      display: none;
+    }
+    
+    &--profile {
+      padding-right: 0;
+    }
+  }
+}

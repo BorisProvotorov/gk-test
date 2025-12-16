@@ -1,0 +1,11 @@
+@mixin title {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+@mixin list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}

@@ -1,0 +1,56 @@
+@use "../variables" as *;
+
+.alert {
+  padding: 25px 15px;
+  display: flex;
+  align-items: center;
+  border: 3px solid #E7E8E8;
+  font-size: 14px;
+  line-height: 22px;
+
+  &__social {
+    margin-left: 40px;
+
+    .social__link {
+      background-color: transparent;
+    }
+  }
+
+  &--center {
+    justify-content: center;
+
+    p {
+      margin: 0;
+    }
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .alert {
+    &--center {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .alert {
+    padding: 13px 20px;
+    display: block;
+    text-align: center;
+    font-size: 10px;
+    line-height: 1.2;
+
+    &__social {
+      margin-left: 0;
+
+      .social__list {
+        justify-content: center;
+      }
+    }
+
+    &--center {
+      display: none;
+    }
+  }
+}

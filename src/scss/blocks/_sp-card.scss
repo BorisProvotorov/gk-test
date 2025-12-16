@@ -1,0 +1,103 @@
+@use "../variables" as *;
+
+.sp-card {
+  width: calc(33.33333% - 16px);
+  margin: 8px;
+
+  &__link {
+    display: block;
+    height: 100%;
+    min-height: 445px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    opacity: 1;
+    transition: opacity 0.5s;
+
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+      transition: opacity 0.5s;
+    }
+  }
+
+  &__wrapper {
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 10px;
+    position: absolute;
+    bottom: 0;
+  }
+
+  &__title {
+    margin: 0;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 34px;
+  }
+
+  &__description {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+  }
+
+  &--green {
+    background: linear-gradient(180deg, rgba(112, 121, 47, 0) 0%, #70792F 60%);
+  }
+
+  &--dark-green {
+    background: linear-gradient(180deg, rgba(28, 36, 108, 0) 0%, #2B3C08 60%);
+  }
+
+  &--purple {
+    background: linear-gradient(180deg, rgba(121, 47, 47, 0) 0%, #53363F 60%);
+  }
+
+  &--pink {
+    background: linear-gradient(180deg, rgba(215, 92, 100, 0) 0%, #D75C64 60%);
+  }
+
+  &--blue {
+    background: linear-gradient(180deg, rgba(50, 116, 163, 0) 0%, #2561A8 60%)
+  }
+
+  &--orange {
+    background: linear-gradient(180deg, rgba(220, 119, 0, 0) 0%, #D24C00 60%);
+  }
+
+  &--grey {
+    background: linear-gradient(180deg, rgba(166, 158, 155, 0) 0%, #9C8F8A 60%);
+  }
+
+  &--brown {
+    background: linear-gradient(180deg, rgba(28, 36, 108, 0) 0%, #7E5D57 60%);
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .sp-card {
+    &__link {
+      min-height: 320px;
+    }
+
+    &__title {
+      font-size: 20px;
+      line-height: 1.2;
+    }
+
+    &__description {
+      font-size: 13px;
+      line-height: 1.2;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .sp-card {
+    width: 100%;
+  }
+}

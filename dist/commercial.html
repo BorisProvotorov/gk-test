@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Тест-драйв карты Tinkoff Black от нашей редакции</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="scripts/slick/slick.min.css">
+	<link rel="stylesheet" href="scripts/slick/slick-theme.css">
+	<link rel="stylesheet" href="scripts/fancybox/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+	
+	<div class="banner-wide" style="background-color: #ccc">
+    <a href="#" class="banner-wide__link">
+      <picture>
+        <source media="(max-width: 767px)" srcset="img/banner1mob.png">
+        <source media="(max-width: 1024px)" srcset="img/banner1tab.png">
+        <img src="http://placehold.it/1920x150" alt="Рекламный банер">
+      </picture>
+    </a>
+  </div>
+	  <div class="attention">
+    <div class="container">
+      <b class="attention__label">Срочно</b>
+      <b class="attention__label attention__label--sign">!</b>
+      <p class="attention__news">ЦИК одобрил три вопроса для референдума по пенсионному возрасту</p>
+      <button class="button button--close" type="button"><span class="visually-hidden">Закрыть</span></button>
+    </div>
+  </div>
+	<header class="main-header">
+    <div class="container">
+      <div class="main-header__left">
+        <button class="button button--burger" type="button"><span class="visually-hidden">Навигация сайта</span></button>
+        <div class="logo">
+          <a class="logo__link">
+            <img class="logo__image" src="img/logo.png" width="200" alt="Логотип сайта город Киров">
+          </a>
+        </div>
+      </div>
+      <!--START: кнопка городов (для Костромы) -->
+      <div class="button-city"><a href="#city" data-fancybox=""><span>Костромская область</span></a></div>
+      <!--END: кнопка городов (для Костромы) -->
+      <div class="widjets">
+        <div class="weather">
+          <b class="weather__text">26 августа, Киров</b>
+          <span class="weather__degr">+ 23°</span>
+        </div>
+        <div class="currency">
+          <span class="currency__text">Курс ЦБ</span>
+          <span class="currency__dollar">63,45</span>
+          <span class="currency__euro">73,47</span>
+        </div>
+        <div class="road">
+          <span class="road__text">Средняя <br> загруженность</span>
+        </div>
+      </div>
+      <div class="main-header__right">
+        
+<!--
+        <div class="user">
+         <a href="profile.html" class="user__link">
+          <div class="user__img-wrapper">
+            <img src="img/avatar.jpg" width="32" height="32" alt="Пользователь">
+          </div>
+          <p class="user__name">Aleksandr Sherstnichenko</p>
+          </a>
+        </div>
+-->
+
+        <div class="search">
+          <a href="#" data-fancybox="" data-src="#modal-search" class="search__link"><span class="visually-hidden">Поиск по сайту</span></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- START: Cookies -->
+  <div class="notifycation">
+    <div class="notifycation__wrap">
+      <div class="notifycation__info">
+        <p class="notifycation__info-text">
+          <span class="notifycation__info-title">Мы используем cookie.</span> &nbsp;Оставаясь на сайте, вы соглашаетесь с тем, что мы обрабатываем ваши персональные данные с использованием метрик Яндекс Метрика,top.mail.ru, LiveInternet.
+        </p>
+      </div>
+      <button class="button button--is-bg notifycation__button" type="button">Принять</button>
+    </div>
+  </div>
+  <!-- END: Cookies -->
+	<main class="inner-main">
+		<div class="top-container">
+			<div class="container">
+				<div class="actual-rubrics">
+					<ul class="actual-rubrics__list">
+						<li class="actual-rubrics__item"><a href="#" class="actual-rubrics__link">Выборы 2018</a></li>
+						<li class="actual-rubrics__item"><a href="#" class="actual-rubrics__link">Новостройки</a></li>
+						<li class="actual-rubrics__item"><a href="#" class="actual-rubrics__link">ЖКХ</a></li>
+						<li class="actual-rubrics__item"><a href="#" class="actual-rubrics__link">Дешевые авиабилеты</a></li>
+						<li class="actual-rubrics__item"><a href="#" class="actual-rubrics__link">Общество</a></li>
+						<li class="actual-rubrics__item"><a href="#" class="actual-rubrics__link">Политика</a></li>
+						<li class="actual-rubrics__item"><a href="#" class="actual-rubrics__link">Происшествия</a></li>
+						<li class="actual-rubrics__item"><a href="#" class="actual-rubrics__link">Спорт</a></li>
+						<li class="actual-rubrics__item"><a href="#" class="actual-rubrics__link">Семья</a></li>
+						<li class="actual-rubrics__item"><a href="#" class="actual-rubrics__link">Политика</a></li>
+						<li class="actual-rubrics__item"><a href="#" class="actual-rubrics__link">Семья</a></li>
+					</ul>
+				</div>
+				<div class="top-container__social social">
+					<h3 class="visually-hidden">Мы в социальных сетях</h3>
+					<ul class="social__list">
+						<li class="social__item"><a href="#" class="social__link social__link--vk"><span class="visually-hidden">Вконтакте</span></a></li>
+						<li class="social__item"><a href="#" class="social__link social__link--fb"><span class="visually-hidden">Фейсбук</span></a></li>
+						<li class="social__item"><a href="#" class="social__link social__link--odnk"><span class="visually-hidden">Одноклассники</span></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="top-panel">
+			<div class="container">
+				<div class="breadcrumbs">
+					<ul class="breadcrumbs__list">
+						<li class="breadcrumbs__item"><a href="index.html" class="breadcrumbs__link">Главная</a></li>
+						<li class="breadcrumbs__item"><a class="breadcrumbs__link">Тест-драйв карты Tinkoff Black от нашей редакции</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<article class="article-block">
+			<div class="container container--wide">
+				<header class="article-header">
+					<div class="article-header__wrapper">
+						<a href="#" class="article-header__rubric">Тест-драйв</a>
+						<time class="article-header__time" datetime="2019-01-22 13:15">22 января 2019, 13:15</time>
+						<a href="#" class="article-header__bookmarks">Добавить в закладки</a>
+					</div>
+					<h1 class="title">Тест-драйв карты Tinkoff Black от нашей редакции</h1>
+					<div class="hashteg hashteg--in-page">
+						<a href="#" class="hashteg__item">#Проишествия</a>
+					</div>
+				</header>
+
+				<div class="article-block__image-wrapper">
+					<img src="img/img-11.jpg" alt="Карта Tinkoff Black">
+				</div>
+				<div class="article-block__author author">
+					<div class="author__image-wrapper">
+						<img src="img/user-5.jpg" alt="Фотография автора">
+					</div>
+					<span class="author__name"><b>Автор:</b> Антон Макаров</span>
+				</div>
+				<section class="article-block__lead lead">
+					<h2 class="visually-hidden">Аннотация</h2>
+					<div class="lead__img-wrapper">
+						<img src="img/img-15.jpg" alt="Карта Tinkoff Black">
+					</div>
+					<p class="lead__text">История моего знакомства с картой проста: её реклама часто мелькала в интернете, я видела много положительных отзывов в соцсетях, и когда мне понадобилась новая карта, первой мне пришла в голову Tinkoff Black. В итоге — картой я пользуюсь почти год и ни разу не пожалела об этом. </p>
+				</section>
+				<div class="article-block__container">
+					<div class="article-block__feature feature">
+						<ol class="feature__list">
+							<li class="feature__item">
+								<h2 class="feature__title"><span class="feature__number">1.</span> Поддержка и отличный сервис</h2>
+								<p class="feature__desription">Раньше у меня была карта другого банка, и дозвониться до поддержки было целым квестом. У "Тинькофф" всё не так: с поддержкой можно связаться за пару минут без всяких усилий. Если звонишь — сразу попадаешь на специалиста. Нет желания звонить — можно написать в чат в приложении или в мессенджере. Ещё можно позвонить по интернету из приложения, что удобно, если вы в роуминге. Специалисты отвечают быстро и решают любой вопрос. </p>
+							</li>
+							<li class="feature__item">
+								<h2 class="feature__title"><span class="feature__number">2.</span> Карту просто получить и восстановить при утрате</h2>
+								<p class="feature__desription">Раньше у меня была карта другого банка, и дозвониться до поддержки было целым квестом. У "Тинькофф" всё не так: с поддержкой можно связаться за пару минут без всяких усилий. Если звонишь — сразу попадаешь на специалиста. Нет желания звонить — можно написать в чат в приложении или в мессенджере. Ещё можно позвонить по интернету из приложения, что удобно, если вы в роуминге. Специалисты отвечают быстро и решают любой вопрос.</p>
+							</li>
+						</ol>
+					</div>
+					<div class="article-block__image-wrapper">
+						<img src="img/img-10.jpg" alt="Карта Tinkoff Black">
+					</div>
+					<div class="article-block__feature feature">
+						<ol class="feature__list" start="3">
+							<li class="feature__item">
+								<h2 class="feature__title"><span class="feature__number">3.</span> Карту просто получить и восстановить при утрате</h2>
+								<p class="feature__desription">Раз в месяц банк возвращает мне часть денег с любых моих покупок. <br>
+									<b>Важно:</b> не баллы, которые можно потратить только в определённых местах и на определённые вещи, а рубли. </p>
+							</li>
+						</ol>
+					</div>
+					<section class="trick">
+						<h2 class="visually-hidden">Кэш-бек</h2>
+						<ul class="trick__list">
+							<li class="trick__item">
+								<div class="trick__persent">1%</div>
+								<p class="trick__description">Возвращается на карту с обычных покупок.</p>
+							</li>
+							<li class="trick__item">
+								<div class="trick__persent">2%</div>
+								<p class="trick__description">С трёх категорий, которые каждый выбирает сам (раз в три месяца их можно поменять и выбрать новые). Сейчас я выбрала для повышенного кэшбэка кино, транспорт и развлечения. Последней категорией я пользуюсь реже всего, зато две первые работают часто. </p>
+							</li>
+							<li class="trick__item">
+								<div class="trick__persent">5%</div>
+								<p class="trick__description">С покупок у партнёров банка: как правило, среди них — популярные магазины и кафе. Ещё карта работает как вклад: на остаток на счёте начисляется 6% годовых. Чтобы было понятно в деньгах: если хранить на карте 30 000 рублей, банк начислит где-то 150 рублей за месяц сверху. В среднем процент на остаток и кэшбэк зарабатывают мне примерно 600–800 рублей в месяц.</p>
+							</li>
+						</ul>
+					</section>
+
+					<div class="line-v2">
+						<a href="#" class="line-v2__link line-v2__link--inst"><span class="line-v2__text">Читайте новости «Город Киров» в Instagram</span></a>
+					</div>
+
+					<div class="article-block__feature feature">
+						<ol class="feature__list" start="4">
+							<li class="feature__item">
+								<h2 class="feature__title"><span class="feature__number">4.</span> Карта удобна в путешествиях</h2>
+								<p class="feature__desription">Среди моих знакомых бывали случаи, когда в отпуске банк блокировал их карты — принимал операции за мошеннические. Приходилось звонить в банк, объяснять, что карту не украли, а на разблокировку иногда уходило несколько дней. Это очень неприятно, особенно когда хочешь отдохнуть. У клиентов "Тинькофф Банка" таких проблем нет: достаточно сообщить о своей поездке сотрудникам поддержки через чат или просто отметить даты и страну в мобильном банке. А ещё можно сделать карту мультивалютной и расплачиваться в Европе в евро, не теряя на конвертациях и комиссии.</p>
+							</li>
+						</ol>
+					</div>
+					<section class="plan">
+						<h2 class="title">Как заказать карту?</h2>
+						<picture>
+							<source media="(max-width: 767px)" srcset="img/scheme-mobile.png">
+							<source media="(max-width: 992px)" srcset="img/scheme-desktop.png">
+							<img src="img/scheme-desktop.png" width="100%" alt="Схема">
+						</picture>
+						<div class="plan__text">
+							<p>Раньше для любой операции с картой я искала компьютер — нужно было зайти в личный кабинет через браузер, потому что с телефона ничего не работало. Сейчас я даже не вспоминаю об этом — всё делаю через приложение. В нём есть всё: я могу следить за балансом и тратами, переводить деньги, оплачивать коммуналку и общаться с поддержкой. Ни разу не было вопроса, который нельзя было бы
+								решить через приложение. </p>
+						</div>
+					</section>
+					<section class="review hide">
+						<div class="review__item">
+							<div class="review__content">
+								<div class="review__image-wrapper">
+									<img src="img/img-12.jpg" width="100%" alt="Человек, оставивший отзыв">
+								</div>
+								<div class="review__text">
+									<p>Если бы я прочитала такую статью — тем более про банковскую карту — я бы обязательно начала искать подвох. Но за год использования Tinkoff Black я его не нашла. Всё, что здесь написано, вы можете проверить сами: по этой ссылке можно оформить карту с тремя месяцами бесплатного обслуживания.</p>
+								</div>
+							</div>
+						</div>
+						<div class="review__item">
+							<div class="review__content">
+								<div class="review__image-wrapper">
+									<img src="img/img-12.jpg" width="100%" alt="Человек, оставивший отзыв">
+								</div>
+								<div class="review__text">
+									<p>Если бы я прочитала такую статью — тем более про банковскую карту — я бы обязательно начала искать подвох. Но за год использования Tinkoff Black я его не нашла. Всё, что здесь написано, вы можете проверить сами: по этой ссылке можно оформить карту с тремя месяцами бесплатного обслуживания.</p>
+								</div>
+							</div>
+						</div>
+						<div class="review__item">
+							<div class="review__content">
+								<div class="review__image-wrapper">
+									<img src="img/img-12.jpg" width="100%" alt="Человек, оставивший отзыв">
+								</div>
+								<div class="review__text">
+									<p>Если бы я прочитала такую статью — тем более про банковскую карту — я бы обязательно начала искать подвох. Но за год использования Tinkoff Black я его не нашла. Всё, что здесь написано, вы можете проверить сами: по этой ссылке можно оформить карту с тремя месяцами бесплатного обслуживания.</p>
+								</div>
+							</div>
+						</div>
+
+					</section>
+				</div>
+
+				<footer class="article__footer article-footer">
+					<div class="article-footer__wrapper">
+						<span class="article-footer__text">Расскажи друзьям:</span>
+						<div class="social article-footer__social">
+							<ul class="social__list">
+								<li class="social__item"><a href="#" class="social__link social__link--vk"><span class="visually-hidden">Вконтакте</span></a></li>
+								<li class="social__item"><a href="#" class="social__link social__link--fb"><span class="visually-hidden">Фейсбук</span></a></li>
+								<li class="social__item"><a href="#" class="social__link social__link--odnk"><span class="visually-hidden">Одноклассники</span></a></li>
+							</ul>
+						</div>
+						<span class="article-footer__views">2352</span>
+						<a href="#" class="article-footer__bookmark"><span>Добавить новость</span> в закладки</a>
+						<a href="#" data-fancybox="" data-src="#modal-write-us" class="article-footer__write-us">Написать нам</a>
+					</div>
+					<div class="alert alert--center">
+						<p>Нашли ошибку? Выделите ее и нажмите Ctrl+Enter</p>
+					</div>
+				</footer>
+			</div>
+		</article>
+
+		<div class="container">
+			<div class="button-wrapper">
+				<a href="index.html" class="button button--inner button--link">Вернуться на главную</a>
+			</div>
+			<h3 class="title--grey">АО «Тинькофф Банк»</h3>
+		</div>
+	</main>
+	  <footer class="main-footer">
+    <div class="container">
+      <div class="main-footer__flex-wrapper">
+        <div class="main-footer__left">
+          <div class="logo">
+            <a class="logo__link">
+              <img class="logo__image" src="img/logo.png" width="200" alt="Логотип сайта город Киров">
+            </a>
+          </div>
+        </div>
+        <div class="main-footer__center">
+          <div class="main-footer__copyright">
+            <p>Сетевое издание "WWW.GORODKIROV.RU". Учредитель: ООО «Фогран». Главный редактор: Черных Юлия Эдуардовна. Адрес редакции: 610000, Кировская область, г. Киров, ул.Молодой Гвардии, д.82. Эл.почта: reklama@gorodkirov.ru, тел: +7(922)926-54-04, 54-16-05. Свидетельство о регистрации ЭЛ № ФС77-60902 от 02 марта 2015, выдано Федеральной службой по надзору в сфере связи, информационных технологий и массовых коммуникаций. Полное или частичное цитирование материалов сайта, возможно только с гиперссылкой на источник. Мнение редакции может не совпадать с мнениями, высказанными в интервью, комментариях пользователей или прямой речи персонажей публикаций. Редакция не несёт ответственности за текст комментариев читателей.</p>
+            <p class="green">Политика обработки персональных данных и соглашение об обработке персональных данных. | Спец. оценка по условиям труда</p>
+          </div>
+        </div>
+        <div class="main-footer__right">
+          <div class="social">
+            <h3 class="visually-hidden">Мы в социальных сетях</h3>
+            <ul class="social__list">
+              <li class="social__item"><a href="#" class="social__link social__link--vk"><span class="visually-hidden">Вконтакте</span></a></li>
+              <li class="social__item"><a href="#" class="social__link social__link--fb"><span class="visually-hidden">Фейсбук</span></a></li>
+              <li class="social__item"><a href="#" class="social__link social__link--odnk"><span class="visually-hidden">Одноклассники</span></a></li>
+            </ul>
+          </div>
+          <div class="main-footer__age">16+</div>
+        </div>
+      </div>
+
+      <div class="main-footer__metric">
+        <div>Здесь будут счетчики</div>
+        <div class="main-footer__age">16+</div>
+      </div>
+    </div>
+  </footer>
+	<div class="search-block">
+    <div class="container" id="modal-search">
+      <div class="search-block__content">
+        <div class="search-block__wrapper">
+          <input type="search" class="search-block__input">
+          <button class="search-block__button"><span class="visually-hidden">Найти</span></button>
+        </div>
+        <ul class="search-block__list">
+          <li class="search-block__item">
+            <a class="tag tag--white" href="#">Проишествия</a>
+            <a href="#">
+              <p class="search-block__text">Трое участников «Артподготовки» получили тюремные сроки по делу о подготовке теракта</p>
+            </a>
+            <time class="search-block__time" datetime="2019-01-31 09:33">3 часа назад</time>
+          </li>
+          <li class="search-block__item">
+            <a class="tag tag--white" href="#">Проишествия</a>
+            <a href="#">
+              <p class="search-block__text">Трое участников «Артподготовки» получили тюремные сроки по делу о подготовке теракта</p>
+            </a>
+            <time class="search-block__time" datetime="2019-01-31 09:33">3 часа назад</time>
+          </li>
+          <li class="search-block__item">
+            <a class="tag tag--white" href="#">Проишествия</a>
+            <a href="#">
+              <p class="search-block__text">Трое участников «Артподготовки» получили тюремные сроки по делу о подготовке теракта</p>
+            </a>
+            <time class="search-block__time" datetime="2019-01-31 09:33">3 часа назад</time>
+          </li>
+          <li class="search-block__item search-block__item--time">
+            <time class="search-block__main-time" datetime="2019-01-31 09:33">21 января, понедельник</time>
+          </li>
+          <li class="search-block__item">
+            <a class="tag tag--white" href="#">Проишествия</a>
+            <a href="#">
+              <p class="search-block__text">Трое участников «Артподготовки» получили тюремные сроки по делу о подготовке теракта</p>
+            </a>
+            <time class="search-block__time" datetime="2019-01-31 09:33">3 часа назад</time>
+          </li>
+          <li class="search-block__item">
+            <a class="tag tag--white" href="#">Проишествия</a>
+            <a href="#">
+              <p class="search-block__text">Трое участников «Артподготовки» получили тюремные сроки по делу о подготовке теракта</p>
+            </a>
+            <time class="search-block__time" datetime="2019-01-31 09:33">3 часа назад</time>
+          </li>
+          <li class="search-block__item">
+            <a class="tag tag--white" href="#">Проишествия</a>
+            <a href="#">
+              <p class="search-block__text">Трое участников «Артподготовки» получили тюремные сроки по делу о подготовке теракта</p>
+            </a>
+            <time class="search-block__time" datetime="2019-01-31 09:33">3 часа назад</time>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+	<div class="background">
+    <div class="burger-panel">
+    <button class="button button--dark-close"><span class="visually-hidden">Закрыть меню</span></button>
+    <div class="burger-panel__wrapper-top">
+      <div class="logo">
+        <a class="logo__link">
+          <img class="logo__image" src="img/logo.png" width="240" alt="Логотип сайта город Киров">
+        </a>
+      </div>
+      <nav class="burger-panel__nav">
+        <ul class="burger-panel__list">
+          <li class="burger-panel__item">
+            <a href="#" class="burger-panel__link burger-panel__link--grey">
+              <svg width="14" height="14">
+                <use xlink:href="#avto"></use>
+              </svg>
+              Авто
+            </a>
+          </li>
+          <li class="burger-panel__item">
+            <a href="#" class="burger-panel__link burger-panel__link--grey">
+              <svg width="14" height="14">
+                <use xlink:href="#house"></use>
+              </svg>
+              Дом
+            </a>
+          </li>
+          <li class="burger-panel__item">
+            <a href="#" class="burger-panel__link burger-panel__link--grey">
+              <svg width="14" height="14">
+                <use xlink:href="#movie"></use>
+              </svg>
+              Афиша
+            </a>
+          </li>
+          <li class="burger-panel__item  burger-panel__item--gap">
+            <a href="#" class="burger-panel__link burger-panel__link--grey">
+              <svg width="14" height="14">
+                <use xlink:href="#work"></use>
+              </svg>
+              Работа
+            </a>
+          </li>
+          <li class="burger-panel__item"><a href="#" class="burger-panel__link">Новости</a></li>
+          <li class="burger-panel__item"><a href="#" class="burger-panel__link">Интервью</a></li>
+          <li class="burger-panel__item"><a href="#" class="burger-panel__link">Репортаж</a></li>
+          <li class="burger-panel__item"><a href="#" class="burger-panel__link">Срочные новости</a></li>
+          <li class="burger-panel__item"><a href="#" class="burger-panel__link">Хроника событий</a></li>
+          <li class="burger-panel__item"><a href="#" class="burger-panel__link">Спецпроекты</a></li>
+          <li class="burger-panel__item"><a href="#" class="burger-panel__link">Форум</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="burger-panel__wrapper-bottom">
+      <a href="#" class="button button--dark">Предложить новость</a>
+      <a href="#" class="button button--inner">Разместить рекламу</a>
+    </div>
+  </div>
+</div>
+	
+  <div class="modal modal-enter" id="modal-enter">
+    <form action="#">
+      <div class="modal-enter__buttons">
+        <button class="button modal-enter__button" type="button" id="enterbtn">Вход</button>
+        <button class="button modal-enter__button modal-enter__button--active" type="button" id="registrbtn">Регистрация</button>
+      </div>
+      <div class="login">
+        <div class="modal-enter__social">
+          <p>Войти через соцсети:</p>
+          <div class="social">
+            <ul class="social__list">
+              <li class="social__item"><a href="#" class="social__link social__link--vk"><span class="visually-hidden">Вконтакте</span></a></li>
+              <li class="social__item"><a href="#" class="social__link social__link--fb"><span class="visually-hidden">Фейсбук</span></a></li>
+              <li class="social__item"><a href="#" class="social__link social__link--odnk"><span class="visually-hidden">Одноклассники</span></a></li>
+            </ul>
+          </div>
+        </div>
+        <span>или</span>
+        <div>
+          <input class="progect-input" type="text" placeholder="Введите ваш логин">
+        </div>
+        <div class="field-wrapper">
+          <input class="progect-input progect-input--password" type="password" placeholder="Введите ваш пароль">
+          <button type="button" class="modal__password-btn"><span class="visually-hidden">Показать пароль</span></button>
+        </div>
+        <div class="modal-enter__link-wrapper">
+          <a href="#" data-fancybox="" data-src="#modal-password" class="modal-enter__link">Забыли пароль?</a>
+        </div>
+        <button class="button button--dark modal--button">Войти</button>
+      </div>
+      <div class="registration">
+        <div>
+          <input class="progect-input" type="text" placeholder="Введите ваше имя">
+        </div>
+        <div>
+          <input class="progect-input" type="text" placeholder="Введите вашу фамилию">
+        </div>
+        <div>
+          <input class="progect-input" type="text" placeholder="Введите ваш логин">
+        </div>
+        <div>
+          <input class="progect-input" type="email" placeholder="Введите ваш email">
+        </div>
+        <div class="field-wrapper">
+          <input class="progect-input progect-input--password" type="password" placeholder="Введите ваш пароль">
+          <button type="button" class="modal__password-btn"><span class="visually-hidden">Показать пароль</span></button>
+        </div>
+        <div>
+          <div class="g-recaptcha" data-sitekey="6LdUEZQUAAAAAB3njdPhMuvBONRL6G9UD03xPbpe"></div>
+        </div>
+        <div class="modal__align-left">
+          <input class="progect-check" type="checkbox" id="check1" required="">
+          <label class="checkbox-label" for="check1">Нажимая на кнопку ЗАРЕГИСТРИРОВАТЬСЯ, я даю <a href="#" class="form__link">согласие на обработку персональных данных</a></label>
+        </div>
+        <button class="button button--dark modal--button">Зарегистрироваться</button>
+      </div>
+    </form>
+  </div>
+
+
+<!--
+  <div class="modal modal-enter" id="modal-enter">
+    <form action="#">
+      <div class="modal-enter__buttons">
+        <button class="button modal-enter__button" type="button" id="enterbtn">Вход</button>
+        <button class="button modal-enter__button modal-enter__button--active" type="button" id="registrbtn">Регистрация</button>
+      </div>
+      <div class="login">
+        <div class="modal-enter__social">
+          <p>Войти через соцсети:</p>
+          <div class="social">
+            <ul class="social__list">
+              <li class="social__item"><a href="#" class="social__link social__link--vk"><span class="visually-hidden">Вконтакте</span></a></li>
+              <li class="social__item"><a href="#" class="social__link social__link--fb"><span class="visually-hidden">Фейсбук</span></a></li>
+              <li class="social__item"><a href="#" class="social__link social__link--odnk"><span class="visually-hidden">Одноклассники</span></a></li>
+              <li class="social__item"><a href="#" class="social__link social__link--tw"><span class="visually-hidden">Твиттер</span></a></li>
+            </ul>
+          </div>
+        </div>
+        <span>или</span>
+        <div>
+          <input class="progect-input" type="text" placeholder="Введите ваш логин">
+        </div>
+        <div class="field-wrapper">
+          <input class="progect-input progect-input--password" type="password" placeholder="Введите ваш пароль">
+          <button type="button" class="modal__password-btn"><span class="visually-hidden">Показать пароль</span></button>
+        </div>
+        <div class="modal-enter__link-wrapper">
+          <a href="#" data-fancybox="" data-src="#modal-password" class="modal-enter__link">Забыли пароль?</a>
+        </div>
+      </div>
+      <div class="registration">
+       <span class="modal__title">Поздравляем!</span>
+        <p>Ваши регистрационные данные успешно сохранены, но ваш электронной адрес не подтвержден.Чтобы его подтвердить, вам было отправлено письмо с кодом подтверждения регистрации. Если письмо не пришло в течение 30 минут, проверьте папку «СПАМ» или обратитесь в техническую поддержку.</p>
+      </div>
+    </form>
+  </div>
+-->
+  
+<!--
+  <div class="modal modal-enter" id="modal-enter">
+    <form action="#">
+      <div class="modal-enter__buttons">
+        <button class="button modal-enter__button" type="button" id="enterbtn">Вход</button>
+        <button class="button modal-enter__button modal-enter__button--active" type="button" id="registrbtn">Регистрация</button>
+      </div>
+      <div class="login">
+        <div class="modal-enter__social">
+          <p>Войти через соцсети:</p>
+          <div class="social">
+            <ul class="social__list">
+              <li class="social__item"><a href="#" class="social__link social__link--vk"><span class="visually-hidden">Вконтакте</span></a></li>
+              <li class="social__item"><a href="#" class="social__link social__link--fb"><span class="visually-hidden">Фейсбук</span></a></li>
+              <li class="social__item"><a href="#" class="social__link social__link--odnk"><span class="visually-hidden">Одноклассники</span></a></li>
+              <li class="social__item"><a href="#" class="social__link social__link--tw"><span class="visually-hidden">Твиттер</span></a></li>
+            </ul>
+          </div>
+        </div>
+        <span>или</span>
+        <div>
+          <input class="progect-input" type="text" placeholder="Введите ваш логин">
+        </div>
+        <div class="field-wrapper">
+          <input class="progect-input progect-input--password" type="password" placeholder="Введите ваш пароль">
+          <button type="button" class="modal__password-btn"><span class="visually-hidden">Показать пароль</span></button>
+        </div>
+        <div class="modal-enter__link-wrapper">
+          <a href="#" data-fancybox="" data-src="#modal-password" class="modal-enter__link">Забыли пароль?</a>
+        </div>
+      </div>
+      <div class="registration">
+       <b>Мы рады приветствовать Вас на нашем портале ГородКиров.ру.Ваш личный кабинет подтвержден.</b>
+      </div>
+    </form>
+  </div>
+-->
+	<div class="modal modal-forget-password" id="modal-password">
+  <form action="#">
+    <h2 class="modal__title">Восстановление пароля</h2>
+    <div class="modal-forget-password__wrapper">
+      <input class="progect-input" type="text" placeholder="Введите email, указанный при регистрации">
+      <div>
+        <div class="g-recaptcha" data-sitekey="6LdUEZQUAAAAAB3njdPhMuvBONRL6G9UD03xPbpe"></div>
+      </div>
+    </div>
+    <button class="button button--dark modal--button">Восстановить пароль</button>
+  </form>
+</div>
+
+	<div class="modal modal-write-us" id="modal-write-us">
+	<form action="#">
+		<div class="modal-enter__buttons">
+			<h2 class="modal__title">Написать нам</h2>
+		</div>
+		<div class="modal__wrapper">
+			<h3 class="modal__title">вы знаете что-то, чего не знаем мы?</h3>
+			<p>У вас есть тема? Вы находитесь на месте событий? Мы написали текст по теме, по которой вы знаете больше нас? Напишите нам!</p>
+			<div>
+				<input class="progect-input" type="text" placeholder="Укажите ваш электронный адрес или телефон" required="">
+			</div>
+			<div>
+				<textarea class="progect-textarea progect-textarea--message" placeholder="Напишите ваш текст" required=""></textarea>
+			</div>
+			<div class="file-wrapper">
+				<input class="file-input" type="file" data-photo="three" id="userphoto" name="fileMulti[]" multiple="">
+				<label class="progect-label file-label" for="userphoto"><span class="file-image"></span>Загрузите фото</label>
+				<div class="photos"></div>
+			</div>
+			<div class="mrg-vertical">
+				<div class="g-recaptcha" data-sitekey="6LdUEZQUAAAAAB3njdPhMuvBONRL6G9UD03xPbpe"></div>
+			</div>
+			<div class="mrg-bottom modal__align-left">
+				<input class="progect-check" type="checkbox" id="check1" required="">
+				<label class="checkbox-label" for="check1">Я принимаю условия <a href="#" class="form__link">пользовательсткого соглашения</a> и <a href="#" class="form__link">политики обработки персональных данных</a></label>
+			</div>
+			<button type="submit" class="button button--dark modal--button">Отправить</button>
+		</div>
+	</form>
+</div>
+
+	<div class="banner-wide banner-wide--fixed" style="background-color: #000">
+    <div class="container">
+      <button class="button--fixbanner-close"><span class="visually-hidden">Закрыть банер</span></button>
+    </div>
+    <a href="#" class="banner-wide__link">
+      <picture>
+        <source media="(max-width: 767px)" srcset="img/banner9mob.png">
+        <source media="(max-width: 992px)" srcset="img/banner9tab.png">
+        <img src="img/banner9.jpg" alt="Рекламный банер">
+      </picture>
+    </a>
+  </div>
+  <!--START: окно с городами (для Костромы) -->
+  <div class="modal menu-city" id="city">
+  <div class="menu-city__wrap">
+    <div class="menu-city__title">ВЫБЕРИТЕ ГОРОД</div>
+    <!-- <div><a href="" class="menu-city__current">Кострома</a></div> -->
+    <div class="menu-city__btn-close"><a href="#" class="close" data-fancybox-close=""></a></div>
+    <ul class="menu-city__list">
+      <li class="menu-city__item"><a href="#">Буй</a></li>
+      <li class="menu-city__item"><a href="#">Волгореченск</a></li>
+      <li class="menu-city__item"><a href="#">Галич</a></li>
+      <li class="menu-city__item"><a href="#">Кологрив</a></li>
+      <li class="menu-city__item"><a href="#">Кострома</a></li>
+      <li class="menu-city__item"><a href="#">Макарьев</a></li>
+      <li class="menu-city__item"><a href="#">Мантурово</a></li>
+      <li class="menu-city__item"><a href="#">Нерехта</a></li>
+      <li class="menu-city__item"><a href="#">Нея</a></li>
+      <li class="menu-city__item"><a href="#">Солигалич</a></li>
+      <li class="menu-city__item"><a href="#">Чухлома</a></li>
+      <li class="menu-city__item"><a href="#">Шарья</a></li>
+    </ul>
+  </div>
+</div>
+  <!--END: окно с городами (для Костромы) --> 
+
+
+
+	<script src="scripts/jquery-3.3.1.min.js"></script>
+	<script src="scripts/slick/slick.min.js"></script>
+	<script src="scripts/headhesive/headhesive.min.js"></script>
+	<script src="scripts/fancybox/jquery.fancybox.min.js"></script>
+	<script src="scripts/main-header.js"></script>
+	<script src="scripts/script.min.js"></script>
+
+</body>
+
+</html>

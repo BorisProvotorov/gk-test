@@ -1,0 +1,14 @@
+.news {
+  &__flex-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 0 -8px;
+  }
+  
+  &__flex-start {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+}

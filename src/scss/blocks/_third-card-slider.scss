@@ -1,0 +1,17 @@
+@use "../variables" as *;
+
+.third-card-slider {
+  width: 25%;
+}
+
+@media (max-width: $tablet-width) {
+  .third-card-slider {
+    width: 33.33333%;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .third-card-slider {
+    width: 100%;
+  }
+}

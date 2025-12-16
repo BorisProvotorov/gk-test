@@ -1,0 +1,51 @@
+@use "../variables" as *;
+
+.half-card-advert {
+  height: 100%;
+
+  &__link {
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    overflow: hidden;
+  }
+
+  &:hover,
+  &:focus {
+    transform: scale(1.01);
+    transition: transform 0.5s;
+  }
+
+  &__img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .half-card-advert {
+
+    &__link {
+      height: 355px;
+    }
+
+    &__img {
+      height: 355px;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .half-card-advert {
+    height: auto;
+
+    &__link {
+      height: auto;
+    }
+    
+    &__img {
+      height: auto;
+    }
+  }
+}

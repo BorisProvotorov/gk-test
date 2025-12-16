@@ -1,0 +1,52 @@
+@use "../variables" as *;
+
+.title {
+  margin: 0;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1.2;
+  color: #000000;
+
+  &--dark {
+    margin: 0;
+    line-height: 45px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #2C3D52;
+  }
+
+  &--red {
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #FE4349;
+  }
+
+  &--grey {
+    margin: 0;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 1.2;
+    color: #8A8A8A;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .title {
+    font-size: 21px;
+    line-height: 27px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .title, 
+  .title--grey {
+    font-size: 22px;
+    line-height: 32px;
+  }
+}

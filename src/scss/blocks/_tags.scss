@@ -1,0 +1,14 @@
+.tags {
+ 
+  &__link {
+    font-size: 12px;
+    line-height: 15px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #959EA8;
+  }
+
+  &__link:not(:last-child)::after {
+    content: ",";
+  }
+}

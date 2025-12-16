@@ -1,0 +1,56 @@
+@use "../variables" as *;
+
+.progect-textarea {
+	width: 100%;
+	height: 316px;
+	border: 1px solid rgba(86, 100, 117, 0.6);
+	border-radius: 3px;
+	margin-bottom: 15px;
+	outline: none;
+	font-size: 14px;
+	line-height: 1.2;
+	color: #2C3D52;
+	padding: 15px;
+	resize: none;
+	transition: border .5s;
+	outline: none;
+
+	&--message {
+		height: 156px;
+	}
+
+	&--add-comment {
+		height: 94px;
+		position: static !important;
+    margin-bottom: 10px;
+	}
+
+	&:hover {
+		border: 1px solid #2C3D52;
+	}
+
+	&:focus,
+	&:active {
+		border: 1px solid rgba(44, 61, 82, 0.8);
+	}
+}
+
+@media (max-width: $tablet-width) {
+	.progect-textarea {
+		height: 256px;
+
+		&--add-comment {
+			height: 94px;
+		}
+	}
+}
+
+@media (max-width: $mobile-width) {
+	.progect-textarea {
+		height: 305px;
+
+		&--add-comment {
+			height: 94px;
+		}
+	}
+}

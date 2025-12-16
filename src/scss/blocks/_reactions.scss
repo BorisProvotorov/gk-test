@@ -1,0 +1,32 @@
+@use "../variables" as *;
+
+.reactions {
+    display: flex;
+    &__item {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        user-select: none;
+        background-color: transparent;
+        padding: 0;
+        border: none;
+    }
+    &__item:not(:last-child) {
+        margin-right: 25px;
+    }
+    &__icon {
+        margin-right: 5px;
+        pointer-events: none;
+    }
+    &__value {
+        font-size: 14px;
+        line-height: 20px;
+        color: #2c3d52;
+        pointer-events: none;
+    }
+    @media (max-width: $mobile-width) {
+        &__item:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
+}

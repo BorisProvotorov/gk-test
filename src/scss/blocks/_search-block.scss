@@ -1,0 +1,130 @@
+@use "../variables" as *;
+@use "../mixins.scss" as *;
+
+.search-block {
+  display: none;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+
+  .container {
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: scroll;
+  }
+
+  &__content {
+    width: 100%;
+    padding: 10%;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    align-items: flex-end;
+  }
+
+  &__input {
+    margin-bottom: 0;
+    font: inherit;
+    width: calc(100% - 40px);
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+     -webkit-appearance: none;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  &__button {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background-color: transparent;
+    padding: 10px 0 15px 10px;
+    width: 40px;
+    height: 40px;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    &::before {
+      content: "";
+      width: 40px;
+      height: 40px;
+      background-image: url("../img/icon-search-white.svg");
+      background-repeat: no-repeat;
+      background-position: right center;
+      transition: opacity 0.7s;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+
+  &__list {
+    @include list;
+    margin: 40px 0;
+  }
+
+  &__item {
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+    &--time {
+      text-align: center;
+    }
+  }
+
+  &__text {
+    line-height: 22px;
+    font-size: 16px;
+    margin-right: 35%;
+  }
+
+  &__main-time {
+    margin: 0 auto;
+    line-height: 18px;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #AEAEAE;
+  }
+
+  &__time {
+    color: #AEAEAE;
+  }
+}
+
+.search-block__button:hover::before,
+.search-block__button:focus::before {
+  opacity: 0.5;
+}
+
+.search-block__button:active::before {
+  opacity: 0.9;
+}
+
+
+@media (max-width: $mobile-width) {
+  .search-block {
+    &__content {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+    
+    &__text {
+      margin-right: 0;
+    }
+  }
+}

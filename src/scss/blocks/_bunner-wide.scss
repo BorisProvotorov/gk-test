@@ -1,0 +1,66 @@
+@use "../variables" as *;
+
+.banner-wide {
+  width: 100%;
+  max-width: 1250px;
+  margin: 0 auto;
+
+  &__link {
+    display: block;
+    // width: 1280px;
+    margin: 0 auto;
+//    padding: 0 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+  }
+
+  &--fixed {
+    transform: translate(0, calc(100% + 30px));
+
+    .container {
+      position: static;
+    }
+    
+    position: fixed;
+    width: 100%;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    z-index: 51;
+  }
+
+  &--fixed-show {
+    transform: translate(0, 0);
+    transition: all 0.2s;
+  }
+}
+
+// .banner-wide--fixed-desc-open {
+//   bottom: -44px;
+// }
+
+// .banner-wide--fixed-tablet-open {
+//   bottom: -65px;
+// }
+
+// .banner-wide--fixed-mobile-open {
+//   bottom: -45px;
+// }
+
+@media (max-width: $tablet-width) {
+  .banner-wide {
+    min-width: 100%;
+  }
+  
+  .banner-wide__link {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+

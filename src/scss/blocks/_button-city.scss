@@ -1,0 +1,83 @@
+@use "../variables" as *;
+
+.button-city {
+  position: relative;
+  cursor: pointer;
+
+  a {
+    text-decoration: none;
+    color: #2c3d52;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.2s;
+
+    &:hover {
+      transition: all 0.2s;
+      color: #818c99;
+    }
+  }
+
+  a:before {
+    content: '';
+    position: absolute;
+    background-image: url('../img/icon-geo-red.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 35px;
+    width: 40px;
+    height: 40px;
+    z-index: 10;
+    left: -40px;
+    top: -13px;
+  }
+
+  @media (max-width: $tablet-width) {
+    a {
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 900px) {
+    margin-left: 30px;
+    width: 100px;
+
+    a {
+      font-size: 13px;
+      
+    }
+
+    a:before {
+      left: -40px;
+      top:-5px;
+      background-size: 35px;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-left: 45px;
+
+    a {
+      font-size: 12px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    margin-left: 40px;
+    margin-right: 0px;
+  }
+
+  @media (max-width: 500px) {
+    margin-left: 20px;
+    margin-right: 10px;
+    width: 0;
+    
+    a span {
+      display: none;
+    }
+
+      a:before {
+      left: -12px;
+      top: -20px;
+    }
+  }
+}

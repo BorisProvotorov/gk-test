@@ -1,0 +1,43 @@
+@use "../mixins.scss" as *;
+
+.link-group {
+  &__list {
+    @include list;
+  }
+
+  &__link {
+    display: block;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 1.2;
+    color: #2C3D52;
+    padding: 8px 0;
+    border-top: 1px solid rgba(196, 196, 196, 0.7);
+    position: relative;
+    transition: .5s;
+
+    &::before {
+      content: "";
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      top: 9px;
+      right: 0;
+      background-image: url("../img/icon-arrow-down.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 5px;
+      transform: rotate(-90deg);
+    }
+    
+    &:hover,
+    &:focus {
+      opacity: .7
+    }
+    
+    &:active {
+      opacity: .85;
+    }
+  }
+
+}

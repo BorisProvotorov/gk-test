@@ -1,0 +1,33 @@
+.progect-field {
+	text-align: left;
+
+	&--error {
+		.progect-input {
+			color: rgb(219, 68, 55);
+			border: 1px solid;
+		}
+	}
+
+	&__tooltip {
+		color: rgb(219, 68, 55);
+		font-size: 12px;
+		line-height: 16px;
+		margin-top: -7px;
+		margin-bottom: 20px;
+		position: relative;
+		padding-right: 80px;
+
+		&:after {
+		    content: "";
+		    position: absolute;
+		    right: 0;
+		    top: 0px;
+		    background-image: url(../img/icon-error.svg);
+		    background-repeat: no-repeat;
+		    background-position: center;
+		    padding: 0;
+		    width: 20px;
+		    height: 20px;
+		}
+	}
+} 

@@ -1,0 +1,221 @@
+@use "../variables" as *;
+
+.rubric-item {
+  overflow: hidden;
+  background-size: auto, 1250px;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  .container {
+    position: relative;
+    height: 537px;
+  }
+
+  &__toggle {
+    display: none;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 75px 46px 60px 46px;
+
+    @media (max-width: $tablet-width-portret) {
+      padding: 105px 60px 85px;
+    }
+  }
+
+  &__left {
+    width: 50%;
+  }
+
+  &__right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__main-title {
+    margin: 0 0 24px;
+    font-size: 38px;
+    line-height: 49px;
+
+    @media (max-width: $tablet-width-portret) {
+      font-size: 40px;
+      line-height: 51px;
+      margin-bottom: 28px;
+      margin-top: 10px;
+    }
+  }
+
+  &__sub-title {
+    margin: 0;
+    line-height: 1.2;
+    font-size: 30px;
+    margin-bottom: 25px;
+  }
+
+  &__text {
+    p {
+      margin: 0;
+      margin-bottom: 20px;
+      font-size: 22px;
+      line-height: 1.3;
+    }
+
+  }
+  
+  &--inner {
+    .container {
+      width: auto;
+    }
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .rubric-item {
+    .container {
+      height: auto;
+    }
+  }
+}
+
+@media (max-width: $tablet-width-portret) {
+  .rubric-item {
+    .container {
+      height: auto;
+    }
+
+    &__toggle {
+      display: inline-block;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 1.2;
+      text-transform: uppercase;
+      cursor: pointer;
+      padding: 0;
+      padding-right: 30px;
+      margin: 20px 0;
+      text-align: left;
+      color: #fff;
+      background-color: transparent;
+      outline: none;
+      border: none;
+      padding-left: 40px;
+
+      &--v1 {
+        position: relative;
+
+        &::before {
+          content: "";
+          position: absolute;
+          width: 43px;
+          height: 1px;
+          background-color: #fff;
+          top: 50%;
+          left: 0;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          width: 1px;
+          height: 75px;
+          background-color: #fff;
+          top: 50%;
+          left: 0;
+        }
+      }
+    }
+
+    &__wrapper {
+      flex-wrap: wrap;
+    }
+
+    &__wrapper--chronicle {
+      padding: 60px 40px 0;
+    }
+
+    &__left {
+      width: 100%;
+    }
+
+    &__right {
+      display: block;
+      width: 100%;
+    }
+
+    .button--arrow {
+      svg {
+        margin-left: 5px;
+        vertical-align: middle;
+        fill: #fff;
+        transition: transform 0.5s;
+      }
+    }
+
+    &__toggle {
+      padding: 0 30px 0 57px;
+    }
+  }
+}
+
+@media (max-width: $tablet-width-portret) {
+
+  .rubric-item__toggle--v1 {
+    margin: 40px 0 60px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .rubric-item {
+    &__wrapper {
+      padding: 35px 15px;
+    }
+
+    &__wrapper--chronicle {
+      padding: 46px 15px 30px 10px;
+    }
+    
+    &__main-title {
+      font-size: 21px;
+      line-height: 1.2;
+      margin-bottom: 20px;
+      margin-top: 5px;
+    }
+    
+    &__sub-title {
+      font-size: 19px;
+      line-height: 1.2;
+      margin-bottom: 18px;
+    }
+
+    &__text {
+      p {
+        font-size: 15px;
+        line-height: 1.2;
+      }
+    }
+
+    &__toggle {
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 17px;
+      text-transform: uppercase;
+      padding-left: 0;
+      
+      &--v1 {
+        padding-left: 0;
+        margin-top: 14px;
+        margin-bottom: 30px;
+      }
+
+      &--v1::after,
+      &--v1::before {
+        display: none;
+      }
+    }
+  }
+}

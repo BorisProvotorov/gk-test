@@ -1,0 +1,68 @@
+@use "../variables" as *;
+
+.profile-card {
+  background: #fff;
+  border: 1px solid #E2E2E2;
+  padding: 20px;
+  margin-bottom: 20px;
+
+  &__username {
+    display: block;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    color: #2C3D52;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 257px;
+  }
+  
+  &__img-wrapper {
+    width: 257px;
+    height: 234px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-bottom: 25px;
+  }
+  
+  &--pale {
+    width: calc(100% - 90px);
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .profile-card {
+    padding: 15px;
+    &__username {
+      width: auto;
+      font-size: 14px;
+    } 
+    
+    &__img-wrapper  {
+      width: 201px;
+      height: 183px;
+    }
+    
+    &--pale {
+    width: calc(100% - 30px);
+  }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .profile-card {
+    margin-right: 0;
+    
+    &--pale {
+      margin-bottom: 20px;
+    }
+    
+    &__img-wrapper {
+      width: 86px;
+      height: 86px;
+      border-radius: 50%;
+    }
+  }
+}

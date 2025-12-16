@@ -1,0 +1,54 @@
+@use "../variables" as *;
+@use "../mixins.scss" as *;
+
+.feature {
+  padding: 40px 0;
+
+  &__list {
+    @include list;
+  }
+
+  &__item {
+    margin: 20px 0;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 20px;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 1.2;
+  }
+
+  &__number {
+    display: inline-flex;
+    min-width: 32px;
+    background: #FFCD00;
+    padding: 0 8px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .feature {
+    margin-left: 50px;
+    
+    &__title {
+      font-size: 19px;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .feature {
+    margin-left: 0;
+    
+    &__title {
+      font-size: 15px;
+    }
+    
+    &__number {
+      min-width: 15px;
+    }
+  }
+}
+

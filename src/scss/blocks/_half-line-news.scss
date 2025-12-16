@@ -1,0 +1,121 @@
+.half-line-news {
+	position: relative;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  display: flex;
+  align-items: flex-start;
+  padding: 24px 24px 20px 24px;
+  text-decoration: none;
+  height: 177px;
+
+  &__link {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+  }
+
+  @media (max-width: 768px) {
+    height: 169px;
+  }
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    height: auto;
+    padding: 0;
+    flex-grow: 1;
+    overflow: hidden;
+    height: 310px;
+    padding-bottom: 14px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__content {
+    padding-left: 24px;
+  }
+
+  &__img-wrp {
+    position: relative;
+    flex-shrink: 0;
+
+    @media (max-width: 767px) {
+      width: 100%;
+      height: 140px;
+    }
+  }
+
+  &__img-wrp::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(0,0,0,0.3);
+    transition: all .3s;
+  }
+
+  &__img {
+    display: block;
+
+    @media (max-width: 767px) {
+      width: 100%;
+      height: 140px !important;
+      object-fit: cover;
+    }
+  }
+
+  &__link:hover &__img-wrp::after {
+    background-color: rgba(0,0,0,0);
+  }
+
+  &__title {
+    text-decoration: none;
+    color: #000000;
+    font-size: 17px;
+    line-height: 22px;
+    font-weight: 500;
+    margin: 0 0 5px 0;
+    max-height: 88px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+
+    @media (max-width: 768px) {
+      font-size: 15px;
+      line-height: 18px;
+    }
+
+    @media (max-width: 767px) {
+      font-weight: 500;
+      font-size: 17px;
+      line-height: 22px;
+      padding-left: 0;
+      margin: 16px 0 10px 0;
+    }
+  }
+
+  &__info {
+    margin-left: 179px;
+    position: absolute;
+    bottom: 20px;
+
+    @media (max-width: 767px) {
+      margin: 0 20px;
+      position: static;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+
+  &__hashteg {
+    margin-bottom: 8px;
+    position: relative;
+    z-index: 1;
+  }
+}

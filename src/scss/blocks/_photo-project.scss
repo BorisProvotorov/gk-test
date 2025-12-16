@@ -1,0 +1,77 @@
+@use "../variables" as *;
+
+.photo-project {
+  min-width: 1280px;
+  background-image: url("../img/back-progect.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  padding-bottom: 20px;
+
+  .container {
+    background-color: #fff;
+  }
+
+  &__container {
+    width: 1250px;
+    margin: 0 auto;
+    padding: 15px 0;
+    margin-bottom: 200px;
+  }
+
+  &__title {
+    margin: 0;
+    padding: 20px 0;
+    font-size: 24px;
+    line-height: 31px;
+    text-align: center;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    margin: 0 -8px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .photo-project {
+    min-width: auto;
+
+    .container {
+      width: 767px;
+    }
+
+    &__container {
+      margin-bottom: 105px;
+      width: 768px;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .photo-project {
+    min-width: 320px;
+    max-width: 767px;
+    background-size: 780px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    .container {
+      width: calc(100% - 30px);
+      min-width: 290px;
+      padding: 0;
+    }
+
+    &__container {
+      margin-bottom: 75px;
+      width: calc(100% - 30px); 
+      padding: 15px;
+    }
+
+    &__wrapper {
+      margin: 0;
+    }
+  }
+}

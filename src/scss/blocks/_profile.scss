@@ -1,0 +1,39 @@
+@use "../variables" as *;
+
+.profile {
+  .container {
+    display: flex;
+  }
+
+  &__left-column {
+    margin-right: 15px;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+
+  &__right-column {
+    flex-grow: 1;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .profile {
+    &__left-column {
+      width: 232px;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .profile {
+    .container {
+      flex-direction: column;
+    }
+    
+    &__left-column {
+      width: 100%;
+      margin-right: 0;
+    }
+  }
+}
+

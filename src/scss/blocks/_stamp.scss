@@ -1,0 +1,86 @@
+@use "../variables" as *;
+
+.stamp {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0;
+
+  &__left{
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15px;
+    padding: 0 9px 0 22px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    color: $grey;
+    white-space: nowrap;
+
+    &--time {
+      background-image: url("../img/icon-clock.svg");
+
+      &--grey {
+        background-image: url("../img/icon-clock-grey.svg");
+      }
+    }
+
+    &--views {
+      padding-left: 29px;
+      padding-right: 15px;
+      background-image: url("../img/icon-view.svg");
+
+      &--grey {
+        background-image: url("../img/icon-view-grey.svg");
+      }
+    }
+
+    &--comments {
+      background-image: url("../img/icon-comments.svg");
+
+      &--grey {
+        background-image: url("../img/icon-comments-grey.svg");
+      }
+    }
+
+    &--reading {
+      padding: 0;
+    }
+
+    &--bookmarks {
+      &--grey {
+        background-image: url("../img/icon-star.svg");
+      }
+
+      &--red {
+        background-image: url("../img/icon-star-red.svg");
+      }
+    }
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .stamp {
+    flex-wrap: wrap-reverse;
+    
+    &__right {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .stamp {
+    &__item {
+      &--bookmarks {
+        display: none;
+      }
+    }
+  }
+}

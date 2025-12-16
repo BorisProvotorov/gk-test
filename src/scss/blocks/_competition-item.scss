@@ -1,0 +1,39 @@
+@use "../variables" as *;
+
+.competition-item {
+  min-width: 1280px;
+  min-height: 537px;
+  margin-bottom: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  .container {
+    min-height: 537px;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+
+  &__link {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .competition-item {
+    min-width: auto;
+    width: 100%;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .competition-item {
+    min-width: 100%;
+    min-height: 350px;
+
+    .container {
+      min-height: 350px;
+    }
+  }
+}

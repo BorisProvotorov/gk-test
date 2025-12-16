@@ -1,0 +1,140 @@
+@use "../variables" as *;
+
+.sort {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px 20px 20px 20px;
+  background-color: #fff;
+  justify-content: space-between;
+  border-radius: 8px 8px 0 0;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 8px;
+    bottom: -4px;
+    background-color: #fff;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    margin: 0;
+    max-width: 420px;
+    padding-right: 10px;
+    min-width: 100px;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &__button {
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #2C3D52;
+    outline: none;
+    cursor: pointer;
+    transition: 0.5s;
+    padding-right: 20px;
+    background-image: url("../img/icon-arrow-sort.svg");
+    background-repeat: no-repeat;
+    background-position: top 54% right;
+    text-decoration: none;
+
+    &--red {
+      color: #FE4349;
+    }
+
+    &:hover,
+    &:focus {
+      opacity: 0.7;
+    }
+  }
+
+  &__button:not(:last-child) {
+    margin-right: 35px;
+  }
+
+  .hashteg {
+    width: 100%;
+    padding-bottom: 10px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .sort {
+
+    &::after {
+      display: none;
+    }
+    
+    &__title {
+      font-size: 21px;
+      line-height: 27px;
+    }
+
+    &__button {
+      padding: 4px 20px 4px 10px;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .sort {
+    background-color: transparent;
+    border-bottom: 0;
+	  padding: 6px 20px 9px 20px;
+    position: relative;
+    justify-content: center;
+    margin-bottom: 16px;
+
+    &::after {
+      content: "";
+      display: block;
+      height: 1px;
+      position: absolute;
+      bottom: 0;
+      left: -16px;
+      right: -16px;
+      background-color: rgba(44, 61, 82, 0.2);
+    }
+
+    &__title {
+      display: none;
+    }
+
+    &__button {
+      font-size: 12px;
+      line-height: 15px;
+      white-space: nowrap;
+      margin-right: 15px;
+      padding: 2px 20px 2px 0;
+
+      &__button:not(:last-child) {
+        margin-right: 40px;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    
+    .hashteg__item {
+      font-size: 8px;
+      line-height: 1.2;
+    }
+  }
+}

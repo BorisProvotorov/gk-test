@@ -1,0 +1,119 @@
+@use "../variables" as *;
+
+.notifycation {
+  position: sticky;
+  max-width: 1250px;
+  right: 0;
+  left: 0;
+  top: 0px;
+  height: 0;
+  z-index: 1000;
+  opacity: 0;
+  transition: all 0.4s;
+  display: flex;
+  align-items: start;
+  margin-top: 0px;
+  margin: 0 auto;
+
+  &__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+    border-radius: 0 0 8px 8px;
+    background-color: rgba(227, 227, 227, 0.95);
+    margin: 0 auto;
+    min-width: 100%;
+    padding: 20px;
+    position: relative;
+  }
+
+  &__info {
+    color: #000;
+    flex-grow: 1;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  &__info-title {
+    font-weight: 600;
+    font-size: 18px;
+  }
+
+  &__info-text {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__button {
+    margin-top: auto;
+    margin-bottom: 0;
+    margin-left: 20px;
+    padding: 10px 30px;
+  }
+
+  &.active {
+    opacity: 1;
+  }
+
+  &.add-gap {
+    top: 50px;
+    transition: all 0.4s;
+  }
+
+  @media  screen and (max-width: $tablet-width) {
+    &__info-title,
+    &__info-text {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+  @media  screen and (max-width: $tablet-width-portret) {
+    &.add-gap {
+      top: 43px;
+      transition: all 0.4s;
+    }
+
+    &__wrap {
+      padding: 10px;
+    }
+  }
+
+  @media  screen and (max-width: $mobile-width) {
+    &__info-title,
+    &__info-text {
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+
+  @media  screen and (max-width: 500px) {
+    &__wrap {
+      padding: 5px;
+      margin-left: 0;
+    }
+
+    &__info-title,
+    &__info-text {
+      font-size: 12px;
+      line-height: 14px;
+    }
+
+    &__button {
+      margin-left: 10px;
+    }
+  }
+
+  @media  screen and (max-width: 370px) {
+    &__wrap {
+      flex-direction: column;
+    }
+
+    &__button {
+      margin-top: 5px;
+      margin-left: 0px;
+      font-size: 13px;
+    }
+  }
+}

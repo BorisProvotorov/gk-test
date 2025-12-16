@@ -1,0 +1,62 @@
+@use "../variables" as *;
+@use "../mixins.scss" as *;
+
+.actual-rubrics {
+  
+  &__list {
+    @include list;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  &__item {
+    flex-shrink: 0;
+  }
+
+  &__link {
+    display: block;
+    padding: 12.8px 15px;
+    text-decoration: none;
+    color: rgba(44, 61, 82, 0.7);
+    font-weight: bold;
+    transition: color 0.7s;
+    white-space: nowrap;
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:hover,
+    &:focus {
+      color: #FE4349;
+      transition: color 0.7s;
+    }
+    &:active {
+      color: #FE4349;
+      transition: color 0.7s;
+    }
+  }
+}
+
+@media (max-width: $tablet-width)  {
+  .actual-rubrics {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    position: relative;
+        
+    &__item:last-child .actual-rubrics__link {
+      margin-right: 33px;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .actual-rubrics {
+    width: 100%;
+    
+    &::before {
+      width: 35px;
+    }
+  }
+}

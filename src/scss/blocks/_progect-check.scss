@@ -1,0 +1,17 @@
+.progect-check {
+	appearance: none;
+	margin: 0;
+	display: none;
+}
+
+input[type="checkbox"]:checked + .checkbox-label::after {
+	content: "";
+	width: 10px;
+	height: 5px;
+	border-left: 1px solid rgba(86, 100, 117, 0.6);
+	border-bottom: 1px solid rgba(86, 100, 117, 0.6);
+	transform: rotate(-45deg);
+	position: absolute;
+	left: 4px;
+	top: 8px;
+}

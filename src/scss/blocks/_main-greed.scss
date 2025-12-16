@@ -1,0 +1,58 @@
+@use "../variables" as *;
+
+.main-greed {
+
+  .container {
+    display: flex;
+    align-items: stretch;
+  }
+
+  &__left-column {
+    width: calc(100% - 318px);
+    margin-bottom: 15px;
+
+    &--form {
+      border: 1px solid #E2E2E2;
+      background: #fff;
+    }
+  }
+
+  &__right-column {
+    flex-shrink: 0;
+    width: 303px;
+    margin-bottom: 15px;
+    background-color: #f4f4f4;
+  }
+
+  &__mrg-vertical {
+    margin-top: 20px;
+    margin-bottom: 4px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .main-greed {
+
+    &__left-column {
+      width: 100%;
+
+      &.mrg-right {
+        margin: 0;
+      }
+    }
+
+    &__right-column {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .main-greed {
+
+    &__banner {
+      margin: 0 -16px;
+    }
+    
+  }
+}

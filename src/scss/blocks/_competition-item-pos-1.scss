@@ -1,0 +1,66 @@
+@use "../variables" as *;
+
+.competition-item-pos-1 {
+  .container {
+    background-repeat: no-repeat;
+    background-position: center right;
+  }
+
+  &__title {
+    margin: 0;
+    width: 507px;
+    font-size: 38px;
+    line-height: 49px;
+    padding-top: 180px;
+  }
+
+  &__description {
+    font-size: 22px;
+    line-height: 28px;
+    width: 507px;
+  }
+
+  .tag {
+    position: absolute;
+    top: 140px;
+    left: 15px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .competition-item-pos-1 {
+    .container {
+      background-position: center right, center right -100px;
+    }
+
+    &__title {
+      font-size: 40px;
+      line-height: 1.2;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .competition-item-pos-1 {
+    .container {
+      background-position: center, center right -200px;
+    }
+
+    &__title {
+      font-size: 21px;
+      line-height: 1.2;
+      width: 260px;
+      padding-top: 110px;
+    }
+
+    &__description {
+      font-size: 15px;
+      line-height: 1.2;
+      width: 260px;
+    }
+    
+      .tag {
+    top: 60px;
+  }
+  }
+}

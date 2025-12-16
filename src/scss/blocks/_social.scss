@@ -1,0 +1,64 @@
+@use "../mixins.scss" as *;
+
+.social {
+  &__list {
+    @include list;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  &__link {
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 40px;
+      height: 40px;
+      background-repeat: no-repeat;
+      background-position: center;
+      position: absolute;
+      opacity: .5;
+      top: 0;
+      left: 0;
+      transition: opacity 0.5s;
+    }
+
+    &--vk::before {
+      background-image: url("../img/icon-social-vk.svg");
+    }
+
+    &--fb::before {
+      background-image: url("../img/icon-social-fb.svg");
+    }
+
+    &--odnk::before {
+      background-image: url("../img/icon-social-odnk.svg");
+    }
+
+    &--inst::before {
+      background-image: url("../img/icon-social-inst.svg");
+    }
+
+    &--tw::before {
+      background-image: url("../img/icon-social-tw.svg");
+    }
+    &--tg::before {
+      background-image: url("../img/icon-social-tg.svg");
+    }
+  }
+}
+
+.social__link:hover::before,
+.social__link:focus::before {
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+.social__link:active::before {
+  opacity: .8;
+  transition: opacity 0.5s;
+}

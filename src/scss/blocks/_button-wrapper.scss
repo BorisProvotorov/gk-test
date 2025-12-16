@@ -1,0 +1,14 @@
+@use "../variables" as *;
+
+.button-wrapper {
+  justify-content: center;
+  display: flex;
+
+  @media (max-width: $mobile-width) {
+    display: block;
+    text-align: center;
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-bottom: 30px;
+  }
+}

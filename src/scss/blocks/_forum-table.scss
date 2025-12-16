@@ -1,0 +1,177 @@
+@use "../variables" as *;
+
+.forum-table {
+  width: 100%;
+  border-collapse: collapse;
+
+  th {
+    padding: 15px;
+    text-align: center;
+    font-size: 13px;
+    line-height: 22px;
+    color: rgba(44, 61, 82, 0.8);
+    font-weight: normal;
+    background: rgba(226, 226, 226, 0.2);
+    border: 1px solid #D1D1D1;
+  }
+
+  td {
+    border: 1px solid rgba(196, 196, 196, 0.5);
+  }
+
+  &__category-td {
+    width: 50%;
+    padding: 15px;
+
+    h3 {
+      margin: 0;
+    }
+
+    a {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 27px;
+      color: #000;
+      transition: color 0.5s;
+      text-decoration: none;
+
+      &:hover,
+      &:focus {
+        color: #888888;
+        transition: color 0.5s;
+        outline: none;
+      }
+    }
+
+    span {
+      display: block;
+      color: #9099A3;
+      font-size: 12px;
+      line-height: 1.2;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      max-height: 32px;
+      overflow: hidden;
+      -webkit-line-clamp: 2;
+      text-overflow: ellipsis;
+    }
+  }
+
+  &__charter-td,
+  &__comments-td {
+    width: 12%;
+    padding: 15px;
+    text-align: center;
+
+    a {
+      font-size: 15px;
+      line-height: 26px;
+      color: #000;
+      transition: color 0.5s;
+      text-decoration: none;
+
+      &:hover,
+      &:focus {
+        color: #888888;
+        outline: none;
+        transition: color 0.5s;
+      }
+    }
+  }
+
+  &__theme-td,
+  &__author-td {
+    width: 15%;
+    padding: 15px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 26px;
+    color: #9099A3;
+  }
+
+  &__update-td {
+    width: 23%;
+    padding: 15px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 26px;
+    color: #000;
+
+    b {
+      display: none;
+      font-weight: normal;
+      color: #9099A3;
+    }
+  }
+
+  &__time {
+    color: #9099A3;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .forum-table {
+    thead {
+      display: none;
+    }
+
+    tr {
+      display: block;
+      border-bottom: 1px solid rgba(196, 196, 196, 0.5);
+
+      &:last-of-type {
+        border-bottom: none;
+      }
+    }
+
+    td {
+      border: none;
+    }
+
+    &__category-td {
+      display: block;
+      width: 100%;
+      padding: 10px 0;
+
+      a {
+        font-size: 14px;
+        line-height: 24px;
+      }
+
+      span {
+        font-size: 12px;
+        line-height: 19px;
+      }
+    }
+
+    &__update-td {
+      display: block;
+      width: 100%;
+      padding: 0;
+      padding-bottom: 10px;
+      text-align: left;
+      font-size: 12px;
+      line-height: 19px;
+
+      b {
+        display: inline;
+      }
+    }
+
+    &__charter-td {
+      display: none;
+    }
+
+    &__theme-td {
+      display: none;
+    }
+
+    &__comments-td {
+      display: none;
+    }
+
+    &__author-td {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,92 @@
+@use "../variables" as *;
+@use "../mixins.scss" as *;
+
+.forum-topic {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  margin-bottom: 15px;
+
+  &__left,
+  &__right {
+    width: 49%;
+    padding: 25px 20px;
+    background: #fff;
+    border: 1px solid #E9E9E9;
+  }
+
+  &__title {
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 500;
+  }
+
+  &__list {
+    @include list;
+  }
+
+  &__link {
+    display: block;
+    padding: 12px 15px;
+    font-size: 14px;
+    line-height: 24px;
+    text-decoration: none;
+    color: #000;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    max-height: 90px;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    text-overflow: ellipsis;
+    position: relative;
+    border-bottom: 1px solid #C4C4C4;
+    transition: color 0.5s;
+
+    &::before {
+      content: "";
+      width: 5px;
+      height: 10px;
+      position: absolute;
+      top: 20px;
+      left: 0;
+      background-image: url("../img/icon-arrow-right.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &:hover,
+    &:focus {
+      color: #888888;
+      transition: color 0.5s;
+      outline: none;
+    }
+
+    span {
+      color: #959EA8;
+    }
+  }
+
+  &__item:last-child .forum-topic__link {
+    border-bottom: none;
+  }
+
+}
+
+@media (max-width: $mobile-width) {
+  .forum-topic {
+    display: block;
+
+    &__left,
+    &__right {
+      width: 100%;
+    }
+
+    &__left {
+      margin-bottom: 20px;
+    }
+
+    &__link {
+      font-size: 13px;
+    }
+  }
+}

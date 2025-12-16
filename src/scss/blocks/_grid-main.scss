@@ -1,0 +1,99 @@
+.grid-main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 16px;
+    margin-bottom: 16px;
+    &__half-card-news {
+        grid-column: 1/3;
+    }
+    &__news-feed {
+        grid-row: 1/5;
+        grid-column: 4;
+        display: flex;
+        align-items: flex-start;
+    }
+    &__top-banner {
+        grid-column: 1/4;
+    }
+    &__banner {
+        grid-column: 1/5;
+    }
+    &__left-promo {
+        display: grid;
+        grid-gap: 16px;
+        align-content: flex-start;
+    }
+    &__news-parthner {
+        background-color: #ffffff;
+    }
+    &__news-lenta {
+        grid-column: 2/4;
+        grid-row: 3/5;
+        display: grid;
+        grid-gap: 15px 0;
+        align-content: start;
+    }
+    &__left-parthner {}
+}
+
+@media (max-width: 768px) {
+    .grid-main {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto auto 1fr;
+    }
+    .grid-main__half-card-news {
+        grid-column: 1/3;
+    }
+    .grid-main__news-feed {
+        grid-row: 3;
+        grid-column: 3;
+    }
+    .grid-main__top-banner {
+        grid-column: 1/4;
+    }
+    .grid-main__left-promo {
+        grid-row: 5;
+        grid-column: 1/4;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: flex-start;
+    }
+    .grid-main__news-parthner {
+        height: 100%;
+    }
+    .grid-main__news-lenta {
+        grid-column: 1/3;
+        grid-row: 3/5;
+    }
+    .grid-main__news-parthner {
+        grid-column: 2/4;
+    }
+}
+
+@media (max-width: 767px) {
+    .grid-main {
+        grid-template-columns: none;
+        grid-gap: 16px 0;
+    }
+    .grid-main__news-feed,
+    .grid-main__third-card-news-bg,
+    .grid-main__news-parthner,
+    .grid-main__half-card-news {
+        grid-column: 1/4;
+    }
+    .grid-main__top-banner {
+        grid-row: 4;
+        margin: 0 -15px;
+    }
+    .grid-main__news-lenta {
+        grid-column: 1/4;
+        grid-row: 5;
+    }
+    .grid-main__left-promo {
+        grid-row: 7;
+        grid-template-columns: 1fr;
+        grid-gap: 16px 0;
+    }
+    .grid-main__left-parthner {
+        grid-column: 1/4;
+    }
+}

@@ -1,0 +1,38 @@
+.file-image {
+  display: inline-block;
+  width: 103px;
+  height: 109px;
+  overflow: hidden;
+  cursor: pointer;
+  font-size: 13px;
+  line-height: 1.2;
+  border: 1px solid #9AA2AC;
+  border-radius: 5px;
+  background-image: url("../img/icon-avatar-back.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+  margin-right: 20px;
+
+  &--min {
+    border: none;
+    width: 40px;
+    height: 40px;
+    background-size: 30px;
+
+    &:hover,
+    &:focus {
+      opacity: 1;
+      transition: opacity 0.7s;
+    }
+
+    &:active {
+      opacity: .6;
+      transition: opacity 0.7s;
+    }
+  }
+}
+
+.file-image .users-photo {
+  margin: 0;
+}

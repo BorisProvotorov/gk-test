@@ -1,0 +1,52 @@
+@use "../variables" as *;
+
+.lead {
+  display: flex;
+  align-items: center;
+  margin: 0 53px;
+
+  &__img-wrapper {
+    width: 340px;
+    height: 247px;
+    overflow: hidden;
+    margin-right: 53px;
+    flex-shrink: 0;
+  }
+
+  &__text {
+    font-size: 21px;
+    line-height: 38px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .lead {
+    margin: 0;
+
+    &__img-wrapper {
+      width: 273px;
+      height: 182px;
+      margin-right: 25px;
+    }
+
+    &__text {
+      font-size: 17px;
+      line-height: 27px;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .lead {
+    &__img-wrapper {
+      display: none;
+    }
+
+    &__text {
+      font-size: 15px;
+      line-height: 21px;
+      padding-left: 15px;
+      border-left: 2px solid #FE4349;
+    }
+  }
+}

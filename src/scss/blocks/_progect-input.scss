@@ -1,0 +1,26 @@
+.progect-input {
+  font: inherit;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 13px 15px;
+  border: 1px solid #9aa2ac;
+  font-size: 14px;
+  color: #9aa2ac;
+  background-color: #fff;
+  cursor: pointer;
+  transition: border .5s;
+  outline: none;
+
+  &::placeholder {
+    color: #9aa2ac;
+  }
+
+  &:hover{
+    border: 1px solid #2C3D52;
+  }
+
+  &:focus,
+  &:active {
+    border: 1px solid rgba(44, 61, 82, 0.8);
+  }
+}

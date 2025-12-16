@@ -1,0 +1,153 @@
+@use "../variables" as *;
+
+.half-card-news {
+  overflow: hidden;
+  border-radius: 10px;
+  position: relative;
+  height: 100%;
+
+  &__link {
+    display: block;
+    height: 100%;
+    text-decoration: none;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+
+  &__inner {
+    padding: 25px 25px 40px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(25, 23, 47, 0.55);
+      z-index: 1;
+      transition: background-color 0.5s;
+    }
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 25px;
+    line-height: 32px;
+    color: #fff;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    max-height: 123px;
+    -webkit-line-clamp: 3;
+    text-overflow: ellipsis;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100% !important;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &__info {
+    position: absolute;
+    left: 24px;
+    bottom: 17px;
+    z-index: 1;
+  }
+
+  &__bottom {
+    padding-left: 25px;
+    padding-right: 25px;
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+
+  &__hashteg {
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    margin-bottom: 6px;
+  }
+
+  &__tag {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 38px;
+  }
+
+  &__stamp {
+    position: static;
+  }
+
+
+  .stamp__item {
+    color: #fff;
+  }
+
+  &:hover,
+  &:focus {
+    transform: scale(1.01);
+    transition: transform 0.5s;
+  }
+}
+
+.half-card-news:hover .half-card-news__inner::before,
+.half-card-news__link:focus + .half-card-news__inner::before {
+  background-color: rgba(25, 23, 47, 0.65);
+  transition: background-color 0.5s;
+}
+
+@media (max-width: $tablet-width) {
+  .half-card-news {
+    border: 1px solid transparent;
+
+    &__title {
+      font-size: 21px;
+      line-height: 27px;
+      -webkit-line-clamp: 5;
+      height: calc(100% - 100px);
+    }
+
+    .stamp {
+      bottom: -80px;
+    }
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .half-card-news {
+    overflow: hidden;
+    
+    &__title {
+      max-height: 199px;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .half-card-news {
+    height: 310px;
+  }
+}

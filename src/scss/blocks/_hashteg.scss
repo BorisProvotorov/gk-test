@@ -1,0 +1,41 @@
+@use "../variables" as *;
+
+.hashteg {
+    overflow: hidden;
+    &__item {
+        display: inline-block;
+        color: rgb(44, 61, 82);
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 15px;
+        text-decoration: none;
+        transition: 0.5s;
+        padding-right: 5px;
+        &:hover,
+        &:focus {
+            color: #FE4349;
+        }
+        &:active {
+            opacity: 1;
+        }
+    }
+    &--in-page {
+        padding: 10px 0;
+    }
+    &__item--white {
+        color: #ffffff;
+    }
+    &__item:not(:last-child)::after {
+        content: ",";
+    }
+}
+
+@media (max-width: $mobile-width) {
+    .hashteg {
+        &__item {
+            font-size: 14px;
+            padding-top: 1px;
+            padding-bottom: 10px;
+        }
+    }
+}

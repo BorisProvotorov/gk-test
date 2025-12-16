@@ -1,0 +1,14 @@
+.radio-input {
+  appearance: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  background: transparent;
+  z-index: -10;
+  outline: none;
+}
+
+.radio-input:checked + .radio-label {
+  background-color: rgba(44, 61, 82, 0.13);
+  color: #2C3D52;
+}

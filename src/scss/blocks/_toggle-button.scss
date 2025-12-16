@@ -1,0 +1,45 @@
+@use "../variables" as *;
+
+.toggle-button-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.toggle-button {
+  font-size: 15px;
+  line-height: 1.2;
+  color: #2C3D52;
+  margin-bottom: -1px;
+  padding: 10px 20px;
+  transition: .5s;
+
+  &:hover,
+  &:focus {
+    opacity: .7;
+  }
+
+  &:active {
+    opacity: .85;
+  }
+
+  &--active {
+    border-bottom: 2px solid #2C3D52;
+    cursor: default;
+
+    &:hover,
+    &:focus,
+    &:active {
+      opacity: 1;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .toggle-button {
+    span {
+      display: none;
+    }
+  }
+}

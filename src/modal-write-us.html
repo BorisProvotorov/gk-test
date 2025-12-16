@@ -1,0 +1,30 @@
+<div class="modal modal-write-us" id="modal-write-us">
+	<form action="#">
+		<div class="modal-enter__buttons">
+			<h2 class="modal__title">Написать нам</h2>
+		</div>
+		<div class="modal__wrapper">
+			<h3 class="modal__title">вы знаете что-то, чего не знаем мы?</h3>
+			<p>У вас есть тема? Вы находитесь на месте событий? Мы написали текст по теме, по которой вы знаете больше нас? Напишите нам!</p>
+			<div>
+				<input class="progect-input" type="text" placeholder="Укажите ваш электронный адрес или телефон" required>
+			</div>
+			<div>
+				<textarea class="progect-textarea progect-textarea--message" placeholder="Напишите ваш текст" required=""></textarea>
+			</div>
+			<div class="file-wrapper">
+				<input class="file-input" type="file" data-photo="three" id="userphoto" name="fileMulti[]" multiple="">
+				<label class="progect-label file-label" for="userphoto"><span class="file-image"></span>Загрузите фото</label>
+				<div class="photos"></div>
+			</div>
+			<div class="mrg-vertical">
+				<div class="g-recaptcha" data-sitekey="6LdUEZQUAAAAAB3njdPhMuvBONRL6G9UD03xPbpe"></div>
+			</div>
+			<div class="mrg-bottom modal__align-left">
+				<input class="progect-check" type="checkbox" id="check1" required="">
+				<label class="checkbox-label" for="check1">Я принимаю условия <a href="#" class="form__link">пользовательсткого соглашения</a> и <a href="#" class="form__link">политики обработки персональных данных</a></label>
+			</div>
+			<button type="submit" class="button button--dark modal--button">Отправить</button>
+		</div>
+	</form>
+</div>

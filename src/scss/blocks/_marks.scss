@@ -1,0 +1,22 @@
+@use "../variables" as *;
+
+.marks {
+  display: flex;
+  align-items: flex-end;
+  position: absolute;
+  bottom: 28px;
+  left: 230px;
+}
+
+@media (max-width: $tablet-width) {
+  .marks {
+    left: 168px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .marks {
+    left: 20px;
+    bottom: 5px;
+  }
+}

@@ -1,0 +1,26 @@
+.tag {
+  display: inline-block;
+  padding: 5px 16px;
+  text-decoration: none;
+  color: #000;
+  border: 1px solid #c1c5cc;
+
+  &--white {
+    color: #fff;
+    border-color: #fff;
+  }
+  
+  &--blue {
+    color: #2F5787;
+    border-color: #2F5787;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 1;
+  }
+}

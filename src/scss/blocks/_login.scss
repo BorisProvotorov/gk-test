@@ -1,0 +1,16 @@
+@use "../variables" as *;
+
+.login {
+  padding: 0 120px;
+  span {
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .login {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

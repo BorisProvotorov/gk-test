@@ -1,0 +1,138 @@
+@use "../variables" as *;
+
+.drp-calendar th {
+  font-weight: normal;
+}
+
+
+.table-condensed thead tr:nth-child(2) {
+  background-color: #2C3D52;
+  color: #fff;
+}
+
+.daterangepicker .calendar-table th,
+.daterangepicker .calendar-table td {
+  border-radius: 0;
+}
+
+.daterangepicker td.in-range {
+  background-color: rgba(151, 151, 151, 0.3);
+}
+
+.daterangepicker td.active,
+.daterangepicker td.active:hover {
+  background-color: #979797;
+}
+
+.daterangepicker.show-calendar {
+  //  display: flex;
+  //  flex-wrap: wrap;
+  //  justify-content: center;
+  max-width: 540px;
+}
+
+.daterangepicker.show-calendar .ranges {
+  width: 100%;
+}
+
+.daterangepicker.show-calendar .ranges ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.daterangepicker .ranges li {
+  font-size: 14px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #9B9B9B;
+}
+
+.daterangepicker .ranges li.active {
+    background-color: #eee;
+    color: #000000;
+}
+
+.daterangepicker .ranges li.active:hover {
+  background-color: #eee;
+}
+
+.daterangepicker.show-calendar .drp-calendar {
+  width: 50%;
+}
+
+.daterangepicker.show-calendar .drp-buttons {
+  width: 100%;
+}
+
+.daterangepicker.show-ranges.ltr .drp-calendar.left {
+  border-left: none;
+}
+
+.daterangepicker .drp-selected {
+  display: none;
+}
+
+.daterangepicker .cancelBtn {
+  display: none;
+}
+
+.daterangepicker .drp-buttons .applyBtn {
+  width: 100%;
+  background-color: #2C3D52;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  margin: 0;
+  outline: none;
+  transition: background 0.5s;
+
+  &:hover,
+  &:focus {
+    border: 1px solid #2c3d52;
+    background-color: transparent;
+    color: #2c3d52;
+    transition: background 0.5s;
+  }
+
+  &:active {
+    background: #4a586a;
+    border-color: #4a586a;
+    color: #fff;
+  }
+}
+
+
+@media (max-width: $mobile-width) {
+  .daterangepicker.show-calendar {
+    left: 0 !important;
+    right: 0 !important;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .daterangepicker.show-calendar .ranges ul {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .daterangepicker.show-ranges.single.ltr .drp-calendar.left {
+    border-left: none;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+
+  .daterangepicker .drp-calendar {
+    max-width: none;
+    width: 270px;
+  }
+
+  .daterangepicker.openscenter:after,
+  .daterangepicker.openscenter:before {
+    display: none;
+  }
+}

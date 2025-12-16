@@ -1,0 +1,192 @@
+@use "../variables" as *;
+
+.main-footer {
+    padding: 45px 0 40px;
+    border-top: 2px solid #E5E5E5;
+    background-color: #f4f4f4;
+    position: relative;
+    z-index: 11;
+    &__flex-wrapper {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    &__center {
+        width: 60.72%;
+        margin: 0 28px 0 59px;
+        @media (max-width: $tablet-width) {
+            padding-left: 0;
+        }
+        @media (max-width: $mobile-width) {
+            padding-left: 0;
+        }
+    }
+    &__right {
+        width: 9.04%;
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-right: 8px;
+        @media (max-width: $tablet-width) {
+            justify-content: space-between;
+        }
+    }
+    &__metric {
+        height: 50px;
+        align-items: center;
+        display: flex;
+        .main-footer__age {
+            display: none;
+        }
+    }
+    .logo {
+        opacity: 0.6;
+    }
+    &__copyright {
+        margin-bottom: 35px;
+    }
+    &__copyright p {
+        margin: 0;
+        text-align: justify;
+        margin-bottom: 16px;
+        font-size: 12px;
+        line-height: 15px;
+        color: #555555;
+        @media (max-width: $tablet-width) {
+            margin-bottom: 20px;
+        }
+    }
+    .red {
+        color: #B30000;
+        text-decoration: none;
+        @media (max-width: $tablet-width) {
+            display: block;
+            margin-bottom: 20px;
+        }
+    }
+    .red:not(:last-child)::after {
+        content: " | ";
+        color: #000000;
+    }
+    .social {
+        margin-top: -15px;
+    }
+    .social__link {
+        background-color: transparent;
+        &::before {
+            opacity: 1;
+        }
+    }
+    .social__link--vk::before {
+        background-size: 23px;
+    }
+    .social__link--tg::before {
+        background-size: 19px;
+    }
+    &__age {
+        width: 50px;
+        height: 50px;
+        color: rgb(44, 61, 82);
+        font-size: 20px;
+        border: 1px solid rgb(44, 61, 82);
+        border-radius: 50%;
+        text-align: center;
+        padding-top: 16px;
+        margin-top: 40px;
+        @media (max-width: $tablet-width) {
+            margin-top: 0;
+        }
+    }
+}
+
+.main-footer .social__link:hover::before,
+.main-footer .social__link:focus::before {
+    opacity: 0.5;
+    transition: opacity 0.5s;
+}
+
+.main-footer .social__link:active::before {
+    opacity: .8;
+    transition: opacity 0.5s;
+}
+
+@media (max-width: $tablet-width) {
+    .main-footer {
+        padding-top: 35px;
+        padding-bottom: 16px;
+        &__flex-wrapper {
+            flex-wrap: wrap;
+        }
+        &__left {
+            width: 28%;
+        }
+        &__center {
+            margin: 35px 0 0 0;
+            width: 100%;
+            order: 2;
+        }
+        &__right {
+            .main-footer__age {
+                display: none;
+            }
+        }
+        .red:not(:last-child)::after {
+            display: none;
+        }
+        &__copyright {
+            margin-bottom: 40px;
+        }
+        &__metric {
+            margin-left: 0;
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            .main-footer__age {
+                display: block;
+            }
+        }
+        .social {
+            margin-top: 0;
+        }
+    }
+}
+
+@media (max-width: $mobile-width) {
+    .main-footer {
+        padding-top: 17px;
+        &__left {
+            width: 100%;
+            order: 3;
+            margin: 0;
+            .logo__link {
+                margin: 0 auto;
+                max-width: 160px;
+            }
+        }
+        &__copyright {
+            margin-bottom: 0;
+        }
+        &__right {
+            width: 100%;
+            .social {
+                margin: 0 auto;
+            }
+        }
+        &__metric {
+            position: absolute !important;
+            bottom: 0;
+            left: 16px;
+            right: 16px;
+            width: auto;
+        }
+        &__flex-wrapper {
+            padding-bottom: 56px;
+        }
+        &__center {
+            margin-top: 18px;
+        }
+    }
+}

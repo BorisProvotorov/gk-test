@@ -1,0 +1,41 @@
+@use "../variables" as *;
+
+.review {
+  padding-bottom: 40px;
+
+  &__content {
+    display: flex;
+  }
+
+  &__image-wrapper {
+    flex-shrink: 0;
+
+    img {
+      display: block;
+    }
+  }
+
+  &__text {
+    border: 5px solid #FFCD00;
+    padding: 35px 22px 22px 40px;
+    min-height: 262px;
+
+    p {
+      margin: 0;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .review {
+    &__content {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__text {
+      min-height: auto;
+      padding: 20px;
+    }
+  }
+}
