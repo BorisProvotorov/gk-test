@@ -3,10 +3,10 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>Портал город Киров</title>
+	<title>Портал город Киров 123</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" as="style" href="css/style.min.css" onload="this.rel='stylesheet'">
 	<!-- <script src="https://www.google.com/recaptcha/api.js" async="" defer=""></script> -->
 </head>
 
@@ -152,7 +152,7 @@
               <source type="image/webp" media="(max-width: 480px)" srcset=" img/news1.jpg">
               <source media="(max-width: 480px)" srcset=" img/news1.jpg">
               <source type="image/webp" srcset=" img/news1.webp">
-              <img class="half-card-news__image" src="img/news1.jpg" width="602" height="380" alt="Превью" loading="lazy">
+              <img class="half-card-news__image" src="img/news1.jpg" width="602" height="380" alt="Превью" loading="lazy" fetchpriority="high">
             </picture>
             <div class="half-card-news__info">
               <div class="stamp">
