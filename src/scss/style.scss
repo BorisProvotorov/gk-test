@@ -1,22 +1,17 @@
-body {
-  margin: 0;
-  padding: 0;
-}
+@use "variables.scss";
+@use "mixins.scss";
+@use "scaffolding.scss";
+@use "visually-hidden.scss";
+@use "background.scss";
 
-// @use "variables.scss";
-// @use "mixins.scss";
-// @use "scaffolding.scss";
-// @use "visually-hidden.scss";
-// @use "background.scss";
+@use "blocks/button.scss";
+@use "blocks/link.scss";
+@use "blocks/title.scss";
+@use "blocks/field-wrapper.scss";
+@use "blocks/news-title.scss";
+@use "blocks/mrg-right.scss";
 
-// @use "blocks/button.scss";
-// @use "blocks/link.scss";
-// @use "blocks/title.scss";
-// @use "blocks/field-wrapper.scss";
-// @use "blocks/news-title.scss";
-// @use "blocks/mrg-right.scss";
-
-// @use "blocks/inner-main.scss";
+@use "blocks/inner-main.scss";
 
 // // // burger
 // @use "blocks/burger-panel.scss";
