@@ -28,6 +28,7 @@
 	height: 20px;
 	opacity: .6;
 	transition: opacity 0.7s;
+  will-change: opacity;
 
 	&:hover,
 	&:focus {
