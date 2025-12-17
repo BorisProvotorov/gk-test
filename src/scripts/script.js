@@ -39,21 +39,29 @@ $(document).ready(function() {
         }
     });
 
+    const $rubricNews = $(".rubric-news");
+    const $toggleBtn = $(document); // будем использовать делегирование
+    
+    // Инициализируем обработчик клика один раз (делегирование)
+    $toggleBtn.on('click', '.rubric-item__toggle', function () {
+        $rubricNews.toggleClass('hide');
+        // Предполагается, что `slider` определён в глобальной/родительской области видимости
+        if (typeof slider !== 'undefined' && slider.slick) {
+            slider.slick("slickSetOption", "draggable", true, true);
+        }
+    });
+    
     function resizeContent() {
-        if ($(".rubric-news").length > 0) {
-            if (window.innerWidth > 768) {
-                $(".rubric-news").removeClass('hide')
-            } else if (window.innerWidth <= 768) {
-                $(".rubric-news").addClass('hide')
-
-                $(document).on('click', '.rubric-item__toggle', function() {
-                    $(".rubric-news").toggleClass('hide')
-                    slider.slick("slickSetOption", "draggable", true, true)
-                })
-            };
+        if (!$rubricNews.length) return;
+    
+        if (window.innerWidth > 768) {
+            $rubricNews.removeClass('hide');
+        } else {
+            $rubricNews.addClass('hide');
         }
     }
-
+    
+    // Запуск при инициализации
     resizeContent();
 
     // везде: закрыть горячую новость
