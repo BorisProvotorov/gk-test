@@ -7,7 +7,24 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<meta name="format-detection" content="telephone=no">
   <link rel="stylesheet" href="css/style.min.css">
-	<!-- <script src="https://www.google.com/recaptcha/api.js" async="" defer=""></script> -->
+  <link rel="preload" 
+    as="font" 
+    href="scripts/slick/fonts/slick.woff2" 
+    type="font/woff2" 
+    crossorigin
+  >
+  <link rel="preload" 
+    as="style" 
+    href="scripts/slick/slick.min.css" 
+    onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" 
+    as="style" 
+    href="scripts/slick/slick-theme.css" 
+    onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" 
+    as="style" 
+    href="scripts/fancybox/jquery.fancybox.min.css" 
+    onload="this.onload=null;this.rel='stylesheet'">
 </head>
 
 <body>
@@ -1151,10 +1168,6 @@
   <!--START: окно с городами (для Костромы) -->
   <include src="components/menu-city.html"></include>
   <!--END: окно с городами (для Костромы) --> 
-
-  <link rel="stylesheet" href="scripts/slick/slick.min.css" rel="preload">
-	<link rel="stylesheet" href="scripts/slick/slick-theme.css" rel="preload">
-	<link rel="stylesheet" href="scripts/fancybox/jquery.fancybox.min.css" rel="preload">
 
 	<script src="scripts/jquery-3.3.1.min.js"></script>
 	<script src="scripts/slick/slick.min.js"></script>
