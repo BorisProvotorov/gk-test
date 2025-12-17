@@ -1,167 +1,167 @@
-@use "variables.scss";
-@use "mixins.scss";
-@use "scaffolding.scss";
-@use "visually-hidden.scss";
-@use "background.scss";
+// @use "variables.scss";
+// @use "mixins.scss";
+// @use "scaffolding.scss";
+// @use "visually-hidden.scss";
+// @use "background.scss";
 
-@use "blocks/button.scss";
-@use "blocks/link.scss";
-@use "blocks/title.scss";
-@use "blocks/field-wrapper.scss";
-@use "blocks/news-title.scss";
-@use "blocks/mrg-right.scss";
+// @use "blocks/button.scss";
+// @use "blocks/link.scss";
+// @use "blocks/title.scss";
+// @use "blocks/field-wrapper.scss";
+// @use "blocks/news-title.scss";
+// @use "blocks/mrg-right.scss";
 
-@use "blocks/inner-main.scss";
+// @use "blocks/inner-main.scss";
 
-// // burger
-@use "blocks/burger-panel.scss";
-@use "blocks/breadcrumbs.scss";
+// // // burger
+// @use "blocks/burger-panel.scss";
+// @use "blocks/breadcrumbs.scss";
 
-// //top
-@use "blocks/bunner-wide.scss";
-@use "blocks/attention.scss";
-@use "blocks/widjets.scss";
-@use "blocks/weather.scss";
-@use "blocks/currency.scss";
-@use "blocks/road.scss";
-@use "blocks/user.scss";
+// // //top
+// @use "blocks/bunner-wide.scss";
+// @use "blocks/attention.scss";
+// @use "blocks/widjets.scss";
+// @use "blocks/weather.scss";
+// @use "blocks/currency.scss";
+// @use "blocks/road.scss";
+// @use "blocks/user.scss";
 
-// // main-header
-@use "blocks/main-header.scss";
-@use "blocks/enter.scss";
-@use "blocks/logo.scss";
-@use "blocks/search.scss";
+// // // main-header
+// @use "blocks/main-header.scss";
+// @use "blocks/enter.scss";
+// @use "blocks/logo.scss";
+// @use "blocks/search.scss";
 
-// // main index
-@use "blocks/top-container.scss";
-@use "blocks/actual-rubrics.scss";
-@use "blocks/social.scss";
-@use "blocks/button-wrapper.scss";
+// // // main index
+// @use "blocks/top-container.scss";
+// @use "blocks/actual-rubrics.scss";
+// @use "blocks/social.scss";
+// @use "blocks/button-wrapper.scss";
 
-@use "blocks/tag.scss";
-@use "blocks/tags.scss";
-@use "blocks/hashteg.scss";
-@use "blocks/stamp.scss";
-@use "blocks/bookmark.scss";
+// @use "blocks/tag.scss";
+// @use "blocks/tags.scss";
+// @use "blocks/hashteg.scss";
+// @use "blocks/stamp.scss";
+// @use "blocks/bookmark.scss";
 
-// // большие карточки
-@use "blocks/while-card.scss";
-@use "blocks/half-card.scss";
-@use "blocks/half-card-news.scss";
-@use "blocks/half-card-advert.scss";
+// // // большие карточки
+// @use "blocks/while-card.scss";
+// @use "blocks/half-card.scss";
+// @use "blocks/half-card-news.scss";
+// @use "blocks/half-card-advert.scss";
 
-@use "blocks/third-card.scss";
-@use "blocks/third-card-slider.scss";
-@use "blocks/half-card-slider.scss";
-@use "blocks/third-card-news-bg.scss";
-@use "blocks/third-card-news.scss";
-@use "blocks/third-card-news-no-bg.scss";
-@use "blocks/half-line-news.scss";
+// @use "blocks/third-card.scss";
+// @use "blocks/third-card-slider.scss";
+// @use "blocks/half-card-slider.scss";
+// @use "blocks/third-card-news-bg.scss";
+// @use "blocks/third-card-news.scss";
+// @use "blocks/third-card-news-no-bg.scss";
+// @use "blocks/half-line-news.scss";
 
-@use "blocks/article.scss";
-@use "blocks/article-card.scss";
-@use "blocks/read-also.scss";
-@use "blocks/interesting.scss";
-@use "blocks/news-feed.scss";
-@use "blocks/banner.scss";
-@use "blocks/bunner-side.scss";
-@use "blocks/news.scss";
-@use "blocks/rubric.scss";
-@use "blocks/rubric-item.scss";
-@use "blocks/rubric-news.scss";
-@use "blocks/rubric-author.scss";
+// @use "blocks/article.scss";
+// @use "blocks/article-card.scss";
+// @use "blocks/read-also.scss";
+// @use "blocks/interesting.scss";
+// @use "blocks/news-feed.scss";
+// @use "blocks/banner.scss";
+// @use "blocks/bunner-side.scss";
+// @use "blocks/news.scss";
+// @use "blocks/rubric.scss";
+// @use "blocks/rubric-item.scss";
+// @use "blocks/rubric-news.scss";
+// @use "blocks/rubric-author.scss";
 
-// //Сетка
-@use "blocks/main-greed.scss";
-@use "blocks/_grid-main.scss";
-@use "blocks/_grid-main-bottom.scss";
+// // //Сетка
+// @use "blocks/main-greed.scss";
+// @use "blocks/_grid-main.scss";
+// @use "blocks/_grid-main-bottom.scss";
 
-// // footer
-@use "blocks/main-footer.scss";
+// // // footer
+// @use "blocks/main-footer.scss";
 
-// // plagins 
-@use "blocks/is-js-slick.scss";
-@use "blocks/is-js-headhesive.scss";
-@use "blocks/is-js-fancybox.scss";
-@use "blocks/is-js-datarangepicker.scss";
-@use "blocks/is-js.scss";
-@use "blocks/main-content-wrapper.scss";
+// // // plagins 
+// @use "blocks/is-js-slick.scss";
+// @use "blocks/is-js-headhesive.scss";
+// @use "blocks/is-js-fancybox.scss";
+// @use "blocks/is-js-datarangepicker.scss";
+// @use "blocks/is-js.scss";
+// @use "blocks/main-content-wrapper.scss";
 
-// // search
-@use "blocks/search-block.scss";
-@use "blocks/likes.scss";
+// // // search
+// @use "blocks/search-block.scss";
+// @use "blocks/likes.scss";
 
-@use "blocks/modal-enter.scss";
-@use "blocks/login.scss";
-@use "blocks/registration.scss";
-@use "blocks/progect-label.scss";
-@use "blocks/progect-input.scss";
-@use "blocks/progect-field.scss";
-@use "blocks/progect-textarea.scss";
-@use "blocks/progect-check.scss";
-@use "blocks/checkbox-label.scss";
-@use "blocks/select-wrapper.scss";
-@use "blocks/progect-select.scss";
-@use "blocks/radio-input.scss";
-@use "blocks/radio-label.scss";
-@use "blocks/radio-wrapper.scss";
-@use "blocks/file-input.scss";
-@use "blocks/file-label.scss";
-@use "blocks/file-wrapper.scss";
-@use "blocks/file-image.scss";
-@use "blocks/top-panel.scss";
+// @use "blocks/modal-enter.scss";
+// @use "blocks/login.scss";
+// @use "blocks/registration.scss";
+// @use "blocks/progect-label.scss";
+// @use "blocks/progect-input.scss";
+// @use "blocks/progect-field.scss";
+// @use "blocks/progect-textarea.scss";
+// @use "blocks/progect-check.scss";
+// @use "blocks/checkbox-label.scss";
+// @use "blocks/select-wrapper.scss";
+// @use "blocks/progect-select.scss";
+// @use "blocks/radio-input.scss";
+// @use "blocks/radio-label.scss";
+// @use "blocks/radio-wrapper.scss";
+// @use "blocks/file-input.scss";
+// @use "blocks/file-label.scss";
+// @use "blocks/file-wrapper.scss";
+// @use "blocks/file-image.scss";
+// @use "blocks/top-panel.scss";
 
-// // profile
-@use "blocks/profile.scss";
-@use "blocks/profile-card.scss";
-@use "blocks/form.scss";
-@use "blocks/link-group.scss";
-@use "blocks/card.scss";
+// // // profile
+// @use "blocks/profile.scss";
+// @use "blocks/profile-card.scss";
+// @use "blocks/form.scss";
+// @use "blocks/link-group.scss";
+// @use "blocks/card.scss";
 
-@use "blocks/sort.scss";
-@use "blocks/toggle-button-wrapper.scss";
-@use "blocks/toggle-button.scss";
-@use "blocks/marks.scss";
-@use "blocks/alert.scss";
+// @use "blocks/sort.scss";
+// @use "blocks/toggle-button-wrapper.scss";
+// @use "blocks/toggle-button.scss";
+// @use "blocks/marks.scss";
+// @use "blocks/alert.scss";
 
-@use "blocks/comments.scss";
-@use "blocks/comment.scss";
-@use "blocks/add-comment.scss";
+// @use "blocks/comments.scss";
+// @use "blocks/comment.scss";
+// @use "blocks/add-comment.scss";
 
-// // Всплывающее уведомление об использовании куки
-@use 'blocks/notifycation';
+// // // Всплывающее уведомление об использовании куки
+// @use 'blocks/notifycation';
 
-// // verstki
-@use "blocks/_reactions.scss";
-@use "blocks/line-v1.scss";
-@use "blocks/line-v2.scss";
-@use "blocks/line-v3.scss";
-@use "blocks/text-block.scss";
-@use "blocks/article-block.scss";
-@use "blocks/author.scss";
-@use "blocks/lead.scss";
-@use "blocks/feature.scss";
-@use "blocks/trick.scss";
-@use "blocks/plan.scss";
-@use "blocks/review.scss";
-@use "blocks/article-header.scss";
-@use "blocks/article-footer.scss";
-@use "blocks/reading-similar.scss";
-@use "blocks/reading.scss";
-@use "blocks/reading-item.scss";
-@use "blocks/chronic.scss";
+// // // verstki
+// @use "blocks/_reactions.scss";
+// @use "blocks/line-v1.scss";
+// @use "blocks/line-v2.scss";
+// @use "blocks/line-v3.scss";
+// @use "blocks/text-block.scss";
+// @use "blocks/article-block.scss";
+// @use "blocks/author.scss";
+// @use "blocks/lead.scss";
+// @use "blocks/feature.scss";
+// @use "blocks/trick.scss";
+// @use "blocks/plan.scss";
+// @use "blocks/review.scss";
+// @use "blocks/article-header.scss";
+// @use "blocks/article-footer.scss";
+// @use "blocks/reading-similar.scss";
+// @use "blocks/reading.scss";
+// @use "blocks/reading-item.scss";
+// @use "blocks/chronic.scss";
 
-@use "blocks/img-thumbnail.scss";
-@use "blocks/only-mobile-block.scss";
-@use "blocks/fixed-block.scss";
-@use "blocks/push-bunner.scss";
-@use "blocks/closed.scss";
-@use "blocks/opened.scss";
-@use "blocks/passive.scss";
-@use "blocks/partner-news.scss";
+// @use "blocks/img-thumbnail.scss";
+// @use "blocks/only-mobile-block.scss";
+// @use "blocks/fixed-block.scss";
+// @use "blocks/push-bunner.scss";
+// @use "blocks/closed.scss";
+// @use "blocks/opened.scss";
+// @use "blocks/passive.scss";
+// @use "blocks/partner-news.scss";
 
-@use "blocks/news-fix.scss";
-@use "blocks/menu-city.scss";
-@use "blocks/button-city.scss";
+// @use "blocks/news-fix.scss";
+// @use "blocks/menu-city.scss";
+// @use "blocks/button-city.scss";
 
 
