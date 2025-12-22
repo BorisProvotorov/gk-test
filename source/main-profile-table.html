@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Личный кабинет</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="css/blocks/inner-main.min.css">
+	<link rel="stylesheet" href="css/blocks/breadcrumbs.min.css">
+	<link rel="stylesheet" href="css/blocks/road.min.css">
+	<link rel="stylesheet" href="css/blocks/bookmark.min.css">
+	<link rel="stylesheet" href="css/blocks/top-panel.min.css">
+	<link rel="stylesheet" href="css/blocks/profile.min.css">
+	<link rel="stylesheet" href="css/blocks/profile-card.min.css">
+	<link rel="stylesheet" href="css/blocks/link-group.min.css">
+	<link rel="stylesheet" href="css/blocks/toggle-button-wrapper.min.css">
+	<link rel="stylesheet" href="css/blocks/toggle-button.min.css">
+	<link rel="stylesheet" href="css/blocks/marks.min.css">
+</head>
+
+<body>
+	<include src="img/main-sprite.svg"></include>
+	<h1 class="visually-hidden">Личный кабинет</h1>
+	<include src="components/bunner-wide.html"></include>
+	<include src="components/attention.html"></include>
+	<include src="components/main-header.html"></include>
+
+  <!-- START: Cookies -->
+  <div class="notifycation">
+    <div class="notifycation__wrap">
+      <div class="notifycation__info">
+        <p class="notifycation__info-text">
+          <span class="notifycation__info-title">Мы используем cookie.</span> &nbsp;Оставаясь на сайте, вы соглашаетесь с тем, что мы обрабатываем ваши персональные данные с использованием метрик Яндекс Метрика,top.mail.ru, LiveInternet.
+        </p>
+      </div>
+      <button class="button button--is-bg notifycation__button" type="button">Принять</button>
+    </div>
+  </div>
+  <!-- END: Cookies -->
+	<main class="inner-main">
+		<div class="top-container">
+			<div class="container">
+				<div class="actual-rubrics">
+					<ul class="actual-rubrics__list">
+						<li class="actual-rubrics__item"><a href="#" class="actual-rubrics__link">Выборы 2018</a></li>
+						<li class="actual-rubrics__item"><a href="#" class="actual-rubrics__link">Новостройки</a></li>
+						<li class="actual-rubrics__item"><a href="#" class="actual-rubrics__link">ЖКХ</a></li>
+						<li class="actual-rubrics__item"><a href="#" class="actual-rubrics__link">Дешевые авиабилеты</a></li>
+						<li class="actual-rubrics__item"><a href="#" class="actual-rubrics__link">Общество</a></li>
+						<li class="actual-rubrics__item"><a href="#" class="actual-rubrics__link">Политика</a></li>
+						<li class="actual-rubrics__item"><a href="#" class="actual-rubrics__link">Происшествия</a></li>
+						<li class="actual-rubrics__item"><a href="#" class="actual-rubrics__link">Спорт</a></li>
+						<li class="actual-rubrics__item"><a href="#" class="actual-rubrics__link">Семья</a></li>
+						<li class="actual-rubrics__item"><a href="#" class="actual-rubrics__link">Политика</a></li>
+						<li class="actual-rubrics__item"><a href="#" class="actual-rubrics__link">Семья</a></li>
+					</ul>
+				</div>
+				<div class="top-container__social social">
+					<h3 class="visually-hidden">Мы в социальных сетях</h3>
+					<ul class="social__list">
+						<li class="social__item"><a href="#" class="social__link social__link--vk"><span class="visually-hidden">Вконтакте</span></a></li>
+						<li class="social__item"><a href="#" class="social__link social__link--fb"><span class="visually-hidden">Фейсбук</span></a></li>
+						<li class="social__item"><a href="#" class="social__link social__link--odnk"><span class="visually-hidden">Одноклассники</span></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="top-panel">
+			<div class="container">
+				<div class="breadcrumbs">
+					<ul class="breadcrumbs__list">
+						<li class="breadcrumbs__item"><a href="index.html" class="breadcrumbs__link">Главная</a></li>
+						<li class="breadcrumbs__item"><a class="breadcrumbs__link">Личный кабинет</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="profile">
+			<div class="container">
+				<div class="profile__left-column">
+					<section class="profile-card">
+						<b class="profile-card__username">Константин Константиновский</b>
+						<div class="profile-card__img-wrapper">
+							<img class="profile-card__img" src="img/avatar2.jpg" alt="Константин Константиновский">
+						</div>
+						<a href="profile.html" class="button button--inner button">Редактировать</a>
+						<div class="link-group">
+							<ul class="link-group__list">
+								<li class="link-group__item"><a href="#" class="link-group__link">Мои объявления на Авто 43</a></li>
+								<li class="link-group__item"><a href="#" class="link-group__link">Мои объявления на Дом 43</a></li>
+								<li class="link-group__item"><a href="#" class="link-group__link">Мои резюме на Джоб 43</a></li>
+								<li class="link-group__item"><a href="#" class="link-group__link">Мои вакансии на Джоб 43</a></li>
+							</ul>
+						</div>
+					</section>
+					<a href="#" class="button button--pale profile-card--pale">Техподдержка</a>
+				</div>
+				<div class="profile__right-column">
+
+					<div class="toggle-button-wrapper">
+						<a href="main-profile-table-read.html" class="button toggle-button">Прочитанные <span>новости</span></a>
+						<a class="button toggle-button toggle-button--active">Закладки <span>новостей</span></a>
+					</div>
+
+					<section class="card card--profile">
+						<article class="card__item">
+							<a href="###" class="card__link">
+								<div class="card__image-wrapper">
+									<img src="img/mock1.jpg" alt="Новость">
+								</div>
+								<div class="card__wrapper">
+									<header class="card__header">
+										<h2 class="card__title">В Кирове управляющая компания завышала плату за “коммуналку” из-за ошибок в вычислениях</h2>
+									</header>
+									<p class="card__text">Дорожный знак 3.1. "Въезд запрещён" перенесён на 200 метров в сторону</p>
+								</div>
+							</a>
+							<div class="card__inner-wrapper">
+								<a href="#" class="card__rubric">Политика</a>
+								<a href="##" class="bookmark"><span class="bookmark__text bookmark__text--dark ">В закладки</span></a>
+							</div>
+							<div class="marks">
+								<time class="card__time">Вчера, 14:15</time>
+								<div class="hashteg">
+									<a href="#" class="hashteg__item">#Чтослучилось</a>
+								</div>
+							</div>
+						</article>
+						<article class="card__item">
+							<a href="###" class="card__link">
+								<div class="card__image-wrapper">
+									<img src="img/mock3.png" alt="Новость">
+								</div>
+								<div class="card__wrapper">
+									<header class="card__header">
+										<h2 class="card__title">В Кирове без согласования с властями продлили движение по ул. Шатурской</h2>
+									</header>
+									<p class="card__text">Дорожный знак 3.1. "Въезд запрещён" перенесён на 200 метров в сторону</p>
+								</div>
+							</a>
+							<div class="card__inner-wrapper">
+								<a href="#" class="card__rubric">ЖКХ</a>
+								<a href="##" class="bookmark"><span class="bookmark__text bookmark__text--dark ">В закладки</span></a>
+							</div>
+							<div class="marks">
+								<time class="card__time">Вчера, 14:15</time>
+								<div class="hashteg">
+									<a href="#" class="hashteg__item">#Чтослучилось</a>
+								</div>
+							</div>
+						</article>
+						<article class="card__item">
+							<a href="###" class="card__link">
+								<div class="card__image-wrapper">
+									<img src="img/mock1.jpg" alt="Новость">
+								</div>
+								<div class="card__wrapper">
+									<header class="card__header">
+										<h2 class="card__title">У ТЦ "Европа" в Кирове бойцы "Грома" задержали торговца героином</h2>
+									</header>
+									<p class="card__text">Дорожный знак 3.1. "Въезд запрещён" перенесён на 200 метров в сторону</p>
+								</div>
+							</a>
+							<div class="card__inner-wrapper">
+								<a href="#" class="card__rubric">Общество</a>
+								<a href="##" class="bookmark"><span class="bookmark__text bookmark__text--dark ">В закладки</span></a>
+							</div>
+							<div class="marks">
+								<time class="card__time">Вчера, 14:15</time>
+								<div class="hashteg">
+									<a href="#" class="hashteg__item">#Чтослучилось</a>
+								</div>
+							</div>
+						</article>
+						<article class="card__item">
+							<a href="###" class="card__link">
+								<div class="card__image-wrapper">
+									<img src="img/mock2.jpg" alt="Новость">
+								</div>
+								<div class="card__wrapper">
+									<header class="card__header">
+										<h2 class="card__title">В Кирове управляющая компания завышала плату за “коммуналку” из-за ошибок в вычислениях</h2>
+									</header>
+									<p class="card__text">Дорожный знак 3.1. "Въезд запрещён" перенесён на 200 метров в сторону</p>
+								</div>
+							</a>
+							<div class="card__inner-wrapper">
+								<a href="#" class="card__rubric">Политика</a>
+								<a href="##" class="bookmark"><span class="bookmark__text bookmark__text--dark ">В закладки</span></a>
+							</div>
+							<div class="marks">
+								<time class="card__time">Вчера, 14:15</time>
+								<div class="hashteg">
+									<a href="#" class="hashteg__item">#Чтослучилось</a>
+								</div>
+							</div>
+						</article>
+					</section>
+
+				</div>
+			</div>
+		</div>
+	</main>
+	<include src="components/footer.html"></include>
+	<include src="components/search-block.html"></include>
+	<include src="components/burger-panel.html"></include>
+	<include src="components/modal-enter.html"></include>
+	<include src="components/modal-password.html"></include>
+	<include src="components/fixed-bunner.html"></include>
+  <!--START: окно с городами (для Костромы) -->
+  <include src="components/menu-city.html"></include>
+  <!--END: окно с городами (для Костромы) --> 
+
+	<link rel="stylesheet" href="scripts/fancybox/jquery.fancybox.min.css">
+
+	<script src="scripts/jquery-3.3.1.min.js"></script>
+	<script src="scripts/headhesive/headhesive.min.js"></script>
+	<script src="scripts/fancybox/jquery.fancybox.min.js"></script>
+	<script src="scripts/main-header.js"></script>
+	<script src="scripts/script.min.js"></script>
+
+</body>
+
+</html>

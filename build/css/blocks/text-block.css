@@ -1,0 +1,167 @@
+.text-block {
+  margin: 5px 50px 10px 50px;
+}
+.text-block__title {
+  margin: 0;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 34px;
+}
+.text-block__title span {
+  color: #FE4349;
+}
+.text-block p:not(:last-child) {
+  margin: 30px 0;
+}
+.text-block p:last-child {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.text-block__lead {
+  font-weight: 600;
+}
+.text-block__quote {
+  margin: 0;
+  margin-right: 80px;
+  margin-top: 10px;
+  padding: 20px 0;
+  display: inline-block;
+  border-top: 5px solid #FE4349;
+  width: calc(50% - 80px);
+  font-weight: 800;
+  font-size: 19px;
+  line-height: 32px;
+  color: #2C3D52;
+  vertical-align: top;
+}
+.text-block__quote + p {
+  display: inline-block;
+  width: 49%;
+  margin-top: 0;
+}
+.text-block__quote-horisontal {
+  padding: 0;
+  margin: 0;
+  margin-left: -50px;
+  padding: 0 20px;
+  font-size: 23px;
+  line-height: 31px;
+  border-left: 3px solid #FE4349;
+}
+.text-block blockquote {
+  margin: 0;
+  margin-left: 24px;
+  padding-left: 20px;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 19px;
+  line-height: 32px;
+  position: relative;
+}
+.text-block blockquote::before {
+  content: "";
+  width: 1px;
+  position: absolute;
+  top: 30px;
+  bottom: 0;
+  left: 0;
+  background-color: #C4C4C4;
+}
+.text-block blockquote::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -40px;
+  width: 49px;
+  height: 49px;
+  background-image: url("../img/icon-quote.svg");
+  background-position: top 10px right 3px;
+  background-repeat: no-repeat;
+  background-size: 30px;
+}
+.text-block blockquote img {
+  width: 120px;
+  height: 120px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 100%;
+}
+
+@media (max-width: 1024px) {
+  .text-block {
+    margin-top: 0;
+  }
+  .text-block p:not(:last-child) {
+    margin: 16px 0;
+  }
+  .text-block p:last-child {
+    margin-top: 16px;
+    margin-bottom: 20px;
+  }
+  .text-block__title {
+    font-size: 13px;
+    line-height: 17px;
+    font-weight: bold;
+  }
+  .text-block__quote {
+    font-size: 18px;
+    line-height: 31px;
+  }
+  .text-block__quote-horisontal {
+    font-size: 20px;
+    line-height: 27px;
+  }
+  .text-block blockquote {
+    font-size: 15px;
+    line-height: 26px;
+  }
+  .text-block blockquote::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -40px;
+    width: 49px;
+    height: 49px;
+    background-image: url("../img/icon-quote.svg");
+    background-position: top 10px right 3px;
+    background-repeat: no-repeat;
+    background-size: 30px;
+  }
+  .text-block blockquote img {
+    width: 90px;
+    height: 90px;
+  }
+}
+@media (max-width: 767px) {
+  .text-block {
+    margin: 0;
+  }
+  .text-block p:not(:last-child) {
+    margin: 20px 0;
+  }
+  .text-block p:first-child {
+    margin-top: 12px;
+  }
+  .text-block p:last-child {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .text-block__quote {
+    width: 65%;
+    font-size: 15px;
+    line-height: 26px;
+  }
+  .text-block__quote + p {
+    display: block;
+    width: 100%;
+  }
+  .text-block__quote-horisontal {
+    font-size: 15px;
+    line-height: 20px;
+    margin-left: 0;
+  }
+  .text-block blockquote {
+    font-size: 17px;
+    line-height: 30px;
+  }
+}

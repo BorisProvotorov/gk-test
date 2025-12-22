@@ -1,0 +1,35 @@
+.link-group__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.link-group__link {
+  display: block;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 1.2;
+  color: #2C3D52;
+  padding: 8px 0;
+  border-top: 1px solid rgba(196, 196, 196, 0.7);
+  position: relative;
+  transition: 0.5s;
+}
+.link-group__link::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 9px;
+  right: 0;
+  background-image: url("../img/icon-arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 5px;
+  transform: rotate(-90deg);
+}
+.link-group__link:hover, .link-group__link:focus {
+  opacity: 0.7;
+}
+.link-group__link:active {
+  opacity: 0.85;
+}

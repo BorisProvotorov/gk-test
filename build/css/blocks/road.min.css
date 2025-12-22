@@ -1,0 +1,1 @@
+.road{padding-left:40px;background-image:url(../img/icon-circle.svg);background-repeat:no-repeat;background-position:left center;position:relative}.road::before{content:"5";width:40px;height:40px;position:absolute;top:6px;left:10px}

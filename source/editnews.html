@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Предложить новость</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="css/blocks/inner-main.min.css">
+	<link rel="stylesheet" href="css/blocks/breadcrumbs.min.css">
+	<link rel="stylesheet" href="css/blocks/road.min.css">
+	<link rel="stylesheet" href="css/blocks/progect-label.min.css">
+	<link rel="stylesheet" href="css/blocks/progect-textarea.min.css">
+	<link rel="stylesheet" href="css/blocks/file-input.min.css">
+	<link rel="stylesheet" href="css/blocks/file-label.min.css">
+	<link rel="stylesheet" href="css/blocks/file-wrapper.min.css">
+	<link rel="stylesheet" href="css/blocks/file-image.min.css">
+	<link rel="stylesheet" href="css/blocks/top-panel.min.css">
+	
+	<script src="https://www.google.com/recaptcha/api.js" async="" defer=""></script>
+</head>
+
+<body>
+	<include src="img/main-sprite.svg"></include>
+	<include src="components/bunner-wide.html"></include>
+	<include src="components/attention.html"></include>
+	<include src="components/main-header.html"></include>
+
+  <!-- START: Cookies -->
+  <div class="notifycation">
+    <div class="notifycation__wrap">
+      <div class="notifycation__info">
+        <p class="notifycation__info-text">
+          <span class="notifycation__info-title">Мы используем cookie.</span> &nbsp;Оставаясь на сайте, вы соглашаетесь с тем, что мы обрабатываем ваши персональные данные с использованием метрик Яндекс Метрика,top.mail.ru, LiveInternet.
+        </p>
+      </div>
+      <button class="button button--is-bg notifycation__button" type="button">Принять</button>
+    </div>
+  </div>
+  <!-- END: Cookies -->
+	<main class="inner-main">
+		<div class="top-container">
+			<div class="container">
+				<div class="actual-rubrics">
+					<ul class="actual-rubrics__list">
+						<li class="actual-rubrics__item"><a href="#" class="actual-rubrics__link">Выборы 2018</a></li>
+						<li class="actual-rubrics__item"><a href="#" class="actual-rubrics__link">Новостройки</a></li>
+						<li class="actual-rubrics__item"><a href="#" class="actual-rubrics__link">ЖКХ</a></li>
+						<li class="actual-rubrics__item"><a href="#" class="actual-rubrics__link">Дешевые авиабилеты</a></li>
+						<li class="actual-rubrics__item"><a href="#" class="actual-rubrics__link">Общество</a></li>
+						<li class="actual-rubrics__item"><a href="#" class="actual-rubrics__link">Политика</a></li>
+						<li class="actual-rubrics__item"><a href="#" class="actual-rubrics__link">Происшествия</a></li>
+						<li class="actual-rubrics__item"><a href="#" class="actual-rubrics__link">Спорт</a></li>
+						<li class="actual-rubrics__item"><a href="#" class="actual-rubrics__link">Семья</a></li>
+						<li class="actual-rubrics__item"><a href="#" class="actual-rubrics__link">Политика</a></li>
+						<li class="actual-rubrics__item"><a href="#" class="actual-rubrics__link">Семья</a></li>
+					</ul>
+				</div>
+				<div class="top-container__social social">
+					<h3 class="visually-hidden">Мы в социальных сетях</h3>
+					<ul class="social__list">
+						<li class="social__item"><a href="#" class="social__link social__link--vk"><span class="visually-hidden">Вконтакте</span></a></li>
+						<li class="social__item"><a href="#" class="social__link social__link--fb"><span class="visually-hidden">Фейсбук</span></a></li>
+						<li class="social__item"><a href="#" class="social__link social__link--odnk"><span class="visually-hidden">Одноклассники</span></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="top-panel">
+			<div class="container">
+				<div class="breadcrumbs">
+					<ul class="breadcrumbs__list">
+						<li class="breadcrumbs__item"><a href="editnews.html" class="breadcrumbs__link">Главная</a></li>
+						<li class="breadcrumbs__item"><a class="breadcrumbs__link">Предложить новость</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="add-news">
+			<div class="container">
+				<form class="form" action="#">
+					<section class="form__wrapper">
+						<h1 class="title mrg-vertical">Предложить новость</h1>
+						<div class="form__for-flex">
+							<div class="form__left-column">
+								<div>
+									<label class="progect-label" for="name">Название<sup>*</sup></label>
+									<input class="progect-input" type="text" id="name" required="">
+								</div>
+
+								<div>
+									<label class="progect-label">Текст<sup>*</sup></label>
+									<textarea class="progect-textarea" required=""></textarea>
+								</div>
+
+								<div>
+									<label class="progect-label" for="avtor">Автор<sup>*</sup></label>
+									<input class="progect-input" type="text" id="avtor" required="">
+								</div>
+							</div>
+							<div class="form__right-column">
+								<div>
+									<label class="progect-label" for="cont">Контакты<sup>*</sup></label>
+									<input class="progect-input" type="text" id="cont" required="">
+								</div>
+								<div>
+									<label class="progect-label" for="link">Ссылка на видео</label>
+									<input class="progect-input" type="text" id="link" required="">
+								</div>
+								<div class="file-wrapper">
+									<input class="file-input" data-photo="multi" type="file" id="photo" name="fileMulti[]" multiple="">
+									<label class="progect-label file-label" for="photo"><span class="file-image"></span>Загрузите фото</label>
+									<div class="photos"></div>
+								</div>
+								<div class="mrg-bottom">
+									<div class="g-recaptcha" data-sitekey="6LdUEZQUAAAAAB3njdPhMuvBONRL6G9UD03xPbpe"></div>
+								</div>
+								<div class="mrg-bottom">
+									<input class="progect-check" type="checkbox" id="check1" required>
+									<label class="checkbox-label" for="check1">Я принимаю условия <a href="#" class="form__link">пользовательсткого соглашения</a> и <a href="#" class="form__link">политики обработки персональных данных</a></label>
+								</div>
+								<button class="button button--dark profile-form--dark" type="submit">Отправить</button>
+							</div>
+						</div>
+					</section>
+				</form>
+
+			</div>
+		</div>
+	</main>
+	<include src="components/footer.html"></include>
+	<include src="components/search-block.html"></include>
+	<include src="components/burger-panel.html"></include>
+	<include src="components/modal-enter.html"></include>
+	<include src="components/modal-password.html"></include>
+	<include src="components/fixed-bunner.html"></include>
+  <!--START: окно с городами (для Костромы) -->
+  <include src="components/menu-city.html"></include>
+  <!--END: окно с городами (для Костромы) --> 
+
+	<link rel="stylesheet" href="scripts/fancybox/jquery.fancybox.min.css">
+
+	<script src="scripts/jquery-3.3.1.min.js"></script>
+	<script src="scripts/headhesive/headhesive.min.js"></script>
+	<script src="scripts/fancybox/jquery.fancybox.min.js"></script>
+	<script src="scripts/main-header.js"></script>
+	<script src="scripts/script.min.js"></script>
+	<script src="scripts/upload.js"></script>
+
+</body>
+
+</html>

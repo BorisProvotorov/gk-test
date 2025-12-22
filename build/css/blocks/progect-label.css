@@ -1,0 +1,8 @@
+.progect-label {
+  line-height: 16px;
+  font-size: 10px;
+  color: #2C3D52;
+}
+.progect-label sup {
+  color: #FE4349;
+}

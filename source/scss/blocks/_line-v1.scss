@@ -1,0 +1,118 @@
+@use "../variables" as *;
+
+.line-v1 {
+	margin: 20px 0;
+	font-size: 16px;
+	line-height: 1.2;
+
+	&__text {
+		display: inline-block;
+		min-width: 460px;
+		padding: 14px 15px 10px 62px;
+		position: relative;
+    text-align: left;
+
+		&::before {
+			content: "";
+      width: 31px;
+      height: 31px;
+			position: absolute;
+      top: calc(50% - 15.5px);
+			left: 0;
+			background-repeat: no-repeat;
+			background-position: center right;
+			opacity: 1;
+			transition: .5s;
+		}
+
+		&--inst::before {
+			background-image: url("../../img/icon-beat-inst2.svg");
+		}
+
+		&--vk::before {
+			background-image: url("../../img/icon-beat-vk2.svg");
+		}
+
+		&--tlg::before {
+			background-image: url("../../img/icon-beat-tlg2.svg");
+		}
+
+		&--dzen::before {
+			background-image: url("../../img/icon-beat-yan2.svg");
+		}
+
+    &--yandex {
+      padding-left: 108px;
+    }
+
+    &--yandex::before {
+			background-image: url("../../img/icon-beat-yandex.svg");
+      width: 79px;
+      height: 30px;
+      top: 10px;
+		}
+	}
+
+	&__link {
+		background: rgba(44, 61, 82, 0.05);
+		display: block;
+		text-align: center;
+		color: #000000;
+		text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+
+		&:hover .line-v1__text::before,
+		&:focus .line-v1__text::before {
+			opacity: 1;
+		}
+	}
+}
+
+@media (max-width: $mobile-width) {
+	.line-v1 {
+		font-size: 13px;
+		line-height: 1.2;
+
+		&__text {
+			min-width: min-content;
+      padding-right: 25px;
+      padding-top: 4px;
+      padding-bottom: 4px;
+      padding-left: 76px;
+      text-align: left;
+
+			&::before {
+				left: 25px;
+        width: 24px;
+        height: 24px;
+        background-size: 100%;
+        top: calc(50% - 12px);
+			}
+
+      &--yandex {
+        padding-left: 108px;
+      }
+
+      &--yandex::before {
+        width: 64px;
+        height: 24px;
+        background-size: 100%;
+        top: calc(50% - 12px);
+        left: 25px;
+      }
+
+      &--vk::before {
+        width: 31px;
+        height: 17px;
+        top: calc(50% - 8px);
+      }
+		}
+
+    &__link {
+      font-size: 12px;
+      line-height: 17px;
+    }
+	}
+}

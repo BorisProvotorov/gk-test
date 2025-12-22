@@ -1,0 +1,1185 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Портал город Киров asdasasdasd</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/blocks/push-bunner.min.css">
+  <link rel="preload" as="font" href="scripts/slick/fonts/slick.woff2" type="font/woff2" crossorigin="">
+</head>
+
+<body>
+
+	<svg style="display: none">
+		<symbol id="avto">
+			<path d="M8.0276 6.31519C7.64998 6.31519 7.34277 6.62239 7.34277 7.00001C7.34277 7.37763 7.64998 7.68483 8.0276 7.68483C8.40522 7.68483 8.71242 7.37763 8.71242 7.00001C8.71242 6.62239 8.40522 6.31519 8.0276 6.31519Z"></path>
+			<path d="M8.48145 4.23926V5.47419C8.83314 5.57891 9.1342 5.80201 9.33821 6.0973L10.5128 5.71563C10.1133 4.94585 9.36659 4.38415 8.48145 4.23926Z"></path>
+			<path d="M10.7936 6.57812L9.61865 6.9599C9.61898 6.97324 9.61969 6.9865 9.61969 6.9999C9.61969 7.36349 9.49691 7.69876 9.29102 7.96708L10.0164 8.96551C10.5163 8.45987 10.8254 7.76534 10.8254 6.9999C10.8254 6.85657 10.8145 6.71572 10.7936 6.57812Z"></path>
+			<path d="M8.02814 1.02808H2.50986C2.25936 1.02808 2.05628 1.23116 2.05628 1.48166C2.05628 1.73215 2.25936 1.93523 2.50986 1.93523H4.86761C4.37017 2.24676 3.92165 2.62936 3.53651 3.06891H0.453579C0.203082 3.06894 0 3.27205 0 3.52254C0 3.77304 0.203082 3.97612 0.453579 3.97612H2.88034C2.35704 4.86359 2.05625 5.89724 2.05625 6.99993C2.05625 8.28301 2.4631 9.47285 3.15441 10.4474H1.86744C1.61695 10.4474 1.41387 10.6504 1.41387 10.9009C1.41387 11.1514 1.61695 11.3545 1.86744 11.3545H3.94609C4.22891 11.6198 4.53749 11.8579 4.86761 12.0646H0.500364C0.249868 12.0646 0.0467852 12.2677 0.0467852 12.5182C0.0467852 12.7687 0.249868 12.9718 0.500364 12.9718H8.02814C11.3211 12.9718 14 10.2928 14 6.99991C14 3.70703 11.321 1.02808 8.02814 1.02808ZM10.2315 9.97658C10.2231 9.98363 10.2148 9.99074 10.2058 9.99722C10.1957 10.0046 10.1853 10.0114 10.1749 10.0178C9.56883 10.4502 8.82767 10.7048 8.02814 10.7048C7.22861 10.7048 6.48748 10.4502 5.88141 10.0178C5.87091 10.0114 5.86057 10.0046 5.85045 9.99722C5.84148 9.99069 5.8332 9.98358 5.82483 9.97658C4.91442 9.30091 4.32325 8.21821 4.32325 6.99993C4.32325 4.95705 5.98526 3.29504 8.02814 3.29504C10.071 3.29504 11.733 4.95705 11.733 6.99993C11.733 8.21824 11.1419 9.30091 10.2315 9.97658Z"></path>
+			<path d="M5.54297 5.71563L6.71752 6.0973C6.92159 5.80204 7.22262 5.57894 7.57432 5.47419V4.23926C6.6892 4.38418 5.94246 4.94585 5.54297 5.71563Z"></path>
+			<path d="M8.55785 8.50098C8.39198 8.55971 8.21373 8.592 8.02795 8.592C7.84223 8.592 7.66392 8.55971 7.49806 8.50098L6.77246 9.49963C7.15024 9.69013 7.57675 9.79765 8.02795 9.79765C8.47915 9.79765 8.90566 9.69016 9.28344 9.49963L8.55785 8.50098Z"></path>
+			<path d="M6.43619 6.9999C6.43619 6.9865 6.43685 6.97324 6.43718 6.9599L5.26224 6.57812C5.24135 6.71572 5.23047 6.85657 5.23047 6.9999C5.23047 7.76536 5.53959 8.4599 6.03941 8.96556L6.76484 7.96708C6.55897 7.69878 6.43619 7.36349 6.43619 6.9999Z"></path>
+		</symbol>
+		<symbol id="house">
+			<path d="M1.90339 12.889C1.90339 12.889 1.89096 13.202 2.19665 13.202C2.57697 13.202 5.72567 13.1978 5.72567 13.1978L5.73085 10.3061C5.73085 10.3061 5.68111 9.82944 6.14381 9.82944H7.60805C8.1552 9.82944 8.12153 10.3061 8.12153 10.3061L8.11531 13.1885C8.11531 13.1885 11.1008 13.1885 11.5697 13.1885C11.9578 13.1885 11.9402 12.7989 11.9402 12.7989V7.46778L7.07178 3.13721L1.90339 7.46778V12.889Z"></path>
+			<path d="M0 7.06469C0 7.06469 0.43886 7.8735 1.39585 7.06469L7.11503 2.22635L12.4772 7.03464C13.585 7.8336 14 7.03464 14 7.03464L7.11503 0.797852L0 7.06469Z"></path>
+			<path d="M12.347 2.21484H10.9678L10.9735 3.88738L12.347 5.05267V2.21484Z"></path>
+		</symbol>
+		<symbol id="movie">
+			<path d="M2.78673 5.49618C2.76311 5.29765 2.69269 5.11332 2.58651 4.95471L12.0979 1.779L11.5986 0.28355C11.5261 0.066232 11.291 -0.0510485 11.0738 0.0214377L0.727503 3.47589C0.510326 3.54838 0.392811 3.78341 0.465391 4.00073L0.710213 4.73388C0.465813 4.96081 0.3125 5.28453 0.3125 5.64359C0.3125 6.10859 0.569552 6.51446 0.948898 6.72723V12.5852C0.948898 12.8143 1.13478 13 1.36376 13H12.2715C12.5004 13 12.6863 12.8143 12.6863 12.5852V5.49618H2.78673ZM8.849 1.2522L10.1083 0.831765L9.80524 2.05658L8.54598 2.47702L8.849 1.2522ZM5.73781 2.29095L6.99716 1.87051L6.69414 3.09528L5.43489 3.51577L5.73781 2.29095ZM1.55409 6.27619C1.20539 6.27619 0.921628 5.99243 0.921628 5.64364C0.921628 5.29484 1.20539 5.01108 1.55409 5.01108C1.90289 5.01108 2.18664 5.29484 2.18664 5.64364C2.18664 5.99243 1.90289 6.27619 1.55409 6.27619ZM2.62676 3.3297L3.88611 2.90926L3.58309 4.13408L2.32375 4.55456L2.62676 3.3297ZM3.86385 6.89685H2.53624L3.21153 5.83106H4.53914L3.86385 6.89685ZM6.49144 5.83106H7.81906L7.14377 6.89685H5.81615L6.49144 5.83106ZM6.16556 10.9817V8.17039L8.40448 9.57607L6.16556 10.9817ZM10.4237 6.89685H9.09607L9.77136 5.83106H11.099L10.4237 6.89685Z"></path>
+		</symbol>
+		<symbol id="work">
+			<path d="M5.35742 6.88086H7.64258V7.64258H5.35742V6.88086Z"></path>
+			<path d="M10.5467 7.64266H8.4043V8.02352C8.4043 8.23398 8.2339 8.40438 8.02344 8.40438H4.97656C4.7661 8.40438 4.5957 8.23398 4.5957 8.02352V7.64266H2.45327C1.96083 7.64266 1.52532 7.32875 1.36941 6.8616L0 2.75269V11.0704C0 11.7004 0.512573 12.213 1.14258 12.213H11.8574C12.4874 12.213 13 11.7004 13 11.0704V2.75298L11.6305 6.8616C11.4747 7.32875 11.0392 7.64266 10.5467 7.64266Z"></path>
+			<path d="M8.02341 0.787109H4.97654C4.34653 0.787109 3.83396 1.29968 3.83396 1.92969V2.31055H0.655273L2.09173 6.62051C2.1438 6.77632 2.2892 6.88086 2.45325 6.88086H4.59568V6.5C4.59568 6.28954 4.76607 6.11914 4.97654 6.11914H8.02341C8.23388 6.11914 8.40427 6.28954 8.40427 6.5V6.88086H10.5467C10.7107 6.88086 10.8561 6.77632 10.9082 6.62051L12.3448 2.31055H9.16599V1.92969C9.16599 1.29968 8.65342 0.787109 8.02341 0.787109ZM4.59568 2.31055V1.92969C4.59568 1.71952 4.76637 1.54883 4.97654 1.54883H8.02341C8.23358 1.54883 8.40427 1.71952 8.40427 1.92969V2.31055H4.59568Z"></path>
+		</symbol>
+		<symbol id="arrow">
+			<path d="M3.15346 4.18565L0.143669 1.25936C-0.0478897 1.07322 -0.0478897 0.771411 0.143669 0.585355C0.335056 0.399283 0.645469 0.399283 0.836841 0.585355L3.50005 3.17467L6.16317 0.58543C6.35463 0.399358 6.66501 0.399358 6.8564 0.58543C7.04787 0.771502 7.04787 1.07329 6.8564 1.25944L3.84656 4.18573C3.75082 4.27877 3.62547 4.32523 3.50007 4.32523C3.3746 4.32523 3.24916 4.27867 3.15346 4.18565Z"></path>
+		</symbol>
+	</svg>
+
+	<h1 class="visually-hidden">Новостной портал "Город Киров"</h1>
+
+	<div class="banner-wide" id="top-banner" style="background-color: #ccc">
+		<a href="#" class="banner-wide__link">
+		  <picture>
+		    <source media="(max-width: 767px)" srcset="img/banner1mob.png">
+		    <source media="(max-width: 1024px)" srcset="img/banner1tab.png">
+		    <img src="https://dummyimage.com/1250x120/ccc.jpeg" alt="Рекламный банер">
+		  </picture>
+		</a>
+	</div>
+
+  <div class="attention">
+    <div class="container">
+      <b class="attention__label">Срочно</b>
+      <b class="attention__label attention__label--sign">!</b>
+      <p class="attention__news">ЦИК одобрил три вопроса для референдума по пенсионному возрасту</p>
+      <button class="button button--close" type="button"><span class="visually-hidden">Закрыть</span></button>
+    </div>
+  </div>
+
+	<header class="main-header">
+    <div class="container">
+      <div class="main-header__left">
+        <button class="button button--burger" type="button"><span class="visually-hidden">Навигация сайта</span></button>
+        <div class="logo logo--header">
+          <a class="logo__link">
+            <img class="logo__image" src="img/logo.png" alt="Логотип сайта город Киров">
+            <!-- <img class="logo__image" width="110px" height="44px" src="img/icon-logo-kostroma.svg" alt="Логотип сайта город Киров"> -->
+          </a>
+        </div>
+      </div>
+      <!--START: кнопка городов (для Костромы) -->
+      <div class="button-city"><a href="#city" data-fancybox=""><span>Костромская область</span></a></div>
+      <!--END: кнопка городов (для Костромы) -->
+      <div class="widjets">
+        <div class="weather">
+          <b class="weather__text">26 августа, Киров</b>
+          <span class="weather__degr">+ 23°</span>
+        </div>
+        <div class="currency">
+          <span class="currency__text">Курс ЦБ</span>
+          <span class="currency__dollar">63,45</span>
+          <span class="currency__euro">73,47</span>
+        </div>
+      </div>
+      <div class="main-header__right">
+        <div class="search">
+          <a href="#" data-fancybox="" data-src="#modal-search" class="search__link"><span class="visually-hidden">Поиск по сайту</span></a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- START: Cookies -->
+  <div class="notifycation">
+    <div class="notifycation__wrap">
+      <div class="notifycation__info">
+        <p class="notifycation__info-text">
+          <span class="notifycation__info-title">Мы используем cookie.</span> &nbsp;Оставаясь на сайте, вы соглашаетесь с тем, что мы обрабатываем ваши персональные данные с использованием метрик Яндекс Метрика,top.mail.ru, LiveInternet.
+        </p>
+      </div>
+      <button class="button button--is-bg notifycation__button" type="button">Принять</button>
+    </div>
+  </div>
+  <!-- END: Cookies -->
+	<main class="index-main">
+		<div class="top-container">
+			<div class="container top-container__inner">
+        <div class="top-container__actual-rubrics">
+          <div class="actual-rubrics">
+            <ul class="actual-rubrics__list">
+              <li class="actual-rubrics__item"><a href="#" class="actual-rubrics__link">Выборы 2018</a></li>
+              <li class="actual-rubrics__item"><a href="#" class="actual-rubrics__link">Новостройки</a></li>
+              <li class="actual-rubrics__item"><a href="#" class="actual-rubrics__link">ЖКХ</a></li>
+              <li class="actual-rubrics__item"><a href="#" class="actual-rubrics__link">Дешевые авиабилеты</a></li>
+              <li class="actual-rubrics__item"><a href="#" class="actual-rubrics__link">Общество</a></li>
+              <li class="actual-rubrics__item"><a href="#" class="actual-rubrics__link">Политика</a></li>
+              <li class="actual-rubrics__item"><a href="#" class="actual-rubrics__link">Происшествия</a></li>
+              <li class="actual-rubrics__item"><a href="#" class="actual-rubrics__link">Спорт</a></li>
+              <li class="actual-rubrics__item"><a href="#" class="actual-rubrics__link">Семья</a></li>
+              <li class="actual-rubrics__item"><a href="#" class="actual-rubrics__link">Политика</a></li>
+              <li class="actual-rubrics__item"><a href="#" class="actual-rubrics__link">Семья</a></li>
+            </ul>
+          </div>
+        </div>
+
+				<div class="top-container__social social">
+					<div class="visually-hidden">Мы в социальных сетях</div>
+					<ul class="social__list">
+						<li class="social__item"><a href="#" class="social__link social__link--vk"><span class="visually-hidden">Вконтакте</span></a></li>
+						<li class="social__item"><a href="#" class="social__link social__link--tg"><span class="visually-hidden">Телеграмм</span></a></li>
+						<li class="social__item"><a href="#" class="social__link social__link--odnk"><span class="visually-hidden">Одноклассники</span></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+    <div class="container">
+      <div class="grid-main">
+        <article class="half-card-news grid-main__half-card-news">
+          <a class="half-card-news__link" href="#"></a>
+          <div class="half-card-news__inner">
+            <header class="half-card-news__header">
+              <h2 class="half-card-news__title">Пожар в Костино произошел из-за мужчины, пролившего бензин на генератор</h2>
+              <div class="hashteg half-card-news__hashteg">
+                <a href="#" class="hashteg__item hashteg__item--white">#коммунальное хозяйство</a>
+                <a href="#" class="hashteg__item hashteg__item--white">#развлечения</a>
+              </div>
+            </header>
+            <picture>
+              <source type="image/webp" media="(max-width: 480px)" srcset=" img/news1.jpg">
+              <source media="(max-width: 480px)" srcset=" img/news1.jpg">
+              <source type="image/webp" srcset=" img/news1.webp">
+              <img class="half-card-news__image" src="img/news1.jpg" width="602" height="380" alt="Превью" fetchpriority="high">
+            </picture>
+            <div class="half-card-news__info">
+              <div class="stamp">
+                <div class="stamp__left">
+                  <span class="stamp__item stamp__item--time">Час назад</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="third-card third-card-news-bg grid-main__third-card-news-bg">
+          <a href="#" class="third-card-news-bg__link"></a>
+          <div class="third-card-news-bg__inner">
+            <header class="third-card-news-bg__header">
+              <h2 class="third-card-news-bg__title">Что будет, если убрать заброшенный автомобиль со двора? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, facilis.</h2>
+              <div class="hashteg third-card-news-bg__hashteg">
+                <a href="#" class="hashteg__item hashteg__item--white">#коммунальное хозяйство</a>
+                <a href="#" class="hashteg__item hashteg__item--white">#развлечения</a>
+              </div>
+            </header>
+            <picture>
+              <source type="image/webp" media="(max-width: 480px)" srcset=" img/news2.jpg">
+              <source media="(max-width: 480px)" srcset=" img/news2.jpg">
+              <source type="image/webp" srcset=" img/news2.webp">
+              <img class="third-card-news-bg__image" src="img/news2.jpg" width="293" height="380" alt="Превью" loading="lazy">
+            </picture>
+            <div class="half-card-news__info">
+              <div class="stamp">
+                <div class="stamp__left">
+                  <span class="stamp__item stamp__item--time">Час назад</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <div class="grid-main__news-feed">
+          <div class="news-feed">
+            <h2 class="news-feed__main-title">Лента новостей</h2>
+            <article class="news-feed__item">
+              <time class="news-feed__time" datetime="2019-01-31 09:33">Сегодня, 09:33</time>
+              <header class="news-feed__header">
+                <a href="#" class="link">
+                  <h2 class="news-feed__title">«Победа» возвращается в Киров: причины, расписание и стоимость перелетов</h2>
+                </a>
+              </header>
+            </article>
+    
+            <article class="news-feed__item">
+              <time class="news-feed__time" datetime="2019-01-31 09:33">Сегодня, 09:33</time>
+              <header class="news-feed__header">
+                <a href="#" class="link">
+                  <h2 class="news-feed__title">«Победа» возвращается в Киров: причины, расписание и стоимость перелетов</h2>
+                </a>
+              </header>
+            </article>
+    
+            <article class="news-feed__item">
+              <time class="news-feed__time" datetime="2019-01-31 09:33">Сегодня, 09:33</time>
+              <header class="news-feed__header">
+                <a href="#" class="link">
+                  <h2 class="news-feed__title">«Победа» возвращается в Киров: причины, расписание и стоимость перелетов</h2>
+                </a>
+              </header>
+            </article>
+    
+            <article class="news-feed__item">
+              <time class="news-feed__time" datetime="2019-01-31 09:33">Сегодня, 09:33</time>
+              <header class="news-feed__header">
+                <a href="#" class="link">
+                  <h2 class="news-feed__title">«Победа» возвращается в Киров: причины, расписание и стоимость перелетов</h2>
+                </a>
+              </header>
+            </article>
+    
+            <article class="news-feed__item">
+              <time class="news-feed__time" datetime="2019-01-31 09:33">Сегодня, 09:33</time>
+              <header class="news-feed__header">
+                <a href="#" class="link">
+                  <h2 class="news-feed__title">«Победа» возвращается в Киров: причины, расписание и стоимость перелетов</h2>
+                </a>
+              </header>
+            </article>
+    
+            <article class="news-feed__item">
+              <time class="news-feed__time" datetime="2019-01-31 09:33">Сегодня, 09:33</time>
+              <header class="news-feed__header">
+                <a href="#" class="link">
+                  <h2 class="news-feed__title">«Победа» возвращается в Киров: причины, расписание и стоимость перелетов</h2>
+                </a>
+              </header>
+            </article>
+    
+            <article class="news-feed__item">
+              <time class="news-feed__time" datetime="2019-01-31 09:33">Сегодня, 09:33</time>
+              <header class="news-feed__header">
+                <a href="#" class="link">
+                  <h2 class="news-feed__title">«Победа» возвращается в Киров: причины, расписание и стоимость перелетов</h2>
+                </a>
+              </header>
+            </article>
+    
+            <a href="newsfeed.html" class="news-feed__more">Все новости лентой ></a>
+          </div>
+        </div>
+
+        <div class="banner grid-main__top-banner">
+          <a href="#" class="banner__link">
+            <picture>
+              <source media="(max-width: 767px)" srcset="https://imgholder.ru/320x120">
+              <source media="(max-width: 1024px)" srcset="https://imgholder.ru/728x100">
+              <img src="img/banner2.jpg" alt="Реклама">
+            </picture>
+          </a>
+        </div>
+        <div class="grid-main__left-promo">
+          <div class="banner">
+            <a href="#" class="banner__link">
+              <picture>
+                <source media="(max-width: 767px)" srcset="img/banner-left.jpg">
+                <source media="(max-width: 1024px)" srcset="img/banner-left.jpg">
+                <img src="img/banner-left.jpg" alt="Реклама">
+              </picture>
+            </a>
+          </div>
+          <div class="grid-main__news-parthner"></div>
+        </div>
+        <div class="grid-main__left-parthner">
+          <div class="banner">
+            <a href="#" class="banner__link">
+              <picture>
+                <source media="(max-width: 767px)" srcset="img/banner-left-parthner.jpg">
+                <source media="(max-width: 1024px)" srcset="img/banner-left-parthner-tablet.jpg">
+                <img src="img/banner-left-parthner.jpg" alt="Реклама">
+              </picture>
+            </a>
+          </div>
+        </div>
+        <div class="grid-main__news-lenta">
+          <article class="half-line-news">
+            <a class="half-line-news__link" href="#"></a>
+            <div class="half-line-news__img-wrp">
+              <picture>
+                <source type="image/webp" media="(max-width: 480px)" srcset=" img/news3-mobile.webp">
+                <source media="(max-width: 480px)" srcset=" img/news3-mobile.jpg">
+                <source type="image/webp" srcset=" img/news3.webp">
+                <img class="half-line-news__img" src="img/news3.jpg" width="131" height="100" alt="Превью" loading="lazy">
+              </picture>
+            </div>
+            <div class="half-line-news__content">
+              <h2 class="half-line-news__title">В Кирове похолодает до -5 градусов 1</h2>
+              <div class="hashteg half-line-news__hashteg">
+                <a href="#" class="hashteg__item">#коммунальное хозяйство</a>
+                <a href="#" class="hashteg__item">#развлечения</a>
+              </div>
+              <div class="stamp">
+                <div class="stamp__left">
+                  <span class="stamp__item stamp__item--time stamp__item--time--grey">15:21</span>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="half-line-news">
+            <a class="half-line-news__link" href="#"></a>
+            <div class="half-line-news__img-wrp">
+              <picture>
+                <source type="image/webp" media="(max-width: 480px)" srcset=" img/news4-mobile.webp">
+                <source media="(max-width: 480px)" srcset=" img/news4-mobile.jpg">
+                <source type="image/webp" srcset=" img/news4.webp">
+                <img class="half-line-news__img" src="img/news4.jpg" width="131" height="100" alt="Превью" loading="lazy">
+              </picture>
+            </div>
+            <div class="half-line-news__content">
+              <h2 class="half-line-news__title">Полезно ли ходить босиком: кировский врач поделился лайфхаками для здоровья ног и спины</h2>
+              <div class="hashteg half-line-news__hashteg">
+                <a href="#" class="hashteg__item">#коммунальное хозяйство</a>
+                <a href="#" class="hashteg__item">#развлечения</a>
+              </div>
+              <div class="stamp">
+                <div class="stamp__left">
+                  <span class="stamp__item stamp__item--time stamp__item--time--grey">15:21</span>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="half-line-news">
+            <a class="half-line-news__link" href="#"></a>
+            <div class="half-line-news__img-wrp">
+              <picture>
+                <source type="image/webp" media="(max-width: 480px)" srcset=" img/news5-mobile.webp">
+                <source media="(max-width: 480px)" srcset=" img/news5-mobile.jpg">
+                <source type="image/webp" srcset=" img/news5.webp">
+                <img class="half-line-news__img" src="img/news5.jpg" width="131" height="100" alt="Превью" loading="lazy">
+              </picture>
+            </div>
+            <div class="half-line-news__content">
+              <h2 class="half-line-news__title">Жительница Кировской области обокрала детей-наследников после смерти мужчины</h2>
+              <div class="hashteg half-line-news__hashteg">
+                <a href="#" class="hashteg__item">#коммунальное хозяйство</a>
+                <a href="#" class="hashteg__item">#развлечения</a>
+              </div>
+              <div class="stamp">
+                <div class="stamp__left">
+                  <span class="stamp__item stamp__item--time stamp__item--time--grey">15:21</span>
+                </div>
+              </div>
+            </div>
+          </article>
+          <div class="half-card-advert">
+						<a class="half-card-advert__link" href="#1">
+							<picture>
+								<source media="(max-width: 1024px)" srcset="img/banner4.jpg">
+								<img class="half-card-advert__img" src="img/banner4.jpg" alt="Реклама">
+							</picture>
+						</a>
+					</div>
+          <article class="half-line-news">
+            <a class="half-line-news__link" href="#"></a>
+            <div class="half-line-news__img-wrp">
+              <picture>
+                <source type="image/webp" media="(max-width: 480px)" srcset=" img/news3-mobile.webp">
+                <source media="(max-width: 480px)" srcset=" img/news3-mobile.jpg">
+                <source type="image/webp" srcset=" img/news3.webp">
+                <img class="half-line-news__img" src="img/news3.jpg" width="131" height="100" alt="Превью" loading="lazy">
+              </picture>
+            </div>
+            <div class="half-line-news__content">
+              <h2 class="half-line-news__title">В Кирове похолодает до -5 градусов</h2>
+              <div class="hashteg half-line-news__hashteg">
+                <a href="#" class="hashteg__item">#коммунальное хозяйство</a>
+                <a href="#" class="hashteg__item">#развлечения</a>
+              </div>
+              <div class="stamp">
+                <div class="stamp__left">
+                  <span class="stamp__item stamp__item--time stamp__item--time--grey">15:21</span>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="half-line-news">
+            <a class="half-line-news__link" href="#"></a>
+            <div class="half-line-news__img-wrp">
+              <picture>
+                <source type="image/webp" media="(max-width: 480px)" srcset=" img/news4-mobile.webp">
+                <source media="(max-width: 480px)" srcset=" img/news4-mobile.jpg">
+                <source type="image/webp" srcset=" img/news4.webp">
+                <img class="half-line-news__img" src="img/news4.jpg" width="131" height="100" alt="Превью" loading="lazy">
+              </picture>
+            </div>
+            <div class="half-line-news__content">
+              <h2 class="half-line-news__title">Полезно ли ходить босиком: кировский врач поделился лайфхаками для здоровья ног и спины</h2>
+              <div class="hashteg half-line-news__hashteg">
+                <a href="#" class="hashteg__item">#коммунальное хозяйство</a>
+                <a href="#" class="hashteg__item">#развлечения</a>
+              </div>
+              <div class="stamp">
+                <div class="stamp__left">
+                  <span class="stamp__item stamp__item--time stamp__item--time--grey">15:21</span>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="half-line-news">
+            <a class="half-line-news__link" href="#"></a>
+            <div class="half-line-news__img-wrp">
+              <picture>
+                <source type="image/webp" media="(max-width: 480px)" srcset=" img/news5-mobile.webp">
+                <source media="(max-width: 480px)" srcset=" img/news5-mobile.jpg">
+                <source type="image/webp" srcset=" img/news5.webp">
+                <img class="half-line-news__img" src="img/news5.jpg" width="131" height="100" alt="Превью" loading="lazy">
+              </picture>
+            </div>
+            <div class="half-line-news__content">
+              <h2 class="half-line-news__title">Жительница Кировской области обокрала детей-наследников после смерти мужчины</h2>
+              <div class="hashteg half-line-news__hashteg">
+                <a href="#" class="hashteg__item">#коммунальное хозяйство</a>
+                <a href="#" class="hashteg__item">#развлечения</a>
+              </div>
+              <div class="stamp">
+                <div class="stamp__left">
+                  <span class="stamp__item stamp__item--time stamp__item--time--grey">15:21</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid-main-bottom">
+      <div class="banner grid-main-bottom__banner">
+        <a href="#" class="banner__link">
+          <picture>
+            <source media="(max-width: 767px)" srcset="https://imgholder.ru/320x120">
+            <source media="(max-width: 1024px)" srcset="https://imgholder.ru/728x100">
+            <img src="img/banner3.jpg" alt="Реклама">
+          </picture>
+        </a>
+      </div>
+      <!--  слайдер рубрик -->
+      <div class="rubric is-js-rubric-slider hide grid-main-bottom__rubric">
+        <article class="rubric-item">
+          <div class="container">
+            <div class="slick-prev"><span class="vishually-hidden">стрелка слайдера влево</span></div>
+            <div class="rubric-item__wrapper rubric-item__wrapper--chronicle">
+              <div class="rubric-item__left">
+                <a class="tag tag--white" href="#">Хроника</a>
+                <header class="rubric-item__header">
+                  <h2 class="rubric-item__main-title">Пенсионная реформа в России</h2>
+                </header>
+                <div class="rubric-item__text">
+                  <p>Весной 2018 года Правительство объявило о старте новой пенсионной реформы в России, которая начнет реализовываться уже в 2019 году . Первым этапом очередной реформы будет повышение пенсионного возраста до 65/60 лет для мужчин и женщин.</p>
+                </div>
+              </div>
+              <div class="rubric-item__right">
+                <button class="rubric-item__toggle rubric-item__toggle--v1 button--arrow">Смотреть статьи по теме
+                  <svg width="8" height="4">
+                    <use xlink:href="#arrow"></use>
+                  </svg>
+                </button>
+                <div class="rubric-news rubric-news--v1">
+                  <span class="rubric-news__sub">Смотреть статьи</span>
+                  <div class="rubric-news__item">
+                    <a href="#" class="rubric-news__link">
+                      <time class="rubric-news__time" datetime="2019-01-31 09:33">Сегодня, 09:33</time>
+                      <h3 class="rubric-news__title">Откат или отмена? Пенсионная реформа повисла в воздухе</h3>
+                    </a>
+                  </div>
+                  <div class="rubric-news__item">
+                    <a href="#" class="rubric-news__link">
+                      <time class="rubric-news__time" datetime="2019-01-31 09:33">Сегодня, 09:33</time>
+                      <h3 class="rubric-news__title">Пенсионная реформа в России 2018: последниеновости и видео</h3>
+                    </a>
+                  </div>
+                  <div class="rubric-news__item">
+                    <a href="#" class="rubric-news__link">
+                      <time class="rubric-news__time" datetime="2019-01-31 09:33">Сегодня, 09:33</time>
+                      <h3 class="rubric-news__title">Пенсионная реформа не тянет губернаторов вниз.Снижением рейтинга «Единой России» некому воспользоваться</h3>
+                    </a>
+                  </div>
+                  <a href="#" class="rubric-news__more">Читать всю хронику по теме »</a>
+                </div>
+              </div>
+            </div>
+            <div class="slick-next"><span class="visually-hidden">стрелка слайдера вправо</span></div>
+          </div>
+          <picture class="rubric__image-wrap">
+            <source type="image/webp" media="(max-width: 480px)" srcset="img/rubric-back.jpg">
+            <source media="(max-width: 480px)" srcset="img/rubric-back.jpg">
+            <source type="image/webp" srcset="img/rubric-back.jpg">
+            <img src="img/rubric-back.jpg" class="rubric__image" alt="Реклама">
+          </picture>
+        </article>
+        <article class="rubric-item">
+          <div class="container">
+            <div class="slick-prev"><span class="vishually-hidden">стрелка слайдера влево</span></div>
+            <div class="rubric-item__wrapper rubric-item__wrapper--chronicle">
+              <div class="rubric-item__left">
+                <a class="tag tag--white" href="#">Хроника</a>
+                <header class="rubric-item__header">
+                  <h2 class="rubric-item__main-title">Пенсионная реформа в России</h2>
+                </header>
+                <div class="rubric-item__text">
+                  <p>Весной 2018 года Правительство объявило о старте новой пенсионной реформы в России, которая начнет реализовываться уже в 2019 году . Первым этапом очередной реформы будет повышение пенсионного возраста до 65/60 лет для мужчин и женщин.</p>
+                </div>
+              </div>
+              <div class="rubric-item__right">
+                <button class="rubric-item__toggle rubric-item__toggle--v1 button--arrow">Смотреть статьи по теме
+                  <svg width="8" height="4">
+                    <use xlink:href="#arrow"></use>
+                  </svg>
+                </button>
+                <div class="rubric-news rubric-news--v1">
+                  <span class="rubric-news__sub">Смотреть статьи</span>
+                  <div class="rubric-news__item">
+                    <a href="#" class="rubric-news__link">
+                      <time class="rubric-news__time" datetime="2019-01-31 09:33">Сегодня, 09:33</time>
+                      <h3 class="rubric-news__title">Откат или отмена? Пенсионная реформа повисла в воздухе</h3>
+                    </a>
+                  </div>
+                  <div class="rubric-news__item">
+                    <a href="#" class="rubric-news__link">
+                      <time class="rubric-news__time" datetime="2019-01-31 09:33">Сегодня, 09:33</time>
+                      <h3 class="rubric-news__title">Пенсионная реформа в России 2018: последниеновости и видео</h3>
+                    </a>
+                  </div>
+                  <div class="rubric-news__news">
+                    <a href="#" class="rubric-news__link">
+                      <time class="rubric-news__time" datetime="2019-01-31 09:33">Сегодня, 09:33</time>
+                      <h3 class="rubric-news__title">Пенсионная реформа не тянет губернаторов вниз.Снижением рейтинга «Единой России» некому воспользоваться</h3>
+                    </a>
+                  </div>
+                  <a href="#" class="rubric-news__more">Читать всю хронику по теме »</a>
+                </div>
+              </div>
+            </div>
+            <div class="slick-next"><span class="visually-hidden">стрелка слайдера вправо</span></div>
+          </div>
+          <picture class="rubric__image-wrap">
+            <source type="image/webp" media="(max-width: 480px)" srcset="img/rubric-back.jpg">
+            <source media="(max-width: 480px)" srcset="img/rubric-back.jpg">
+            <source type="image/webp" srcset="img/rubric-back.jpg">
+            <img src="img/rubric-back.jpg" class="rubric__image" alt="Реклама">
+          </picture>
+        </article>
+        <article class="rubric-item">
+          <div class="container">
+            <div class="slick-prev"><span class="vishually-hidden">стрелка слайдера влево</span></div>
+            <div class="rubric-item__wrapper">
+              <div class="rubric-item__left">
+                <a class="tag tag--white" href="#">Тест-драйв</a>
+                <header class="rubric-item__header">
+                  <h2 class="rubric-item__main-title">Тест-драйв Mazda CX-9:</h2>
+                  <p class="rubric-item__sub-title">больше уже не куда, <br> да и не за чем?</p>
+                </header>
+                <div class="rubric-item__text">
+                  <p>Весной 2018 года Правительство объявило о старте новой пенсионной реформы в России, которая начнет реализовываться уже в 2019 году . Первым этапом очередной реформы будет повышение пенсионного возраста до 65/60 лет для мужчин и женщин.</p>
+                </div>
+              </div>
+            </div>
+            <div class="slick-next"><span class="visually-hidden">стрелка слайдера вправо</span></div>
+          </div>
+          <picture class="rubric__image-wrap">
+            <source type="image/webp" media="(max-width: 480px)" srcset="img/car.jpg">
+            <source media="(max-width: 480px)" srcset="img/car.jpg">
+            <source type="image/webp" srcset="img/car.jpg">
+            <img src="img/car.jpg" class="rubric__image" alt="Реклама">
+          </picture>
+        </article>
+      </div>
+
+      <div class="grid-main-bottom__inner">
+        <div class="grid-main-bottom__parthner-top">
+          <picture>
+              <source media="(max-width: 767px)" srcset="https://imgholder.ru/320x70/">
+              <source media="(max-width: 768px)" srcset="https://imgholder.ru/232x539/">
+              <img src="https://imgholder.ru/1250x150/" alt="">
+          </picture>
+        </div>
+        <div class="grid-main-bottom__news-line">
+          <article class="half-line-news">
+            <a class="half-line-news__link" href="#"></a>
+            <div class="half-line-news__img-wrp">
+              <picture>
+                <source type="image/webp" media="(max-width: 480px)" srcset=" img/news3-mobile.webp">
+                <source media="(max-width: 480px)" srcset=" img/news3-mobile.jpg">
+                <source type="image/webp" srcset=" img/news3.webp">
+                <img class="half-line-news__img" src="img/news3.jpg" width="131" height="100" alt="Превью" loading="lazy">
+              </picture>
+            </div>
+            <div class="half-line-news__content">
+              <h2 class="half-line-news__title">В Кирове похолодает до -5 градусов</h2>
+              <div class="hashteg half-line-news__hashteg">
+                <a href="#" class="hashteg__item">#коммунальное хозяйство</a>
+                <a href="#" class="hashteg__item">#развлечения</a>
+              </div>
+              <div class="stamp">
+                <div class="stamp__left">
+                  <span class="stamp__item stamp__item--time stamp__item--time--grey">15:21</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="grid-main-bottom__news-line">
+          <article class="half-line-news">
+            <a class="half-line-news__link" href="#"></a>
+            <div class="half-line-news__img-wrp">
+              <picture>
+                <source type="image/webp" media="(max-width: 480px)" srcset=" img/news4-mobile.webp">
+                <source media="(max-width: 480px)" srcset=" img/news4-mobile.jpg">
+                <source type="image/webp" srcset=" img/news4.webp">
+                <img class="half-line-news__img" src="img/news4.jpg" width="131" height="100" alt="Превью" loading="lazy">
+              </picture>
+            </div>
+            <div class="half-line-news__content">
+              <h2 class="half-line-news__title">В Кирове похолодает до -5 градусов</h2>
+              <div class="hashteg half-line-news__hashteg">
+                <a href="#" class="hashteg__item">#коммунальное хозяйство</a>
+                <a href="#" class="hashteg__item">#развлечения</a>
+              </div>
+              <div class="stamp">
+                <div class="stamp__left">
+                  <span class="stamp__item stamp__item--time stamp__item--time--grey">15:21</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="grid-main-bottom__news-line">
+          <article class="half-line-news">
+            <a class="half-line-news__link" href="#"></a>
+            <div class="half-line-news__img-wrp">
+              <picture>
+                <source type="image/webp" media="(max-width: 480px)" srcset=" img/news5-mobile.webp">
+                <source media="(max-width: 480px)" srcset=" img/news5-mobile.jpg">
+                <source type="image/webp" srcset=" img/news5.webp">
+                <img class="half-line-news__img" src="img/news5.jpg" width="131" height="100" alt="Превью" loading="lazy">
+              </picture>
+            </div>
+            <div class="half-line-news__content">
+              <h2 class="half-line-news__title">В Кирове похолодает до -5 градусов</h2>
+              <div class="hashteg half-line-news__hashteg">
+                <a href="#" class="hashteg__item">#коммунальное хозяйство</a>
+                <a href="#" class="hashteg__item">#развлечения</a>
+              </div>
+              <div class="stamp">
+                <div class="stamp__left">
+                  <span class="stamp__item stamp__item--time stamp__item--time--grey">15:21</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="grid-main-bottom__news-line">
+          <article class="half-line-news">
+            <a class="half-line-news__link" href="#"></a>
+            <div class="half-line-news__img-wrp">
+              <picture>
+                <source type="image/webp" media="(max-width: 480px)" srcset=" img/news3-mobile.webp">
+                <source media="(max-width: 480px)" srcset=" img/news3-mobile.jpg">
+                <source type="image/webp" srcset=" img/news3.webp">
+                <img class="half-line-news__img" src="img/news3.jpg" width="131" height="100" alt="Превью" loading="lazy">
+              </picture>
+            </div>
+            <div class="half-line-news__content">
+              <h2 class="half-line-news__title">В Кирове похолодает до -5 градусов</h2>
+              <div class="hashteg half-line-news__hashteg">
+                <a href="#" class="hashteg__item">#коммунальное хозяйство</a>
+                <a href="#" class="hashteg__item">#развлечения</a>
+              </div>
+              <div class="stamp">
+                <div class="stamp__left">
+                  <span class="stamp__item stamp__item--time stamp__item--time--grey">15:21</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="grid-main-bottom__news-line">
+          <article class="half-line-news">
+            <a class="half-line-news__link" href="#"></a>
+            <div class="half-line-news__img-wrp">
+              <picture>
+                <source type="image/webp" media="(max-width: 480px)" srcset=" img/news4-mobile.webp">
+                <source media="(max-width: 480px)" srcset=" img/news4-mobile.jpg">
+                <source type="image/webp" srcset=" img/news4.webp">
+                <img class="half-line-news__img" src="img/news4.jpg" width="131" height="100" alt="Превью" loading="lazy">
+              </picture>
+            </div>
+            <div class="half-line-news__content">
+              <h2 class="half-line-news__title">В Кирове похолодает до -5 градусов</h2>
+              <div class="hashteg half-line-news__hashteg">
+                <a href="#" class="hashteg__item">#коммунальное хозяйство</a>
+                <a href="#" class="hashteg__item">#развлечения</a>
+              </div>
+              <div class="stamp">
+                <div class="stamp__left">
+                  <span class="stamp__item stamp__item--time stamp__item--time--grey">15:21</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="grid-main-bottom__news-line">
+          <article class="half-line-news">
+            <a class="half-line-news__link" href="#"></a>
+            <div class="half-line-news__img-wrp">
+              <picture>
+                <source type="image/webp" media="(max-width: 480px)" srcset=" img/news5-mobile.webp">
+                <source media="(max-width: 480px)" srcset=" img/news5-mobile.jpg">
+                <source type="image/webp" srcset=" img/news5.webp">
+                <img class="half-line-news__img" src="img/news5.jpg" width="131" height="100" alt="Превью" loading="lazy">
+              </picture>
+            </div>
+            <div class="half-line-news__content">
+              <h2 class="half-line-news__title">В Кирове похолодает до -5 градусов</h2>
+              <div class="hashteg half-line-news__hashteg">
+                <a href="#" class="hashteg__item">#коммунальное хозяйство</a>
+                <a href="#" class="hashteg__item">#развлечения</a>
+              </div>
+              <div class="stamp">
+                <div class="stamp__left">
+                  <span class="stamp__item stamp__item--time stamp__item--time--grey">15:21</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="grid-main-bottom__news-line">
+          <article class="half-line-news">
+            <a class="half-line-news__link" href="#"></a>
+            <div class="half-line-news__img-wrp">
+              <picture>
+                <source type="image/webp" media="(max-width: 480px)" srcset=" img/news3-mobile.webp">
+                <source media="(max-width: 480px)" srcset=" img/news3-mobile.jpg">
+                <source type="image/webp" srcset=" img/news3.webp">
+                <img class="half-line-news__img" src="img/news3.jpg" width="131" height="100" alt="Превью" loading="lazy">
+              </picture>
+            </div>
+            <div class="half-line-news__content">
+              <h2 class="half-line-news__title">В Кирове похолодает до -5 градусов</h2>
+              <div class="hashteg half-line-news__hashteg">
+                <a href="#" class="hashteg__item">#коммунальное хозяйство</a>
+                <a href="#" class="hashteg__item">#развлечения</a>
+              </div>
+              <div class="stamp">
+                <div class="stamp__left">
+                  <span class="stamp__item stamp__item--time stamp__item--time--grey">15:21</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="grid-main-bottom__news-line">
+          <article class="half-line-news">
+            <a class="half-line-news__link" href="#"></a>
+            <div class="half-line-news__img-wrp">
+              <picture>
+                <source type="image/webp" media="(max-width: 480px)" srcset=" img/news4-mobile.webp">
+                <source media="(max-width: 480px)" srcset=" img/news4-mobile.jpg">
+                <source type="image/webp" srcset=" img/news4.webp">
+                <img class="half-line-news__img" src="img/news4.jpg" width="131" height="100" alt="Превью" loading="lazy">
+              </picture>
+            </div>
+            <div class="half-line-news__content">
+              <h2 class="half-line-news__title">В Кирове похолодает до -5 градусов</h2>
+              <div class="hashteg half-line-news__hashteg">
+                <a href="#" class="hashteg__item">#коммунальное хозяйство</a>
+                <a href="#" class="hashteg__item">#развлечения</a>
+              </div>
+              <div class="stamp">
+                <div class="stamp__left">
+                  <span class="stamp__item stamp__item--time stamp__item--time--grey">15:21</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="grid-main-bottom__news-line">
+          <article class="half-line-news">
+            <a class="half-line-news__link" href="#"></a>
+            <div class="half-line-news__img-wrp">
+              <picture>
+                <source type="image/webp" media="(max-width: 480px)" srcset=" img/news5-mobile.webp">
+                <source media="(max-width: 480px)" srcset=" img/news5-mobile.jpg">
+                <source type="image/webp" srcset=" img/news5.webp">
+                <img class="half-line-news__img" src="img/news5.jpg" width="131" height="100" alt="Превью" loading="lazy">
+              </picture>
+            </div>
+            <div class="half-line-news__content">
+              <h2 class="half-line-news__title">В Кирове похолодает до -5 градусов</h2>
+              <div class="hashteg half-line-news__hashteg">
+                <a href="#" class="hashteg__item">#коммунальное хозяйство</a>
+                <a href="#" class="hashteg__item">#развлечения</a>
+              </div>
+              <div class="stamp">
+                <div class="stamp__left">
+                  <span class="stamp__item stamp__item--time stamp__item--time--grey">15:21</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="grid-main-bottom__half-card-news">
+          <article class="half-card-news grid-main-bottom__half-card-news">
+            <a class="half-card-news__link" href="#"></a>
+            <div class="half-card-news__inner">
+              <header class="half-card-news__header">
+                <a class="tag tag--white half-card-news__tag" href="#">Спецпроект</a>
+                <h2 class="half-card-news__title">Где вкусно покушать в Кирове</h2>
+                <div class="hashteg half-card-news__hashteg">
+                  <a href="#" class="hashteg__item hashteg__item--white">#коммунальное хозяйство</a>
+                  <a href="#" class="hashteg__item hashteg__item--white">#развлечения</a>
+                </div>
+              </header>
+              <picture>
+                <source type="image/webp" media="(max-width: 480px)" srcset=" img/news1.jpg">
+                <source media="(max-width: 480px)" srcset=" img/news8.jpg">
+                <source type="image/webp" srcset=" img/news8.webp">
+                <img class="half-card-news__image" src="img/news8.jpg" width="602" height="380" alt="Превью" loading="lazy">
+              </picture>
+              <div class="half-card-news__info">
+                <div class="stamp">
+                  <div class="stamp__left">
+                    <span class="stamp__item stamp__item--time">Час назад</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="grid-main-bottom__right-parthner-1">
+            <picture>
+                <source media="(max-width: 767px)" srcset="https://imgholder.ru/320x290/">
+                <source media="(max-width: 768px)" srcset="https://imgholder.ru/1250x295/">
+                <img src="https://imgholder.ru/618x370/" alt="">
+            </picture>
+        </div>
+        <div class="grid-main-bottom__right-banner">
+          <div class="half-card-advert">
+						<a class="half-card-advert__link" href="#1">
+							<picture>
+								<source media="(max-width: 1024px)" srcset="img/banner6.jpg">
+								<img class="half-card-advert__img" src="img/banner6.jpg" alt="Реклама">
+							</picture>
+						</a>
+					</div>
+        </div>
+        <div class="grid-main-bottom__right-parthner-2">
+            <picture>
+                <source media="(max-width: 767px)" srcset="https://imgholder.ru/320x678/">
+                <source media="(max-width: 768px)" srcset="https://imgholder.ru/232x1037/">
+                <img src="https://imgholder.ru/618x550/" alt="">
+            </picture>
+        </div>
+        <div class="grid-main-bottom__parthner-bottom">
+            <picture>
+                <source media="(max-width: 767px)" srcset="https://imgholder.ru/320x212/">
+                <source media="(max-width: 768px)" srcset="https://imgholder.ru/748x250/">
+                <img src="https://imgholder.ru/1250x295/" alt="">
+            </picture>
+        </div>
+        <div class="grid-main-bottom__while-card while-card">
+          <iframe loading="lazy" src="https://vk.com/video_ext.php?oid=-59750825&id=456241628&hash=4ed3396a2d0a21ca" title="YouTube video player" width="640" height="360" frameborder="0" allowfullscreen="1" allow="autoplay; encrypted-media; fullscreen; picture-in-picture"></iframe>
+          <div class="while-card__video-title">Утепление стен вашего дома в Кирове снаружи и внутри</div>
+        </div>
+      </div>
+    </div>
+		<div class="container">
+      <div class="button-wrapper">
+        <a class="button button--is-bg button" href="#">Читать еще</a>
+      </div>
+		</div>
+	</main>
+
+	<footer class="main-footer">
+	    <div class="container">
+	      <div class="main-footer__flex-wrapper">
+	        <div class="main-footer__left">
+	          <div class="logo">
+	            <a class="logo__link"> 
+	              <img class="logo__image" src="img/logo.png" width="252" alt="Логотип сайта город Киров">
+	            </a>
+	          </div>
+	        </div>
+	        <div class="main-footer__center">
+	          <div class="main-footer__copyright">
+	            <p>Сетевое издание "WWW.GORODKIROV.RU". Учредитель: ООО «Фогран». Главный редактор: Черных Юлия Эдуардовна. Адрес редакции: 610000, Кировская область, г. Киров, ул.Молодой Гвардии, д.82. Эл.почта: reklama@gorodkirov.ru, тел: +7(922)926-54-04, 54-16-05. Свидетельство о регистрации ЭЛ № ФС77-60902 от 02 марта 2015, выдано Федеральной службой по надзору в сфере связи, информационных технологий и массовых коммуникаций. Полное или частичное цитирование материалов сайта, возможно только с гиперссылкой на источник. Мнение редакции может не совпадать с мнениями, высказанными в интервью, комментариях пользователей или прямой речи персонажей публикаций. Редакция не несёт ответственности за текст комментариев читателей.</p>
+	            <p><a href="#" class="red">Политика обработки персональных данных и соглашение об обработке персональных данных. </a><a href="#" class="red">Спец. оценка по условиям труда</a></p>
+	          </div>
+            <div class="main-footer__metric">
+              <div>
+                <img src="https://imgholder.ru/88x18/" alt="">
+                <img src="https://imgholder.ru/31x31/" alt="">
+                <img src="https://imgholder.ru/88x31/" alt="">
+              </div>
+              <div class="main-footer__age">16+</div>
+            </div>
+	        </div>
+	        <div class="main-footer__right">
+	          <div class="social">
+	            <h3 class="visually-hidden">Мы в социальных сетях</h3>
+	            <ul class="social__list">
+	              <li class="social__item"><a href="#" class="social__link social__link--vk"><span class="visually-hidden">Вконтакте</span></a></li>
+	              <li class="social__item"><a href="#" class="social__link social__link--tg"><span class="visually-hidden">Телеграмм</span></a></li>
+	              <li class="social__item"><a href="#" class="social__link social__link--inst"><span class="visually-hidden">Инстаграм</span></a></li>
+	            </ul>
+	          </div>
+	          <div class="main-footer__age">16+</div>
+	        </div>
+	      </div>
+	    </div>
+  	</footer>
+  	<div class="search-block">
+    <div class="container search-block__container" id="modal-search">
+      <div class="search-block__content">
+        <div class="search-block__wrapper">
+          <input type="search" class="search-block__input">
+          <button class="search-block__button"><span class="visually-hidden">Найти</span></button>
+        </div>
+        <ul class="search-block__list">
+          <li class="search-block__item">
+            <a class="tag tag--white" href="#">Проишествия</a>
+            <a href="#">
+              <p class="search-block__text">Трое участников «Артподготовки» получили тюремные сроки по делу о подготовке теракта</p>
+            </a>
+            <time class="search-block__time" datetime="2019-01-31 09:33">3 часа назад</time>
+          </li>
+          <li class="search-block__item">
+            <a class="tag tag--white" href="#">Проишествия</a>
+            <a href="#">
+              <p class="search-block__text">Трое участников «Артподготовки» получили тюремные сроки по делу о подготовке теракта</p>
+            </a>
+            <time class="search-block__time" datetime="2019-01-31 09:33">3 часа назад</time>
+          </li>
+          <li class="search-block__item">
+            <a class="tag tag--white" href="#">Проишествия</a>
+            <a href="#">
+              <p class="search-block__text">Трое участников «Артподготовки» получили тюремные сроки по делу о подготовке теракта</p>
+            </a>
+            <time class="search-block__time" datetime="2019-01-31 09:33">3 часа назад</time>
+          </li>
+          <li class="search-block__item search-block__item--time">
+            <time class="search-block__main-time" datetime="2019-01-31 09:33">21 января, понедельник</time>
+          </li>
+          <li class="search-block__item">
+            <a class="tag tag--white" href="#">Проишествия</a>
+            <a href="#">
+              <p class="search-block__text">Трое участников «Артподготовки» получили тюремные сроки по делу о подготовке теракта</p>
+            </a>
+            <time class="search-block__time" datetime="2019-01-31 09:33">3 часа назад</time>
+          </li>
+          <li class="search-block__item">
+            <a class="tag tag--white" href="#">Проишествия</a>
+            <a href="#">
+              <p class="search-block__text">Трое участников «Артподготовки» получили тюремные сроки по делу о подготовке теракта</p>
+            </a>
+            <time class="search-block__time" datetime="2019-01-31 09:33">3 часа назад</time>
+          </li>
+          <li class="search-block__item">
+            <a class="tag tag--white" href="#">Проишествия</a>
+            <a href="#">
+              <p class="search-block__text">Трое участников «Артподготовки» получили тюремные сроки по делу о подготовке теракта</p>
+            </a>
+            <time class="search-block__time" datetime="2019-01-31 09:33">3 часа назад</time>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  	<div class="background">
+	    <div class="burger-panel">
+	    <button class="button button--dark-close"><span class="visually-hidden">Закрыть меню</span></button>
+	    <div class="burger-panel__wrapper-top">
+	      <div class="logo">
+	        <a class="logo__link">
+	          <img class="logo__image" src="img/logo.png" width="240" alt="Логотип сайта город Киров">
+	        </a>
+	      </div>
+	      <nav class="burger-panel__nav">
+	        <ul class="burger-panel__list">
+	          <li class="burger-panel__item">
+	            <a href="#" class="burger-panel__link burger-panel__link--grey">
+	              <svg width="14" height="14">
+	                <use xlink:href="#avto"></use>
+	              </svg>
+	              Авто
+	            </a>
+	          </li>
+	          <li class="burger-panel__item">
+	            <a href="#" class="burger-panel__link burger-panel__link--grey">
+	              <svg width="14" height="14">
+	                <use xlink:href="#house"></use>
+	              </svg>
+	              Дом
+	            </a>
+	          </li>
+	          <li class="burger-panel__item">
+	            <a href="#" class="burger-panel__link burger-panel__link--grey">
+	              <svg width="14" height="14">
+	                <use xlink:href="#movie"></use>
+	              </svg>
+	              Афиша
+	            </a>
+	          </li>
+	          <li class="burger-panel__item  burger-panel__item--gap">
+	            <a href="#" class="burger-panel__link burger-panel__link--grey">
+	              <svg width="14" height="14">
+	                <use xlink:href="#work"></use>
+	              </svg>
+	              Работа
+	            </a>
+	          </li>
+	          <li class="burger-panel__item"><a href="#" class="burger-panel__link">Новости</a></li>
+	          <li class="burger-panel__item"><a href="#" class="burger-panel__link">Интервью</a></li>
+	          <li class="burger-panel__item"><a href="#" class="burger-panel__link">Репортаж</a></li>
+	          <li class="burger-panel__item"><a href="#" class="burger-panel__link">Срочные новости</a></li>
+	          <li class="burger-panel__item"><a href="#" class="burger-panel__link">Хроника событий</a></li>
+	          <li class="burger-panel__item"><a href="#" class="burger-panel__link">Спецпроекты</a></li>
+	          <li class="burger-panel__item"><a href="#" class="burger-panel__link">Форум</a></li>
+	        </ul>
+	      </nav>
+	    </div>
+	    <div class="burger-panel__wrapper-bottom">
+	      <a href="#" class="button button--dark">Предложить новость</a>
+	      <a href="#" class="button button--inner">Разместить рекламу</a>
+	    </div>
+	  </div>
+	</div>
+
+<div class="modal modal-enter" id="modal-enter">
+  <form action="#">
+    <div class="modal-enter__buttons">
+      <button class="button modal-enter__button" type="button" id="enterbtn">Вход</button>
+      <button class="button modal-enter__button modal-enter__button--active" type="button" id="registrbtn">Регистрация</button>
+    </div>
+    <div class="login">
+      <div class="modal-enter__social">
+        <p>Войти через соцсети:</p>
+        <div class="social">
+          <ul class="social__list">
+            <li class="social__item"><a href="#" class="social__link social__link--vk"><span class="visually-hidden">Вконтакте</span></a></li>
+            <li class="social__item"><a href="#" class="social__link social__link--fb"><span class="visually-hidden">Фейсбук</span></a></li>
+            <li class="social__item"><a href="#" class="social__link social__link--odnk"><span class="visually-hidden">Одноклассники</span></a></li>
+            <li class="social__item"><a href="#" class="social__link social__link--inst"><span class="visually-hidden">Инстаграм</span></a></li>
+          </ul>
+        </div>
+      </div>
+      <span>или</span>
+      <div>
+        <input class="progect-input" type="text" placeholder="Введите ваш логин">
+      </div>
+      <div class="field-wrapper">
+        <input class="progect-input progect-input--password" type="password" placeholder="Введите ваш пароль">
+        <button type="button" class="modal__password-btn"><span class="visually-hidden">Показать пароль</span></button>
+      </div>
+      <div class="modal-enter__link-wrapper">
+        <a href="#" data-fancybox="" data-src="#modal-password" class="modal-enter__link">Забыли пароль?</a>
+      </div>
+      <button class="button button--dark modal--button">Войти</button>
+    </div>
+    <div class="registration">
+      <div>
+        <input class="progect-input" type="text" placeholder="Введите ваше имя">
+      </div>
+      <div>
+        <input class="progect-input" type="text" placeholder="Введите вашу фамилию">
+      </div>
+      <div class="progect-field progect-field--error">
+        <input class="progect-input" type="text" placeholder="Введите ваш логин">
+        <div class="progect-field__tooltip">Такой логин существует, попробуйте другой</div>
+      </div>
+      <div>
+        <input class="progect-input" type="email" placeholder="Введите ваш email">
+      </div>
+      <div class="field-wrapper">
+        <input class="progect-input progect-input--password" type="password" placeholder="Введите ваш пароль">
+        <button type="button" class="modal__password-btn"><span class="visually-hidden">Показать пароль</span></button>
+      </div>
+      <div>
+        <div class="g-recaptcha" data-sitekey="6LdUEZQUAAAAAB3njdPhMuvBONRL6G9UD03xPbpe"></div>
+      </div>
+      <div class="modal__align-left">
+        <input class="progect-check" type="checkbox" id="check1" required="">
+        <label class="checkbox-label" for="check1">Нажимая на кнопку ЗАРЕГИСТРИРОВАТЬСЯ, я даю <a href="#" class="form__link">согласие на обработку персональных данных</a></label>
+      </div>
+      <button class="button button--dark modal--button">Зарегистрироваться</button>
+    </div>
+  </form>
+</div>
+
+	<div class="modal modal-forget-password" id="modal-password">
+	  <form action="#">
+	    <h2 class="modal__title">Восстановление пароля</h2>
+	    <div class="modal-forget-password__wrapper">
+	      <input class="progect-input" type="text" placeholder="Введите email, указанный при регистрации">
+	      <div>
+	        <div class="g-recaptcha" data-sitekey="6LdUEZQUAAAAAB3njdPhMuvBONRL6G9UD03xPbpe"></div>
+	      </div>
+	    </div>
+	    <button class="button button--dark modal--button">Восстановить пароль</button>
+	  </form>
+	</div>
+
+	<div class="banner-wide banner-wide--fixed" style="background-color: #000" data-scroll-percent="5">
+    <!-- <div class="container"> -->
+      <button class="button--fixbanner-close"><span class="visually-hidden">Закрыть банер</span></button>
+    <!-- </div> -->
+    <a href="#" class="banner-wide__link">
+      <picture>
+        <source media="(max-width: 767px)" srcset="img/banner9mob.png">
+        <source media="(max-width: 992px)" srcset="img/banner9tab.png">
+        <img src="img/test-banner.jpg" alt="Рекламный банер">
+      </picture>
+    </a>
+	</div>
+
+	<div class="push-bunner" id="float-banner">
+    <div class="push-bunner__content">
+      <div data-z="2000060" id="check_banner"></div>
+      <button class="push-bunner__close">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 24 24">
+          <path d="M13 12l5-5-1-1-5 5-5-5-1 1 5 5-5 5 1 1 5-5 5 5 1-1z"></path>
+        </svg>
+      </button>
+    </div>
+	</div>
+  <!--START: окно с городами (для Костромы) -->
+  <div class="modal menu-city" id="city">
+  <div class="menu-city__wrap">
+    <div class="menu-city__title">ВЫБЕРИТЕ ГОРОД</div>
+    <!-- <div><a href="" class="menu-city__current">Кострома</a></div> -->
+    <div class="menu-city__btn-close"><a href="#" class="close" data-fancybox-close=""></a></div>
+    <ul class="menu-city__list">
+      <li class="menu-city__item"><a href="#">Буй</a></li>
+      <li class="menu-city__item"><a href="#">Волгореченск</a></li>
+      <li class="menu-city__item"><a href="#">Галич</a></li>
+      <li class="menu-city__item"><a href="#">Кологрив</a></li>
+      <li class="menu-city__item"><a href="#">Кострома</a></li>
+      <li class="menu-city__item"><a href="#">Макарьев</a></li>
+      <li class="menu-city__item"><a href="#">Мантурово</a></li>
+      <li class="menu-city__item"><a href="#">Нерехта</a></li>
+      <li class="menu-city__item"><a href="#">Нея</a></li>
+      <li class="menu-city__item"><a href="#">Солигалич</a></li>
+      <li class="menu-city__item"><a href="#">Чухлома</a></li>
+      <li class="menu-city__item"><a href="#">Шарья</a></li>
+    </ul>
+  </div>
+</div>
+  <!--END: окно с городами (для Костромы) --> 
+
+  <link rel="preload" as="style" href="scripts/slick/slick.min.css" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" as="style" href="scripts/slick/slick-theme.css" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" as="style" href="scripts/fancybox/jquery.fancybox.min.css" onload="this.onload=null;this.rel='stylesheet'">
+
+	<script src="scripts/jquery-3.3.1.min.js"></script>
+	<script src="scripts/slick/slick.min.js"></script>
+	<script src="scripts/headhesive/headhesive.min.js"></script>
+	<script src="scripts/fancybox/jquery.fancybox.min.js"></script>
+	<script src="scripts/main-header.min.js"></script>
+  <script src="scripts/client.base.min.js"></script>
+  <script src="scripts/forge.min.js"></script>
+	<script src="scripts/script.min.js"></script>
+
+</body>
+
+</html>

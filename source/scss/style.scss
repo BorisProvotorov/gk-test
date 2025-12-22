@@ -1,0 +1,166 @@
+@use "_variables.scss";
+@use "_mixins.scss";
+@use "_scaffolding.scss";
+@use "_visually-hidden.scss";
+@use "_background.scss";
+
+@use "blocks/_button.scss";
+@use "blocks/_link.scss";
+@use "blocks/_title.scss";
+@use "blocks/_field-wrapper.scss";
+// @use "blocks/_mrg-right.scss"; // нет в index
+
+// @use "blocks/_inner-main.scss"; // нет в index
+
+// // burger
+@use "blocks/_burger-panel.scss";
+// @use "blocks/_breadcrumbs.scss"; // нет в index
+
+// //top
+@use "blocks/_bunner-wide.scss";
+@use "blocks/_attention.scss";
+@use "blocks/_widjets.scss";
+@use "blocks/_weather.scss";
+@use "blocks/_currency.scss";
+// @use "blocks/_road.scss"; // нет в index
+// @use "blocks/_user.scss"; // нет в index.html--?--не используется
+
+// // main-header
+@use "blocks/_main-header.scss";
+@use "blocks/_enter.scss";
+@use "blocks/_logo.scss";
+@use "blocks/_search.scss";
+
+// // main index
+@use "blocks/_top-container.scss";
+@use "blocks/_actual-rubrics.scss";
+@use "blocks/_social.scss";
+@use "blocks/_button-wrapper.scss";
+
+@use "blocks/_tag.scss";
+// @use "blocks/_tags.scss"; // не используется
+@use "blocks/_hashteg.scss";
+@use "blocks/_stamp.scss";
+// @use "blocks/_bookmark.scss"; // нет в index
+
+// // большие карточки
+@use "blocks/_while-card.scss";
+@use "blocks/_half-card.scss";
+@use "blocks/_half-card-news.scss";
+@use "blocks/_half-card-advert.scss";
+
+@use "blocks/_third-card.scss";
+@use "blocks/_third-card-slider.scss"; // в js
+@use "blocks/_half-card-slider.scss"; // в js
+@use "blocks/_third-card-news-bg.scss";
+@use "blocks/_third-card-news.scss";
+@use "blocks/_third-card-news-no-bg.scss";
+@use "blocks/_half-line-news.scss";
+
+@use "blocks/_article.scss";
+// @use "blocks/_article-card.scss"; // нет в index
+// @use "blocks/_read-also.scss"; // не используется
+// @use "blocks/_interesting.scss"; // нет в index
+@use "blocks/_news-feed.scss";
+@use "blocks/_banner.scss";
+// @use "blocks/_bunner-side.scss"; // нет в index
+@use "blocks/_news.scss";
+@use "blocks/_rubric.scss";
+@use "blocks/_rubric-item.scss";
+@use "blocks/_rubric-news.scss";
+// @use "blocks/_rubric-author.scss"; // нет в index
+
+// //Сетка
+// @use "blocks/_main-greed.scss"; // нет в index
+@use "blocks/_grid-main.scss";
+@use "blocks/_grid-main-bottom.scss";
+
+// // footer
+@use "blocks/_main-footer.scss";
+
+// // plagins 
+@use "blocks/_is-js-slick.scss";
+@use "blocks/_is-js-headhesive.scss";
+@use "blocks/_is-js-fancybox.scss";
+@use "blocks/_is-js-datarangepicker.scss";
+@use "blocks/_is-js.scss";
+@use "blocks/_main-content-wrapper.scss";
+
+// // search
+@use "blocks/_search-block.scss";
+// @use "blocks/_likes.scss"; // нет в index
+
+@use "blocks/_modal-enter.scss";
+@use "blocks/_login.scss";
+@use "blocks/_registration.scss";
+// @use "blocks/_progect-label.scss"; // нет в index
+@use "blocks/_progect-input.scss";
+@use "blocks/_progect-field.scss";
+// @use "blocks/_progect-textarea.scss"; // нет в index
+@use "blocks/_progect-check.scss";
+@use "blocks/_checkbox-label.scss";
+// @use "blocks/_select-wrapper.scss"; // нет в index
+// @use "blocks/_progect-select.scss"; // нет в index
+// @use "blocks/_radio-input.scss"; // нет в index
+// @use "blocks/_radio-label.scss"; // нет в index
+// @use "blocks/_radio-wrapper.scss"; // нет в index
+// @use "blocks/_file-input.scss"; // нет в index
+// @use "blocks/_file-label.scss"; // нет в index
+// @use "blocks/_file-wrapper.scss"; // нет в index
+// @use "blocks/_file-image.scss"; // нет в index
+// @use "blocks/_top-panel.scss"; // нет в index
+
+// // profile
+// @use "blocks/_profile.scss"; // нет в index
+// @use "blocks/_profile-card.scss"; // нет в index
+@use "blocks/_form.scss";
+// @use "blocks/_link-group.scss"; // нет в index
+@use "blocks/_card.scss";
+
+// @use "blocks/_sort.scss"; // нет в index
+// @use "blocks/_toggle-button-wrapper.scss"; // нет в index
+// @use "blocks/_toggle-button.scss"; // нет в index
+// @use "blocks/_marks.scss"; // нет в index
+// @use "blocks/_alert.scss"; // нет в index    text.html?
+
+// @use "blocks/_comments.scss"; // нет в index
+// @use "blocks/_comment.scss"; // нет в index
+// @use "blocks/_add-comment.scss"; // нет в index
+
+// // Всплывающее уведомление об использовании куки
+@use 'blocks/_notifycation';
+
+// verstki
+// @use "blocks/_reactions.scss"; // нет в index
+@use "blocks/_line-v1.scss"; // нет в index
+// @use "blocks/_line-v2.scss"; // нет в index
+// @use "blocks/_line-v3.scss"; // нет в index
+// @use "blocks/_text-block.scss"; // нет в index      text
+// @use "blocks/_article-block.scss"; // нет в index
+// @use "blocks/_author.scss"; // нет в index      text
+// @use "blocks/_lead.scss"; // нет в index
+// @use "blocks/_feature.scss"; // нет в index
+// @use "blocks/_trick.scss"; // нет в index
+// @use "blocks/_plan.scss"; // нет в index
+// @use "blocks/_review.scss"; // нет в index
+// @use "blocks/_article-header.scss"; // нет в index
+// @use "blocks/_article-footer.scss"; // нет в index
+// @use "blocks/_reading-similar.scss"; // нет в index
+// @use "blocks/_reading.scss"; // нет в index
+// @use "blocks/_reading-item.scss"; // нет в index
+@use "blocks/_chronic.scss";
+
+@use "blocks/_img-thumbnail.scss"; // в js
+// @use "blocks/_only-mobile-block.scss"; // не используется
+// @use "blocks/_fixed-block.scss"; // нет в index
+// @use "blocks/_push-bunner.scss";
+@use "blocks/_closed.scss"; // в js
+@use "blocks/_opened.scss"; // в js
+// @use "blocks/_passive.scss"; // нет в index
+// @use "blocks/_partner-news.scss"; // нет в index
+
+// @use "blocks/_news-fix.scss"; // нет в index
+@use "blocks/_menu-city.scss";
+@use "blocks/_button-city.scss";
+
+

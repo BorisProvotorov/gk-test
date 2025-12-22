@@ -1,0 +1,54 @@
+.bookmark {
+  display: block;
+  padding-left: 20px;
+  background-image: url(../img/icon-star.svg);
+  background-repeat: no-repeat;
+  background-position: center left;
+  text-decoration: none;
+  opacity: 0.7;
+  transition: opacity 0.5s;
+}
+.bookmark__text {
+  color: #fff;
+}
+.bookmark__text--dark {
+  color: #2C3D52;
+}
+.bookmark__text--red {
+  color: #FE4349;
+}
+.bookmark--white {
+  background-image: url(../img/icon-star-wh.svg);
+}
+.bookmark--red {
+  background-image: url(../img/icon-star-red.svg);
+}
+.bookmark:hover, .bookmark:focus {
+  opacity: 1;
+}
+
+@media (max-width: 1024px) {
+  .bookmark {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 25px;
+    height: 25px;
+    background-color: rgba(216, 216, 216, 0.7);
+    background-image: url("../img/icon-star-white.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-color 0.5s;
+  }
+  .bookmark__text {
+    display: none;
+  }
+  .bookmark:hover, .bookmark:focus {
+    opacity: 1;
+    background-color: #2C3D52;
+  }
+  .bookmark--red {
+    background-color: #FE4349;
+  }
+}

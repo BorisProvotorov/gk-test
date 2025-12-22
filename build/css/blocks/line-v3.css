@@ -1,0 +1,39 @@
+.line-v3 {
+  margin: 20px 0;
+  font-size: 16px;
+  line-height: 1.2;
+}
+.line-v3__link {
+  padding: 15px;
+  padding-left: 40px;
+  display: block;
+  color: #2C3D52;
+  text-decoration: none;
+  position: relative;
+  transition: 0.5s;
+}
+.line-v3__link::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: calc(50% - 15px);
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.line-v3__link--inst::before {
+  background-image: url("../img/icon-beat-inst1.svg");
+}
+.line-v3__link--vk::before {
+  background-image: url("../img/icon-beat-vk1.svg");
+}
+.line-v3__link--tlg::before {
+  background-image: url("../img/icon-beat-tlg1.svg");
+}
+.line-v3__link--yan::before {
+  background-image: url("../img/icon-beat-yan1.svg");
+}
+.line-v3__link:hover, .line-v3__link:focus {
+  opacity: 0.6;
+}
