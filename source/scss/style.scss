@@ -45,17 +45,17 @@
 
 // // большие карточки
 @use "blocks/_while-card.scss";
-@use "blocks/_half-card.scss";
-@use "blocks/_half-card-news.scss";
-@use "blocks/_half-card-advert.scss";
+// @use "blocks/_half-card.scss";
+// @use "blocks/_half-card-news.scss";
+// @use "blocks/_half-card-advert.scss";
 
-@use "blocks/_third-card.scss";
-@use "blocks/_third-card-slider.scss"; // в js
-@use "blocks/_half-card-slider.scss"; // в js
-@use "blocks/_third-card-news-bg.scss";
-@use "blocks/_third-card-news.scss";
-@use "blocks/_third-card-news-no-bg.scss";
-@use "blocks/_half-line-news.scss";
+// @use "blocks/_third-card.scss";
+// @use "blocks/_third-card-slider.scss"; // в js
+// @use "blocks/_half-card-slider.scss"; // в js
+// @use "blocks/_third-card-news-bg.scss";
+// @use "blocks/_third-card-news.scss";
+// @use "blocks/_third-card-news-no-bg.scss";
+// @use "blocks/_half-line-news.scss";
 
 @use "blocks/_article.scss";
 // @use "blocks/_article-card.scss"; // нет в index
@@ -159,8 +159,9 @@
 // @use "blocks/_passive.scss"; // нет в index
 // @use "blocks/_partner-news.scss"; // нет в index
 
-// @use "blocks/_news-fix.scss"; // нет в index
+@use "blocks/_news-fix.scss"; // нет в index
 @use "blocks/_menu-city.scss";
 @use "blocks/_button-city.scss";
+
 
 
