@@ -1,0 +1,1 @@
+{"version":3,"sources":["blocks/fixed-block.scss","blocks/fixed-block.css"],"names":[],"mappings":"AAAA;EACE,gBAAA;EACA,SAAA;ACCF","file":"blocks/fixed-block.css","sourcesContent":[".fixed-block {\n  position: sticky;\n  top: 75px;\n}",".fixed-block {\n  position: sticky;\n  top: 75px;\n}"]}

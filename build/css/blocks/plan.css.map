@@ -1,0 +1,1 @@
+{"version":3,"sources":["blocks/plan.scss","blocks/plan.css"],"names":[],"mappings":"AAAA;EACE,oBAAA;ACCF","file":"blocks/plan.css","sourcesContent":[".plan {\n  padding-bottom: 40px;\n}",".plan {\n  padding-bottom: 40px;\n}"]}

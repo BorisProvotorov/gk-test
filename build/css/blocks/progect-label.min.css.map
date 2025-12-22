@@ -1,0 +1,1 @@
+{"version":3,"sources":["blocks/progect-label.scss"],"names":[],"mappings":"AAAA,c,CACA,gB,CACA,c,CACA,a,CAEE,kB,CACE,a","file":"blocks/progect-label.min.css","sourcesContent":[".progect-label {\nline-height: 16px;\nfont-size: 10px;\ncolor: #2C3D52;\n  \n  sup {\n    color: #FE4349;\n  }\n}"]}

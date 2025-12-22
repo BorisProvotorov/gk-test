@@ -1,0 +1,1 @@
+{"version":3,"sources":["blocks/inner-main.scss","blocks/inner-main.css"],"names":[],"mappings":"AAAA;EACE,yBAAA;ACCF","file":"blocks/inner-main.css","sourcesContent":[".inner-main {\n  background-color: #F4F4F4;\n}",".inner-main {\n  background-color: #F4F4F4;\n}"]}
